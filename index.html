@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nordirland Transferzentrale &middot; Anstoss Online</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pitch: #143A2C;
+    --pitch-light: #1F5A42;
+    --parchment: #F3EEDF;
+    --parchment-dim: #E9E2CC;
+    --ink: #1A2420;
+    --ink-soft: #4B5750;
+    --gold: #C8973F;
+    --gold-soft: #E4C481;
+    --line: #D8CFB2;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body{
+    margin: 0;
+    background: var(--parchment);
+    color: var(--ink);
+    font-family: 'Space Grotesk', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ---------- Ticker ---------- */
+  .ticker-wrap{
+    background: var(--pitch);
+    border-bottom: 2px solid var(--gold);
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+  }
+  .ticker-wrap::after{
+    content: "";
+    position: absolute; inset: 0;
+    pointer-events: none;
+    background: linear-gradient(90deg, var(--pitch) 0%, transparent 6%, transparent 94%, var(--pitch) 100%);
+  }
+  .ticker{
+    display: inline-flex;
+    padding: 9px 0;
+    animation: scroll-left 45s linear infinite;
+    will-change: transform;
+  }
+  .ticker span{
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    color: var(--gold-soft);
+    letter-spacing: 0.02em;
+    padding: 0 2.2rem;
+    border-right: 1px solid rgba(200,151,63,0.35);
+  }
+  @keyframes scroll-left{
+    from{ transform: translateX(0); }
+    to{ transform: translateX(-50%); }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .ticker{ animation: none; }
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 1.5rem;
+  }
+  .eyebrow{
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin: 0 0 0.6rem;
+  }
+  h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(2.1rem, 5vw, 3.1rem);
+    line-height: 1.05;
+    margin: 0 0 0.5rem;
+    color: var(--pitch);
+  }
+  h1 em{
+    font-style: italic;
+    font-weight: 500;
+    color: var(--gold);
+  }
+  .subtitle{
+    color: var(--ink-soft);
+    font-size: 15.5px;
+    max-width: 46ch;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .stat-row{
+    display: flex;
+    gap: 2.2rem;
+    margin-top: 1.8rem;
+    flex-wrap: wrap;
+  }
+  .stat{
+    border-left: 2px solid var(--line);
+    padding-left: 0.7rem;
+  }
+  .stat .num{
+    font-family: 'Space Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--pitch);
+    display: block;
+  }
+  .stat .label{
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+  }
+
+  /* ---------- Controls ---------- */
+  .controls{
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .controls input[type="text"],
+  .controls select{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    padding: 0.6rem 0.85rem;
+    border: 1.5px solid var(--line);
+    background: #fff;
+    color: var(--ink);
+    border-radius: 3px;
+  }
+  .controls input[type="text"]{
+    flex: 1 1 220px;
+  }
+  .controls input[type="text"]:focus,
+  .controls select:focus{
+    outline: 2px solid var(--gold);
+    outline-offset: 1px;
+    border-color: var(--gold);
+  }
+
+  /* ---------- Table ---------- */
+  main{
+    max-width: 980px;
+    margin: 1.4rem auto 4rem;
+    padding: 0 1.5rem;
+  }
+  .table-scroll{
+    overflow-x: auto;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    background: #fff;
+  }
+  table{
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 720px;
+  }
+  thead th{
+    position: sticky;
+    top: 0;
+    background: var(--pitch);
+    color: var(--parchment);
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.75rem 0.9rem;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+  }
+  thead th:hover{ background: var(--pitch-light); }
+  thead th .arrow{ color: var(--gold); margin-left: 4px; font-size: 10px; }
+
+  tbody tr{
+    border-top: 1px solid var(--parchment-dim);
+    transition: background 0.12s ease;
+  }
+  tbody tr:nth-child(even){ background: #FBF8EF; }
+  tbody tr:hover{ background: #F3E6C8; }
+
+  td{
+    padding: 0.65rem 0.9rem;
+    font-size: 13.5px;
+    white-space: nowrap;
+  }
+  td.player{
+    font-weight: 600;
+    color: var(--pitch);
+  }
+  td.pos{
+    font-family: 'Space Mono', monospace;
+    color: var(--gold);
+    font-weight: 700;
+    font-size: 12px;
+  }
+  td.route{
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+  td.route b{ color: var(--ink); font-weight: 600; }
+  td.route .arrow-icon{ color: var(--gold); margin: 0 0.35rem; }
+  td.num{ font-family: 'Space Mono', monospace; }
+  td.date{ font-family: 'Space Mono', monospace; color: var(--ink-soft); font-size: 12.5px; }
+
+  .empty-state{
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--ink-soft);
+    font-size: 14px;
+  }
+
+  footer{
+    max-width: 980px;
+    margin: 0 auto 3rem;
+    padding: 1rem 1.5rem 0;
+    border-top: 1px solid var(--line);
+    padding-top: 1.2rem;
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+  footer a{ color: var(--pitch); }
+
+  :focus-visible{ outline: 2px solid var(--gold); outline-offset: 2px; }
+</style>
+</head>
+<body>
+
+<div class="ticker-wrap">
+  <div class="ticker" id="ticker">
+    <!-- wird per JS befüllt (zweifach für nahtlose Schleife) -->
+  </div>
+</div>
+
+<header>
+  <p class="eyebrow">Anstoss Online &middot; Community-Auswertung</p>
+  <h1>Nordirland <em>Transferzentrale</em></h1>
+  <p class="subtitle">Alle bislang erfassten Transfers rund um nordirische Vereine &ndash; automatisch gesammelt aus der öffentlichen Länderseite, angelehnt an eine Transfermarkt-Ansicht.</p>
+
+  <div class="stat-row">
+    <div class="stat"><span class="num" id="stat-total">&ndash;</span><span class="label">Transfers erfasst</span></div>
+    <div class="stat"><span class="num" id="stat-clubs">&ndash;</span><span class="label">Vereine beteiligt</span></div>
+    <div class="stat"><span class="num" id="stat-updated">&ndash;</span><span class="label">Zuletzt aktualisiert</span></div>
+  </div>
+</header>
+
+<div class="controls">
+  <input type="text" id="search" placeholder="Spieler oder Verein suchen…" aria-label="Suche">
+  <select id="filter-pos" aria-label="Position filtern">
+    <option value="">Alle Positionen</option>
+  </select>
+  <select id="filter-nat" aria-label="Nationalität filtern">
+    <option value="">Alle Nationalitäten</option>
+  </select>
+</div>
+
+<main>
+  <div class="table-scroll">
+    <table id="transfer-table">
+      <thead>
+        <tr>
+          <th data-key="date">Datum</th>
+          <th data-key="pos">Pos.</th>
+          <th data-key="player">Spieler</th>
+          <th data-key="nationality">Nat.</th>
+          <th data-key="strength">Stärke</th>
+          <th data-key="age">Alter</th>
+          <th data-key="from_club">Von &rarr; Nach</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+  </div>
+  <div class="empty-state" id="empty-state" style="display:none;">Keine Transfers gefunden. Filter zurücksetzen?</div>
+</main>
+
+<main style="margin-top: -1rem;">
+  <p class="eyebrow" style="margin-bottom: 0.3rem;">Lückenloser Abgleich</p>
+  <h2 style="font-family:'Fraunces',serif; font-weight:600; font-size:1.5rem; color:var(--pitch); margin: 0 0 0.4rem;">Alle Kaderveränderungen</h2>
+  <p class="subtitle" style="margin-bottom:1rem;">Täglicher Vergleich der Kader aller 20 Premiership-Vereine &ndash; erkennt jeden Zu- und Abgang, unabhängig davon, wie viele Transfers an einem Tag passieren. Wechsel außerhalb der Nordirland-1 (Ausland, andere Liga) werden als "außerhalb Nordirland-1" markiert, da dort kein Kader mitverglichen wird.</p>
+  <div class="table-scroll">
+    <table id="kader-changes-table">
+      <thead>
+        <tr>
+          <th data-key2="date">Datum</th>
+          <th data-key2="pos">Pos.</th>
+          <th data-key2="player">Spieler</th>
+          <th data-key2="nationality">Nat.</th>
+          <th data-key2="strength">Stärke</th>
+          <th data-key2="age">Alter</th>
+          <th data-key2="from_club">Von &rarr; Nach</th>
+        </tr>
+      </thead>
+      <tbody id="kader-changes-body"></tbody>
+    </table>
+  </div>
+  <div class="empty-state" id="kader-changes-empty" style="display:none;">Noch keine Kaderveränderungen erfasst. Nach dem zweiten Lauf des Bots erscheinen hier Daten.</div>
+</main>
+
+<footer>
+  Datenquelle: <a href="https://www.anstoss-online.de/?do=land&land_id=240" target="_blank" rel="noopener">anstoss-online.de &ndash; Länderseite Nordirland</a>.
+  Diese Seite ist ein inoffizielles Community-Projekt und aktualisiert sich automatisch einmal nachts.
+</footer>
+
+<script>
+(async function(){
+  let rows = [];
+  let sortKey = 'date';
+  let sortDir = -1; // neueste zuerst
+
+  function parseDate(d){
+    if(!d) return new Date(0);
+    const [day, month, year] = d.split('.').map(Number);
+    return new Date(year, month - 1, day);
+  }
+
+  function fillTicker(data){
+    const el = document.getElementById('ticker');
+    if(!data.length){ el.innerHTML = '<span>Noch keine Transfers erfasst.</span>'; return; }
+    const items = data.slice(0, 12).map(t =>
+      `<span>${t.date} &nbsp;&bull;&nbsp; ${t.player} (${t.strength || '–'}) &nbsp;${t.from_club} &rarr; ${t.to_club}</span>`
+    );
+    // doppelt, damit die Schleife nahtlos wirkt
+    el.innerHTML = items.join('') + items.join('');
+  }
+
+  function populateFilters(data){
+    const posSel = document.getElementById('filter-pos');
+    const natSel = document.getElementById('filter-nat');
+    const positions = [...new Set(data.map(t => t.pos).filter(Boolean))].sort();
+    const nats = [...new Set(data.map(t => t.nationality).filter(Boolean))].sort();
+    positions.forEach(p => posSel.insertAdjacentHTML('beforeend', `<option value="${p}">${p}</option>`));
+    nats.forEach(n => natSel.insertAdjacentHTML('beforeend', `<option value="${n}">${n}</option>`));
+  }
+
+  function updateStats(data){
+    document.getElementById('stat-total').textContent = data.length;
+    const clubs = new Set();
+    data.forEach(t => { if(t.from_club) clubs.add(t.from_club); if(t.to_club) clubs.add(t.to_club); });
+    document.getElementById('stat-clubs').textContent = clubs.size;
+    const latest = data.reduce((acc, t) => {
+      const d = parseDate(t.date);
+      return d > acc ? d : acc;
+    }, new Date(0));
+    document.getElementById('stat-updated').textContent = latest.getTime() > 0
+      ? latest.toLocaleDateString('de-DE')
+      : '–';
+  }
+
+  function render(){
+    const search = document.getElementById('search').value.trim().toLowerCase();
+    const posFilter = document.getElementById('filter-pos').value;
+    const natFilter = document.getElementById('filter-nat').value;
+
+    let filtered = rows.filter(t => {
+      if(posFilter && t.pos !== posFilter) return false;
+      if(natFilter && t.nationality !== natFilter) return false;
+      if(search){
+        const hay = `${t.player} ${t.from_club} ${t.to_club}`.toLowerCase();
+        if(!hay.includes(search)) return false;
+      }
+      return true;
+    });
+
+    filtered.sort((a, b) => {
+      let va = a[sortKey], vb = b[sortKey];
+      if(sortKey === 'date'){ va = parseDate(a.date); vb = parseDate(b.date); }
+      if(sortKey === 'strength' || sortKey === 'age'){ va = parseFloat(va) || 0; vb = parseFloat(vb) || 0; }
+      if(va < vb) return -1 * sortDir;
+      if(va > vb) return 1 * sortDir;
+      return 0;
+    });
+
+    const body = document.getElementById('table-body');
+    const empty = document.getElementById('empty-state');
+    if(!filtered.length){
+      body.innerHTML = '';
+      empty.style.display = 'block';
+      return;
+    }
+    empty.style.display = 'none';
+
+    body.innerHTML = filtered.map(t => `
+      <tr>
+        <td class="date">${t.date || '–'}</td>
+        <td class="pos">${t.pos || '–'}</td>
+        <td class="player">${t.player || '–'}</td>
+        <td>${t.nationality || '–'}</td>
+        <td class="num">${t.strength || '–'}</td>
+        <td class="num">${t.age ?? '–'}</td>
+        <td class="route"><b>${t.from_club || '?'}</b><span class="arrow-icon">&rarr;</span><b>${t.to_club || '?'}</b></td>
+      </tr>
+    `).join('');
+  }
+
+  document.querySelectorAll('thead th').forEach(th => {
+    th.addEventListener('click', () => {
+      const key = th.dataset.key;
+      if(sortKey === key){ sortDir *= -1; } else { sortKey = key; sortDir = 1; }
+      document.querySelectorAll('thead th .arrow').forEach(a => a.remove());
+      th.insertAdjacentHTML('beforeend', `<span class="arrow">${sortDir === 1 ? '▲' : '▼'}</span>`);
+      render();
+    });
+  });
+
+  document.getElementById('search').addEventListener('input', render);
+  document.getElementById('filter-pos').addEventListener('change', render);
+  document.getElementById('filter-nat').addEventListener('change', render);
+
+  try{
+    const res = await fetch('data.json', { cache: 'no-store' });
+    rows = await res.json();
+  }catch(e){
+    rows = [];
+    console.error('Konnte data.json nicht laden:', e);
+  }
+
+  fillTicker(rows);
+  populateFilters(rows);
+  updateStats(rows);
+  render();
+
+  // --- Kaderveränderungen (zweite Tabelle) ---
+  try{
+    const res2 = await fetch('kader_changes.json', { cache: 'no-store' });
+    const changes = await res2.json();
+    const body = document.getElementById('kader-changes-body');
+    const empty = document.getElementById('kader-changes-empty');
+    if(!changes.length){
+      empty.style.display = 'block';
+    }else{
+      empty.style.display = 'none';
+      const sorted = [...changes].sort((a,b) => parseDate(b.date) - parseDate(a.date));
+      body.innerHTML = sorted.map(t => `
+        <tr>
+          <td class="date">${t.date || '–'}</td>
+          <td class="pos">${t.pos || '–'}</td>
+          <td class="player">${t.player || '–'}</td>
+          <td>${t.nationality || '–'}</td>
+          <td class="num">${t.strength || '–'}</td>
+          <td class="num">${t.age ?? '–'}</td>
+          <td class="route"><b>${t.from_club || '?'}</b><span class="arrow-icon">&rarr;</span><b>${t.to_club || '?'}</b></td>
+        </tr>
+      `).join('');
+    }
+  }catch(e){
+    console.error('Konnte kader_changes.json nicht laden:', e);
+    document.getElementById('kader-changes-empty').style.display = 'block';
+  }
+})();
+</script>
+
+</body>
+</html>
