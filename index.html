@@ -483,7 +483,24 @@
   let kaderChanges = [];
   try{
     const res2 = await fetch('kader_changes.json', { cache: 'no-store' });
-    kaderChanges = await res2.json();
+    const rawChanges = await res2.json();
+
+    // Fehlende Vereinsnamen ("außerhalb Nordirland-1") mit echten Namen aus
+    // der Transferliste (data.json) auffüllen, wenn derselbe Spieler dort
+    // mit einem konkreten Verein auftaucht.
+    kaderChanges = rawChanges.map(c => {
+      const enriched = { ...c };
+      if(!c.from_club_id){
+        const match = rows.find(r => r.player_id === c.player_id && r.to_club === c.to_club);
+        if(match) enriched.from_club = match.from_club;
+      }
+      if(!c.to_club_id){
+        const match = rows.find(r => r.player_id === c.player_id && r.from_club === c.from_club);
+        if(match) enriched.to_club = match.to_club;
+      }
+      return enriched;
+    });
+
     const body = document.getElementById('kader-changes-body');
     const empty = document.getElementById('kader-changes-empty');
     if(!kaderChanges.length){
