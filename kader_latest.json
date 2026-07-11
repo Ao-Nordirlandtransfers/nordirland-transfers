@@ -301,6 +301,14 @@
         "nationality": "Nordirland"
       },
       {
+        "player_id": "113246",
+        "player": "Mario Wippel",
+        "pos": "LM RM",
+        "strength": "6.4",
+        "age": 32,
+        "nationality": "ﾃ穆terreich"
+      },
+      {
         "player_id": "180854",
         "player": "Tim Everett",
         "pos": "LM RM",
@@ -342,11 +350,11 @@
       },
       {
         "player_id": "178958",
-        "player": "Aage MĂ¸rkĂ¸re",
+        "player": "Aage Mﾃｸrkﾃｸre",
         "pos": "ZM",
         "strength": "3.9",
         "age": 19,
-        "nationality": "FĂ¤rĂ¶er"
+        "nationality": "Fﾃ､rﾃｶer"
       },
       {
         "player_id": "139598",
@@ -1035,6 +1043,14 @@
         "strength": "7.0",
         "age": 26,
         "nationality": "Nordirland"
+      },
+      {
+        "player_id": "186369",
+        "player": "Gaetano Turchi",
+        "pos": "RV",
+        "strength": "4.4",
+        "age": 18,
+        "nationality": "Italien"
       },
       {
         "player_id": "139753",
@@ -1959,14 +1975,6 @@
         "nationality": "Belgien"
       },
       {
-        "player_id": "166585",
-        "player": "JÃỳrgen Putzer",
-        "pos": "LM RM",
-        "strength": "4.0",
-        "age": 22,
-        "nationality": "Deutschland"
-      },
-      {
         "player_id": "104627",
         "player": "Riad Tirone",
         "pos": "RM",
@@ -2069,14 +2077,6 @@
         "strength": "6.4",
         "age": 20,
         "nationality": "Nordirland"
-      },
-      {
-        "player_id": "165264",
-        "player": "Logos Thanou",
-        "pos": "ST",
-        "strength": "6.0",
-        "age": 22,
-        "nationality": "Griechenland"
       },
       {
         "player_id": "117917",
@@ -3059,6 +3059,14 @@
         "nationality": "RumĂ¤nien"
       },
       {
+        "player_id": "177208",
+        "player": "Mehdi Lacen",
+        "pos": "ZM",
+        "strength": "6.0",
+        "age": 21,
+        "nationality": "Algerien"
+      },
+      {
         "player_id": "181373",
         "player": "Graeme Kyran",
         "pos": "ZM",
@@ -3444,14 +3452,6 @@
         "pos": "ST",
         "strength": "6.1",
         "age": 18,
-        "nationality": "Nordirland"
-      },
-      {
-        "player_id": "172094",
-        "player": "Simon Pardner",
-        "pos": "ST",
-        "strength": "5.6",
-        "age": 22,
         "nationality": "Nordirland"
       },
       {
