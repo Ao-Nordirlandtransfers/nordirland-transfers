@@ -331,7 +331,8 @@
     <div class="stat"><span class="num" id="stat-clubs">&ndash;</span><span class="label">Vereine beteiligt</span></div>
     <div class="stat"><span class="num" id="stat-updated">&ndash;</span><span class="label">Zuletzt aktualisiert</span></div>
     <div class="stat"><span class="num" id="stat-active-club" style="font-size:1.1rem;">&ndash;</span><span class="label">Aktivster Verein</span></div>
-    <div class="stat"><span class="num" id="stat-top-strength">&ndash;</span><span class="label">Stärkster Neuzugang</span></div>
+    <div class="stat"><span class="num" id="stat-top-in" style="font-size:1.1rem;">&ndash;</span><span class="label">Stärkster Zugang</span></div>
+    <div class="stat"><span class="num" id="stat-top-out" style="font-size:1.1rem;">&ndash;</span><span class="label">Stärkster Abgang</span></div>
   </div>
 
   <div style="margin-top:1.4rem; display:flex; gap:1.1rem; flex-wrap:wrap; align-items:center; font-size:12px; color:var(--ink-soft);">
@@ -351,6 +352,11 @@
   </select>
   <select id="filter-nat" aria-label="Nationalität filtern">
     <option value="">Alle Nationalitäten</option>
+  </select>
+  <select id="filter-type" aria-label="Leihe oder Transfer filtern">
+    <option value="">Leihe &amp; Transfer</option>
+    <option value="loan">Nur Leihen</option>
+    <option value="transfer">Nur Transfers</option>
   </select>
   <label class="checkbox-label">
     <input type="checkbox" id="filter-domestic">
@@ -535,11 +541,18 @@
     const topClub = Object.entries(counts).sort((a, b) => b[1] - a[1])[0];
     document.getElementById('stat-active-club').textContent = topClub ? `${topClub[0]} (${topClub[1]})` : '–';
 
-    const strongest = allTransfers
-      .filter(t => t.strength)
+    const strongestIn = allTransfers
+      .filter(t => t.strength && niClubNames.has(t.to_club))
       .sort((a, b) => parseFloat(b.strength) - parseFloat(a.strength))[0];
-    document.getElementById('stat-top-strength').textContent = strongest
-      ? `${strongest.strength} – ${strongest.player}`
+    document.getElementById('stat-top-in').textContent = strongestIn
+      ? `${strongestIn.strength} – ${strongestIn.player} (${strongestIn.to_club})`
+      : '–';
+
+    const strongestOut = allTransfers
+      .filter(t => t.strength && niClubNames.has(t.from_club))
+      .sort((a, b) => parseFloat(b.strength) - parseFloat(a.strength))[0];
+    document.getElementById('stat-top-out').textContent = strongestOut
+      ? `${strongestOut.strength} – ${strongestOut.player} (${strongestOut.from_club})`
       : '–';
   }
 
@@ -548,11 +561,14 @@
     const posFilter = document.getElementById('filter-pos').value;
     const natFilter = document.getElementById('filter-nat').value;
     const domesticOnly = document.getElementById('filter-domestic').checked;
+    const typeFilter = document.getElementById('filter-type').value;
 
     let filtered = rows.filter(t => {
       if(posFilter && t.pos !== posFilter) return false;
       if(natFilter && t.nationality !== natFilter) return false;
       if(domesticOnly && !isDomestic(t)) return false;
+      if(typeFilter === 'loan' && t.is_loan !== true) return false;
+      if(typeFilter === 'transfer' && t.is_loan !== false) return false;
       if(search){
         const hay = `${t.player} ${t.from_club} ${t.to_club}`.toLowerCase();
         if(!hay.includes(search)) return false;
@@ -632,9 +648,12 @@
 
   function renderKaderChanges(){
     const domesticOnly = document.getElementById('filter-domestic').checked;
+    const typeFilter = document.getElementById('filter-type').value;
     const body = document.getElementById('kader-changes-body');
     const empty = document.getElementById('kader-changes-empty');
-    const filtered = domesticOnly ? kaderChanges.filter(isDomestic) : kaderChanges;
+    let filtered = domesticOnly ? kaderChanges.filter(isDomestic) : kaderChanges;
+    if(typeFilter === 'loan') filtered = filtered.filter(t => t.is_loan === true);
+    if(typeFilter === 'transfer') filtered = filtered.filter(t => t.is_loan === false);
     if(!filtered.length){
       body.innerHTML = '';
       empty.style.display = 'block';
@@ -681,6 +700,10 @@
   }
 
   document.getElementById('filter-domestic').addEventListener('change', () => {
+    render();
+    renderKaderChanges();
+  });
+  document.getElementById('filter-type').addEventListener('change', () => {
     render();
     renderKaderChanges();
   });
