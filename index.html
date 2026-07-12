@@ -52,7 +52,7 @@
   .ticker{
     display: inline-flex;
     padding: 9px 0;
-    animation: scroll-left 45s linear infinite;
+    animation: scroll-left 90s linear infinite;
     will-change: transform;
   }
   .ticker span{
@@ -495,9 +495,10 @@
   function fillTicker(data){
     const el = document.getElementById('ticker');
     if(!data.length){ el.innerHTML = '<span>Noch keine Transfers erfasst.</span>'; return; }
-    const items = data.slice(0, 12).map(t =>
-      `<span>${t.date} &nbsp;&bull;&nbsp; ${t.player} (${t.strength || '–'}) &nbsp;${t.from_club} &rarr; ${t.to_club}</span>`
-    );
+    const items = data.slice(0, 12).map(t => {
+      const kind = t.is_loan === true ? '&nbsp;[Leihe]' : (t.is_loan === false ? '&nbsp;[Kauf]' : '');
+      return `<span>${t.date} &nbsp;&bull;&nbsp; ${t.player} (${t.strength || '–'}, ${t.age ?? '?'} J.) &nbsp;${t.from_club} &rarr; ${t.to_club}${kind}</span>`;
+    });
     // doppelt, damit die Schleife nahtlos wirkt
     el.innerHTML = items.join('') + items.join('');
   }
