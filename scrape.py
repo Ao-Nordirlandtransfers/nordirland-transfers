@@ -187,7 +187,7 @@ def save(transfers: list[dict]) -> None:
         json.dump(transfers, f, ensure_ascii=False, indent=2)
 
 
-def fetch_with_retry(session: requests.Session, url: str, attempts: int = 3, delay: int = 15, timeout: int = 30):
+def fetch_with_retry(session: requests.Session, url: str, attempts: int = 2, delay: int = 5, timeout: int = 15):
     """Versucht eine Seite mehrfach abzurufen, bevor aufgegeben wird -
     Verbindungs-Timeouts sind bei dieser Seite gelegentlich normal und meist
     nach einer kurzen Pause wieder weg."""

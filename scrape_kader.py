@@ -44,12 +44,12 @@ def load_clubs():
         return json.load(f)
 
 
-def fetch_kader(session: requests.Session, club_id: str, attempts: int = 3, retry_delay: int = 15) -> list[dict]:
+def fetch_kader(session: requests.Session, club_id: str, attempts: int = 2, retry_delay: int = 5) -> list[dict]:
     last_error = None
     resp = None
     for attempt in range(1, attempts + 1):
         try:
-            resp = session.get(KADER_URL.format(id=club_id), timeout=30)
+            resp = session.get(KADER_URL.format(id=club_id), timeout=15)
             resp.raise_for_status()
             break
         except requests.RequestException as e:
