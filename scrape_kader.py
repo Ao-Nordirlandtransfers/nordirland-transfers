@@ -34,7 +34,13 @@ HEADERS = {
                   "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Language": "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7",
+    "Accept-Encoding": "gzip, deflate, br",
     "Connection": "keep-alive",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
 }
 KADER_URL = "https://www.anstoss-online.de/?do=verein&verein_id={id}&detail=kader"
 
@@ -168,14 +174,54 @@ def save_json(path, data):
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
+def select_clubs_for_this_run(clubs: list[dict]) -> list[dict]:
+    """Wählt nur einen Teil der 20 Vereine für diesen Lauf aus, damit nicht
+    alle 20 Anfragen von derselben (evtl. gerade blockierten) GitHub-Adresse
+    kommen. Bei einem manuellen Lauf (FORCE_ALL_CLUBS gesetzt) werden alle
+    20 auf einmal genommen - praktisch zum Testen."""
+    if os.environ.get("FORCE_ALL_CLUBS") == "1":
+        return clubs
+
+    groups = [clubs[0:5], clubs[5:10], clubs[10:15], clubs[15:20]]
+    hour = datetime.now(timezone.utc).hour
+    # Passend zu den 4 Cron-Zeiten in scrape.yml (23:05, 5:05, 11:05, 17:05 UTC)
+    if hour in (23, 0, 1):
+        group_index = 0
+    elif hour in (5, 6, 7):
+        group_index = 1
+    elif hour in (11, 12, 13):
+        group_index = 2
+    elif hour in (17, 18, 19):
+        group_index = 3
+    else:
+        # Außerhalb der geplanten Zeiten (z.B. manueller Test) - alles nehmen
+        return clubs
+
+    chosen = groups[group_index]
+    print(f"Uhrzeit {hour}:xx UTC -> Gruppe {group_index + 1}/4: "
+          f"{', '.join(c['name'] for c in chosen)}")
+    return chosen
+
+
 def main() -> int:
-    clubs = load_clubs()
-    club_names = {c["id"]: c["name"] for c in clubs}
+    clubs = select_clubs_for_this_run(load_clubs())
+    club_names = {c["id"]: c["name"] for c in load_clubs()}
 
     print(f"Lade Kader für {len(clubs)} Vereine ...")
     session = requests.Session()
     session.headers.update(HEADERS)
     today = datetime.now(timezone.utc).strftime("%d.%m.%Y")
+
+    # Erst die normale Länderseite "besuchen", wie es ein echter Browser tun
+    # würde - das setzt Cookies und liefert einen plausiblen Referer, bevor
+    # wir direkt auf tief verlinkte Kader-Unterseiten springen.
+    warmup_url = "https://www.anstoss-online.de/?do=land&land_id=240"
+    try:
+        session.get(warmup_url, timeout=15)
+        session.headers.update({"Referer": warmup_url})
+        time.sleep(2)
+    except requests.RequestException as e:
+        print(f"Warnung: Aufwärm-Anfrage fehlgeschlagen ({e}), mache trotzdem weiter.")
 
     current_snapshot = {}
     for club in clubs:
@@ -196,7 +242,8 @@ def main() -> int:
         # Erster Lauf: es gibt noch keinen Vergleichsstand. Nur den
         # aktuellen Kader als Basis speichern, keine "Fake-Transfers"
         # für alle ~400 Spieler erzeugen.
-        save_json(SNAPSHOT_FILE, {"date": today, "clubs": current_snapshot})
+        merged_clubs = {**previous_clubs, **current_snapshot}
+        save_json(SNAPSHOT_FILE, {"date": today, "clubs": merged_clubs})
         print("Erster Lauf: Basis-Kader gespeichert, noch keine Vergleichsdaten vorhanden.")
         return 0
 
@@ -258,7 +305,8 @@ def main() -> int:
 
     changes.sort(key=lambda c: c["detected_at"], reverse=True)
     save_json(CHANGES_FILE, changes)
-    save_json(SNAPSHOT_FILE, {"date": today, "clubs": current_snapshot})
+    merged_clubs = {**previous_clubs, **current_snapshot}
+    save_json(SNAPSHOT_FILE, {"date": today, "clubs": merged_clubs})
 
     print(f"{new_count} Kaderveränderungen erkannt. Gesamt gespeichert: {len(changes)}")
     return 0
