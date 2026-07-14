@@ -183,10 +183,11 @@ def main() -> int:
             players = fetch_kader(session, club["id"])
         except requests.RequestException as e:
             print(f"  Fehler bei {club['name']} ({club['id']}): {e}")
+            time.sleep(4)
             continue
         current_snapshot[club["id"]] = players
         print(f"  {club['name']}: {len(players)} Spieler")
-        time.sleep(1.5)  # kleine Pause, damit es nicht wie ein Bot-Sturm aussieht
+        time.sleep(4)  # größere Pause, damit es nicht wie ein Bot-Sturm aussieht
 
     previous = load_json(SNAPSHOT_FILE, {"date": None, "clubs": {}})
     previous_clubs = previous.get("clubs", {})
