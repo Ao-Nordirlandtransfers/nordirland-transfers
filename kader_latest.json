@@ -1,4 +1,975 @@
 {
   "date": "15.07.2026",
-  "clubs": {}
+  "clubs": {
+    "4668": [
+      {
+        "player_id": "176665",
+        "player": "Roman BÃỳrki",
+        "pos": "TW",
+        "strength": "6.0",
+        "age": 23,
+        "nationality": "Schweiz"
+      },
+      {
+        "player_id": "140644",
+        "player": "Paul Fellows",
+        "pos": "TW",
+        "strength": "5.4",
+        "age": 28,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "141371",
+        "player": "Mats Hummels",
+        "pos": "LIB",
+        "strength": "5.4",
+        "age": 30,
+        "nationality": "Deutschland"
+      },
+      {
+        "player_id": "183431",
+        "player": "Danijel Graso",
+        "pos": "LV",
+        "strength": "6.4",
+        "age": 19,
+        "nationality": "Kroatien"
+      },
+      {
+        "player_id": "171563",
+        "player": "Bruce Hiley",
+        "pos": "LV",
+        "strength": "4.3",
+        "age": 21,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "172033",
+        "player": "Janus SkarÃḞenni",
+        "pos": "LV RV",
+        "strength": "6.7",
+        "age": 21,
+        "nationality": "FÃĊrÃ¶er"
+      },
+      {
+        "player_id": "138341",
+        "player": "Kevin Shuttle",
+        "pos": "LV RV",
+        "strength": "2.1",
+        "age": 33,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "106172",
+        "player": "JuliÃḂn Ceballos",
+        "pos": "MD",
+        "strength": "8.6",
+        "age": 35,
+        "nationality": "Spanien"
+      },
+      {
+        "player_id": "161364",
+        "player": "Nick Leybourn",
+        "pos": "MD",
+        "strength": "6.9",
+        "age": 24,
+        "nationality": "England"
+      },
+      {
+        "player_id": "180034",
+        "player": "Neven Subotic",
+        "pos": "MD",
+        "strength": "6.0",
+        "age": 22,
+        "nationality": "Serbien"
+      },
+      {
+        "player_id": "155737",
+        "player": "Ronny Decraen",
+        "pos": "MD",
+        "strength": "5.9",
+        "age": 24,
+        "nationality": "Belgien"
+      },
+      {
+        "player_id": "180559",
+        "player": "Cassiano dos Anjos",
+        "pos": "MD",
+        "strength": "4.4",
+        "age": 19,
+        "nationality": "Portugal"
+      },
+      {
+        "player_id": "176361",
+        "player": "Gert van der Linden",
+        "pos": "LM",
+        "strength": "5.6",
+        "age": 22,
+        "nationality": "Belgien"
+      },
+      {
+        "player_id": "104627",
+        "player": "Riad Tirone",
+        "pos": "RM",
+        "strength": "8.1",
+        "age": 34,
+        "nationality": "Frankreich"
+      },
+      {
+        "player_id": "165127",
+        "player": "Ricardo A. Rio Rego",
+        "pos": "RM",
+        "strength": "7.6",
+        "age": 23,
+        "nationality": "Portugal"
+      },
+      {
+        "player_id": "186298",
+        "player": "Ian Ciaran",
+        "pos": "RM",
+        "strength": "6.4",
+        "age": 19,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "110172",
+        "player": "Sam Sismore",
+        "pos": "RM",
+        "strength": "5.4",
+        "age": 32,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "180693",
+        "player": "Mateusz Rusedski",
+        "pos": "RM",
+        "strength": "5.1",
+        "age": 20,
+        "nationality": "Polen"
+      },
+      {
+        "player_id": "150315",
+        "player": "Kristoffer Fine",
+        "pos": "ZM",
+        "strength": "7.7",
+        "age": 26,
+        "nationality": "DÃĊnemark"
+      },
+      {
+        "player_id": "162083",
+        "player": "Oz Sayar",
+        "pos": "ZM",
+        "strength": "6.0",
+        "age": 24,
+        "nationality": "Israel"
+      },
+      {
+        "player_id": "120602",
+        "player": "Shinji Kagawa",
+        "pos": "ZM",
+        "strength": "4.4",
+        "age": 35,
+        "nationality": "Japan"
+      },
+      {
+        "player_id": "150671",
+        "player": "Patrick Bright",
+        "pos": "ZM",
+        "strength": "3.3",
+        "age": 32,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "154337",
+        "player": "Simon Wildeman",
+        "pos": "ZM",
+        "strength": "1.4",
+        "age": 24,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "167353",
+        "player": "Tero Risikko",
+        "pos": "ST",
+        "strength": "7.0",
+        "age": 23,
+        "nationality": "Finnland"
+      },
+      {
+        "player_id": "102218",
+        "player": "Vladimir Taus",
+        "pos": "ST",
+        "strength": "6.9",
+        "age": 34,
+        "nationality": "Lettland"
+      },
+      {
+        "player_id": "176412",
+        "player": "Berry Bluemug",
+        "pos": "ST",
+        "strength": "6.4",
+        "age": 20,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "117917",
+        "player": "Nick Young",
+        "pos": "ST",
+        "strength": "3.1",
+        "age": 32,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "189751",
+        "player": "Mark Dwight",
+        "pos": "ST",
+        "strength": "3.0",
+        "age": 18,
+        "nationality": "Nordirland"
+      }
+    ],
+    "4660": [
+      {
+        "player_id": "165204",
+        "player": "Mark Nequest",
+        "pos": "TW",
+        "strength": "7.6",
+        "age": 22,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "177984",
+        "player": "Donny Losier",
+        "pos": "TW",
+        "strength": "6.4",
+        "age": 21,
+        "nationality": "Niederlande"
+      },
+      {
+        "player_id": "152705",
+        "player": "Steve Woodward",
+        "pos": "TW",
+        "strength": "5.0",
+        "age": 26,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "190188",
+        "player": "Geofram Abbott",
+        "pos": "TW",
+        "strength": "2.6",
+        "age": 17,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "147972",
+        "player": "Martin Wutscher",
+        "pos": "LIB",
+        "strength": "7.0",
+        "age": 30,
+        "nationality": "Ă–sterreich"
+      },
+      {
+        "player_id": "145763",
+        "player": "Jon Suffling",
+        "pos": "LV RV",
+        "strength": "7.3",
+        "age": 31,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "161141",
+        "player": "Vedran DubravÄŤiÄ‡",
+        "pos": "LV RV",
+        "strength": "6.3",
+        "age": 24,
+        "nationality": "Kroatien"
+      },
+      {
+        "player_id": "186146",
+        "player": "Nerius Saag",
+        "pos": "LV RV",
+        "strength": "5.7",
+        "age": 18,
+        "nationality": "Estland"
+      },
+      {
+        "player_id": "137985",
+        "player": "Saleh Al-Dawod",
+        "pos": "MD",
+        "strength": "7.1",
+        "age": 30,
+        "nationality": "Saudi-Arabien"
+      },
+      {
+        "player_id": "160753",
+        "player": "Roberto Caprara",
+        "pos": "MD",
+        "strength": "6.4",
+        "age": 23,
+        "nationality": "Italien"
+      },
+      {
+        "player_id": "151880",
+        "player": "James Wennell",
+        "pos": "RV",
+        "strength": "7.0",
+        "age": 26,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "173356",
+        "player": "Antonio Scrovegni",
+        "pos": "LM RM",
+        "strength": "6.7",
+        "age": 21,
+        "nationality": "Italien"
+      },
+      {
+        "player_id": "136984",
+        "player": "Chris Bart Seed",
+        "pos": "LM RM",
+        "strength": "6.6",
+        "age": 32,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "115405",
+        "player": "RenĂ© S. LustĂĽ",
+        "pos": "RM",
+        "strength": "8.3",
+        "age": 32,
+        "nationality": "DĂ¤nemark"
+      },
+      {
+        "player_id": "179103",
+        "player": "Abraham LĂ¸kin",
+        "pos": "RM",
+        "strength": "6.9",
+        "age": 22,
+        "nationality": "FĂ¤rĂ¶er"
+      },
+      {
+        "player_id": "168160",
+        "player": "Zvonimir Risgard",
+        "pos": "RM",
+        "strength": "6.3",
+        "age": 22,
+        "nationality": "DĂ¤nemark"
+      },
+      {
+        "player_id": "158691",
+        "player": "RĂłbert PĂˇtzay",
+        "pos": "ZM",
+        "strength": "6.9",
+        "age": 24,
+        "nationality": "Ungarn"
+      },
+      {
+        "player_id": "152423",
+        "player": "Steve Milligan",
+        "pos": "ZM",
+        "strength": "6.6",
+        "age": 25,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "161122",
+        "player": "Brian Pass",
+        "pos": "ZM",
+        "strength": "4.9",
+        "age": 24,
+        "nationality": "England"
+      },
+      {
+        "player_id": "161231",
+        "player": "Jason Osler",
+        "pos": "ZM",
+        "strength": "4.7",
+        "age": 23,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "182844",
+        "player": "Agu Kablbinda",
+        "pos": "ZM",
+        "strength": "4.6",
+        "age": 18,
+        "nationality": "Kongo, Demokratische Republik"
+      },
+      {
+        "player_id": "127742",
+        "player": "SĂ¸ren Justinussen",
+        "pos": "ST",
+        "strength": "7.9",
+        "age": 33,
+        "nationality": "FĂ¤rĂ¶er"
+      },
+      {
+        "player_id": "135690",
+        "player": "Michael Schliphoeter",
+        "pos": "ST",
+        "strength": "7.3",
+        "age": 30,
+        "nationality": "Deutschland"
+      },
+      {
+        "player_id": "171695",
+        "player": "Paul Kissane",
+        "pos": "ST",
+        "strength": "6.6",
+        "age": 20,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "184784",
+        "player": "Carl Keefe",
+        "pos": "ST",
+        "strength": "5.1",
+        "age": 18,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "164389",
+        "player": "Alexandre Deiss",
+        "pos": "ST",
+        "strength": "5.1",
+        "age": 23,
+        "nationality": "Schweiz"
+      }
+    ],
+    "4669": [
+      {
+        "player_id": "156565",
+        "player": "George Raghnall",
+        "pos": "TW",
+        "strength": "6.4",
+        "age": 25,
+        "nationality": "Irland"
+      },
+      {
+        "player_id": "181765",
+        "player": "Mark Donegal",
+        "pos": "TW",
+        "strength": "5.2",
+        "age": 19,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "119592",
+        "player": "Barry Tunney",
+        "pos": "LIB",
+        "strength": "7.6",
+        "age": 30,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "183319",
+        "player": "Gary Wade",
+        "pos": "LIB",
+        "strength": "3.0",
+        "age": 21,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "175123",
+        "player": "Richard Dingee",
+        "pos": "LV",
+        "strength": "5.3",
+        "age": 20,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "123973",
+        "player": "Bertrand MouniĂ©",
+        "pos": "LV",
+        "strength": "5.1",
+        "age": 36,
+        "nationality": "Frankreich"
+      },
+      {
+        "player_id": "182555",
+        "player": "Jamie Kain",
+        "pos": "LV RV",
+        "strength": "4.7",
+        "age": 19,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "122374",
+        "player": "Jacinto BarquĂ­n",
+        "pos": "MD",
+        "strength": "5.9",
+        "age": 34,
+        "nationality": "Kuba"
+      },
+      {
+        "player_id": "175761",
+        "player": "Vitaly Oleg",
+        "pos": "MD",
+        "strength": "5.0",
+        "age": 20,
+        "nationality": "Russland"
+      },
+      {
+        "player_id": "142061",
+        "player": "Wayne Prentice",
+        "pos": "MD",
+        "strength": "3.9",
+        "age": 28,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "184278",
+        "player": "Jamie Marmaduke",
+        "pos": "MD",
+        "strength": "3.0",
+        "age": 18,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "183318",
+        "player": "James Chaffin",
+        "pos": "MD",
+        "strength": "3.0",
+        "age": 21,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "179142",
+        "player": "Mies Etolin",
+        "pos": "RV",
+        "strength": "4.4",
+        "age": 19,
+        "nationality": "Finnland"
+      },
+      {
+        "player_id": "156887",
+        "player": "Lee Wilcox",
+        "pos": "RV",
+        "strength": "3.7",
+        "age": 24,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "127720",
+        "player": "Scott Everdon",
+        "pos": "LM RM",
+        "strength": "4.6",
+        "age": 32,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "176094",
+        "player": "Jason Mangall",
+        "pos": "RM",
+        "strength": "6.4",
+        "age": 20,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "144786",
+        "player": "Marcello Panzanini",
+        "pos": "RM",
+        "strength": "6.1",
+        "age": 32,
+        "nationality": "Italien"
+      },
+      {
+        "player_id": "183320",
+        "player": "Owen Guntrip",
+        "pos": "RM",
+        "strength": "2.9",
+        "age": 23,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "141096",
+        "player": "Glen Felton",
+        "pos": "ZM",
+        "strength": "7.0",
+        "age": 28,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "176095",
+        "player": "Lee Devlin",
+        "pos": "ZM",
+        "strength": "4.1",
+        "age": 19,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "117964",
+        "player": "Gary Goddard",
+        "pos": "ST",
+        "strength": "7.1",
+        "age": 32,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "167505",
+        "player": "Gernot Gucher",
+        "pos": "ST",
+        "strength": "3.6",
+        "age": 22,
+        "nationality": "Ă–sterreich"
+      }
+    ],
+    "5012": [
+      {
+        "player_id": "177382",
+        "player": "Byung-ji Kim",
+        "pos": "TW",
+        "strength": "6.8",
+        "age": 23,
+        "nationality": "SĂĽdkorea"
+      },
+      {
+        "player_id": "161969",
+        "player": "Leonel de JesĂşs Velasco",
+        "pos": "TW",
+        "strength": "5.6",
+        "age": 24,
+        "nationality": "Kolumbien"
+      },
+      {
+        "player_id": "185135",
+        "player": "Kevin Cassidy",
+        "pos": "TW",
+        "strength": "5.4",
+        "age": 20,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "117771",
+        "player": "Mladen Praptotnik",
+        "pos": "LIB",
+        "strength": "7.9",
+        "age": 31,
+        "nationality": "Slowenien"
+      },
+      {
+        "player_id": "148064",
+        "player": "Willem Jackson",
+        "pos": "LIB",
+        "strength": "7.3",
+        "age": 29,
+        "nationality": "SĂĽdafrika"
+      },
+      {
+        "player_id": "141295",
+        "player": "Neil Blevins",
+        "pos": "MD",
+        "strength": "8.1",
+        "age": 31,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "172130",
+        "player": "Andy Redman",
+        "pos": "MD",
+        "strength": "8.0",
+        "age": 22,
+        "nationality": "England"
+      },
+      {
+        "player_id": "181712",
+        "player": "Seamus Fergal",
+        "pos": "MD",
+        "strength": "4.6",
+        "age": 18,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "184799",
+        "player": "Alain Preston",
+        "pos": "MD",
+        "strength": "4.1",
+        "age": 18,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "111648",
+        "player": "Alen Beriz",
+        "pos": "LM",
+        "strength": "7.9",
+        "age": 32,
+        "nationality": "Bosnien-Herzegowina"
+      },
+      {
+        "player_id": "158980",
+        "player": "Ilian Stambolow",
+        "pos": "LM",
+        "strength": "6.9",
+        "age": 25,
+        "nationality": "Bulgarien"
+      },
+      {
+        "player_id": "141250",
+        "player": "Muzaffa Tabib",
+        "pos": "LM RM",
+        "strength": "8.3",
+        "age": 29,
+        "nationality": "TĂĽrkei"
+      },
+      {
+        "player_id": "136298",
+        "player": "Michael Earith",
+        "pos": "RM",
+        "strength": "8.7",
+        "age": 33,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "179873",
+        "player": "James Sloan",
+        "pos": "RM",
+        "strength": "5.4",
+        "age": 19,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "124860",
+        "player": "Adrian Kitson",
+        "pos": "ZM",
+        "strength": "8.7",
+        "age": 30,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "179874",
+        "player": "Mark Cronan",
+        "pos": "ZM",
+        "strength": "5.1",
+        "age": 20,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "127011",
+        "player": "Lorenzo Hivju",
+        "pos": "ST",
+        "strength": "9.0",
+        "age": 31,
+        "nationality": "Norwegen"
+      },
+      {
+        "player_id": "167011",
+        "player": "Bernhard Orsolits",
+        "pos": "ST",
+        "strength": "8.1",
+        "age": 23,
+        "nationality": "Kroatien"
+      },
+      {
+        "player_id": "175268",
+        "player": "Darren Godwin",
+        "pos": "ST",
+        "strength": "7.0",
+        "age": 21,
+        "nationality": "Nordirland"
+      }
+    ],
+    "4664": [
+      {
+        "player_id": "171305",
+        "player": "Jonathan Hagger",
+        "pos": "TW",
+        "strength": "6.4",
+        "age": 21,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "107641",
+        "player": "Roderik Shembesh",
+        "pos": "TW",
+        "strength": "4.0",
+        "age": 34,
+        "nationality": "Malta"
+      },
+      {
+        "player_id": "163891",
+        "player": "Chris Gillson",
+        "pos": "TW",
+        "strength": "3.2",
+        "age": 22,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "157331",
+        "player": "Marvin Cullum",
+        "pos": "TW",
+        "strength": "2.4",
+        "age": 24,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "157161",
+        "player": "Mark Hopley",
+        "pos": "TW",
+        "strength": "2.4",
+        "age": 24,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "180420",
+        "player": "Andrew Kerrin",
+        "pos": "LIB",
+        "strength": "5.6",
+        "age": 20,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "181175",
+        "player": "Stuart Dwayne",
+        "pos": "LIB",
+        "strength": "5.0",
+        "age": 19,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "175124",
+        "player": "Lorenzo Ieschwili",
+        "pos": "LIB",
+        "strength": "4.7",
+        "age": 21,
+        "nationality": "Nordkorea"
+      },
+      {
+        "player_id": "181767",
+        "player": "Agshin Khoiski",
+        "pos": "LV RV",
+        "strength": "5.0",
+        "age": 20,
+        "nationality": "Aserbaidschan"
+      },
+      {
+        "player_id": "124469",
+        "player": "Kris Woodmore",
+        "pos": "MD",
+        "strength": "7.3",
+        "age": 30,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "107449",
+        "player": "Vincenzo Boccalini",
+        "pos": "MD",
+        "strength": "6.7",
+        "age": 33,
+        "nationality": "San Marino"
+      },
+      {
+        "player_id": "136075",
+        "player": "Craig Bundy",
+        "pos": "MD",
+        "strength": "4.1",
+        "age": 28,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "140595",
+        "player": "Alexander Jensen",
+        "pos": "RV",
+        "strength": "6.0",
+        "age": 31,
+        "nationality": "Deutschland"
+      },
+      {
+        "player_id": "179423",
+        "player": "Barry Seamus",
+        "pos": "RV",
+        "strength": "4.9",
+        "age": 20,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "158835",
+        "player": "Kevin Robb",
+        "pos": "RV",
+        "strength": "2.3",
+        "age": 23,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "163958",
+        "player": "Lee Northfield",
+        "pos": "LM",
+        "strength": "2.9",
+        "age": 22,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "140738",
+        "player": "Geoffray Abelard",
+        "pos": "LM RM",
+        "strength": "5.4",
+        "age": 29,
+        "nationality": "Frankreich"
+      },
+      {
+        "player_id": "182419",
+        "player": "Mamadou Loum",
+        "pos": "RM",
+        "strength": "6.4",
+        "age": 22,
+        "nationality": "Senegal"
+      },
+      {
+        "player_id": "114364",
+        "player": "Bob Godfrey",
+        "pos": "RM",
+        "strength": "6.3",
+        "age": 31,
+        "nationality": "Schottland"
+      },
+      {
+        "player_id": "142274",
+        "player": "Marco Ottavio",
+        "pos": "RM",
+        "strength": "5.1",
+        "age": 28,
+        "nationality": "Italien"
+      },
+      {
+        "player_id": "124935",
+        "player": "Peter Cauchois",
+        "pos": "RM",
+        "strength": "2.7",
+        "age": 30,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "138354",
+        "player": "Adam Golaszewski",
+        "pos": "ST",
+        "strength": "7.4",
+        "age": 30,
+        "nationality": "Polen"
+      },
+      {
+        "player_id": "141631",
+        "player": "Miroslav Blagojevic",
+        "pos": "ST",
+        "strength": "5.7",
+        "age": 34,
+        "nationality": "Serbien"
+      },
+      {
+        "player_id": "152852",
+        "player": "Kai Virkkunen",
+        "pos": "ST",
+        "strength": "5.1",
+        "age": 25,
+        "nationality": "Finnland"
+      },
+      {
+        "player_id": "126200",
+        "player": "John Kain",
+        "pos": "ST",
+        "strength": "5.0",
+        "age": 30,
+        "nationality": "Irland"
+      }
+    ]
+  }
 }
