@@ -408,6 +408,28 @@
 </main>
 
 <main style="margin-top: -1rem;">
+  <p class="eyebrow" style="margin-bottom: 0.3rem;">Liga-weit</p>
+  <h2 style="font-family:'Fraunces',serif; font-weight:600; font-size:1.5rem; color:var(--pitch); margin: 0 0 0.4rem;">Alle aktuellen Leihspieler</h2>
+  <p class="subtitle" style="margin-bottom:1rem;">Alle Spieler, die laut manueller Prüfung gerade bei einem Verein auf Leihbasis spielen &ndash; unabhängig davon, ob dazu ein Transfer-Ereignis erfasst wurde.</p>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>Spieler</th>
+          <th>Pos.</th>
+          <th>Verein</th>
+          <th>Stärke</th>
+          <th>Alter</th>
+          <th>Nat.</th>
+        </tr>
+      </thead>
+      <tbody id="all-loans-body"></tbody>
+    </table>
+  </div>
+  <div class="empty-state" id="all-loans-empty" style="display:none;">Keine Leihspieler erfasst.</div>
+</main>
+
+<main style="margin-top: -1rem;">
   <p class="eyebrow" style="margin-bottom: 0.3rem;">Vereins-Ansicht</p>
   <h2 style="font-family:'Fraunces',serif; font-weight:600; font-size:1.5rem; color:var(--pitch); margin: 0 0 0.4rem;">Zugänge &amp; Abgänge pro Verein</h2>
   <p class="subtitle" style="margin-bottom:1rem;">Verein wählen, um seine Transfers wie bei Transfermarkt gegenüberzustellen &ndash; links die Zugänge, rechts die Abgänge.</p>
@@ -745,6 +767,43 @@
     kaderLatest = await resKaderLatest.json();
   }catch(e){
     console.error('Konnte kader_latest.json nicht laden:', e);
+  }
+
+  // --- Alle aktuellen Leihspieler, liga-weit ---
+  try{
+    const clubIdToName = {};
+    clubsList.forEach(c => { clubIdToName[c.id] = c.name; });
+
+    const allLoanedPlayers = [];
+    Object.entries(kaderLatest.clubs || {}).forEach(([clubId, squad]) => {
+      squad.forEach(p => {
+        if(manualLoans[p.player_id] === true){
+          allLoanedPlayers.push({ ...p, club_id: clubId, club_name: clubIdToName[clubId] || clubId });
+        }
+      });
+    });
+    allLoanedPlayers.sort((a, b) => (a.club_name || '').localeCompare(b.club_name || '', 'de'));
+
+    const allLoansBody = document.getElementById('all-loans-body');
+    const allLoansEmpty = document.getElementById('all-loans-empty');
+    if(!allLoanedPlayers.length){
+      allLoansBody.innerHTML = '';
+      allLoansEmpty.style.display = 'block';
+    }else{
+      allLoansEmpty.style.display = 'none';
+      allLoansBody.innerHTML = allLoanedPlayers.map(p => `
+        <tr>
+          <td class="player"><a class="player-link" href="https://www.anstoss-online.de/?do=spieler&spieler_id=${p.player_id}" target="_blank" rel="noopener">${p.player}</a></td>
+          <td class="pos">${posBadge(p.pos)}</td>
+          <td class="route">${crestImg(p.club_id)}${clubLink(p.club_name, p.club_id)}</td>
+          <td class="num">${p.strength || '–'}</td>
+          <td class="num">${p.age ?? '–'}</td>
+          <td>${p.nationality || '–'}</td>
+        </tr>
+      `).join('');
+    }
+  }catch(e){
+    console.error('Fehler beim Aufbau der Leihspieler-Liste:', e);
   }
 
   try{
