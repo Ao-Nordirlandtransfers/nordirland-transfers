@@ -1,5 +1,37 @@
 [
   {
+    "id": "178229-4653-4668-16.07.2026",
+    "pos": "LM RM",
+    "player": "M. MintĂˇl",
+    "player_id": "178229",
+    "strength": "6.6",
+    "age": 22,
+    "nationality": "Slowakei",
+    "from_club": "FV Sherif Tiraspol",
+    "from_club_id": "4653",
+    "to_club": "Crusaders FV",
+    "to_club_id": "4668",
+    "date": "16.07.2026",
+    "scraped_at": "2026-07-16T07:33:03.735052+00:00",
+    "is_loan": false
+  },
+  {
+    "id": "110255-5004-5696-16.07.2026",
+    "pos": "LM",
+    "player": "C. Seay",
+    "player_id": "110255",
+    "strength": "5.4",
+    "age": 34,
+    "nationality": "Nordirland",
+    "from_club": "Lurgan Gaelic",
+    "from_club_id": "5004",
+    "to_club": "SU Salernitana",
+    "to_club_id": "5696",
+    "date": "16.07.2026",
+    "scraped_at": "2026-07-16T07:33:03.735204+00:00",
+    "is_loan": false
+  },
+  {
     "id": "111462-5010-5167-15.07.2026",
     "pos": "MD",
     "player": "D. Kemph",
