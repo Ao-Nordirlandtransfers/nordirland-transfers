@@ -1,5 +1,21 @@
 [
   {
+    "id": "178229-None-4668-16.07.2026",
+    "date": "16.07.2026",
+    "player_id": "178229",
+    "player": "Marek MintÃḂl",
+    "pos": "LM RM",
+    "strength": "6.6",
+    "age": 22,
+    "nationality": "Slowakei",
+    "from_club": "außerhalb Nordirland-1",
+    "from_club_id": null,
+    "to_club": "Crusaders FV",
+    "to_club_id": "4668",
+    "is_loan": false,
+    "detected_at": "2026-07-16T11:21:45.971004+00:00"
+  },
+  {
     "id": "190188-None-4660-13.07.2026",
     "date": "13.07.2026",
     "player_id": "190188",
