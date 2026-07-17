@@ -1,5 +1,21 @@
 [
   {
+    "id": "155737-4668-None-17.07.2026",
+    "date": "17.07.2026",
+    "player_id": "155737",
+    "player": "Ronny Decraen",
+    "pos": "MD",
+    "strength": "5.9",
+    "age": 24,
+    "nationality": "Belgien",
+    "from_club": "Crusaders FV",
+    "from_club_id": "4668",
+    "to_club": "außerhalb Nordirland-1",
+    "to_club_id": null,
+    "is_loan": null,
+    "detected_at": "2026-07-17T11:06:20.568484+00:00"
+  },
+  {
     "id": "178993-None-5010-17.07.2026",
     "date": "17.07.2026",
     "player_id": "178993",

@@ -83,14 +83,6 @@
         "nationality": "Serbien"
       },
       {
-        "player_id": "155737",
-        "player": "Ronny Decraen",
-        "pos": "MD",
-        "strength": "5.9",
-        "age": 24,
-        "nationality": "Belgien"
-      },
-      {
         "player_id": "180559",
         "player": "Cassiano dos Anjos",
         "pos": "MD",
@@ -417,7 +409,7 @@
         "player": "Michael Schliphoeter",
         "pos": "ST",
         "strength": "7.3",
-        "age": 30,
+        "age": 31,
         "nationality": "Deutschland"
       },
       {
@@ -467,7 +459,7 @@
         "player": "Barry Tunney",
         "pos": "LIB",
         "strength": "7.6",
-        "age": 30,
+        "age": 31,
         "nationality": "Nordirland"
       },
       {
