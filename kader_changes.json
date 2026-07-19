@@ -1,5 +1,37 @@
 [
   {
+    "id": "180375-5007-None-19.07.2026",
+    "date": "19.07.2026",
+    "player_id": "180375",
+    "player": "Miloje Misic",
+    "pos": "LM",
+    "strength": "5.1",
+    "age": 20,
+    "nationality": "Serbien",
+    "from_club": "Cerrick Rangers",
+    "from_club_id": "5007",
+    "to_club": "außerhalb Nordirland-1",
+    "to_club_id": null,
+    "is_loan": null,
+    "detected_at": "2026-07-19T10:18:25.775702+00:00"
+  },
+  {
+    "id": "177984-4660-None-19.07.2026",
+    "date": "19.07.2026",
+    "player_id": "177984",
+    "player": "Donny Losier",
+    "pos": "TW",
+    "strength": "6.4",
+    "age": 21,
+    "nationality": "Niederlande",
+    "from_club": "Cliftonville FV",
+    "from_club_id": "4660",
+    "to_club": "außerhalb Nordirland-1",
+    "to_club_id": null,
+    "is_loan": null,
+    "detected_at": "2026-07-19T10:18:25.775686+00:00"
+  },
+  {
     "id": "177723-None-4665-19.07.2026",
     "date": "19.07.2026",
     "player_id": "177723",
