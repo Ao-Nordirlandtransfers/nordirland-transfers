@@ -1,5 +1,5 @@
 {
-  "date": "18.07.2026",
+  "date": "19.07.2026",
   "clubs": {
     "4668": [
       {
@@ -2393,6 +2393,14 @@
         "strength": "4.0",
         "age": 32,
         "nationality": "Nordirland"
+      },
+      {
+        "player_id": "177723",
+        "player": "Pit Gengler",
+        "pos": "RV",
+        "strength": "5.7",
+        "age": 19,
+        "nationality": "Luxemburg"
       },
       {
         "player_id": "164681",

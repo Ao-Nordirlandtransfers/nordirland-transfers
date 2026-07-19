@@ -1,5 +1,37 @@
 [
   {
+    "id": "177984-4660-5691-19.07.2026",
+    "pos": "TW",
+    "player": "D. Losier",
+    "player_id": "177984",
+    "strength": "6.4",
+    "age": 21,
+    "nationality": "Niederlande",
+    "from_club": "Cliftonville FV",
+    "from_club_id": "4660",
+    "to_club": "Hepoel Ashkelon",
+    "to_club_id": "5691",
+    "date": "19.07.2026",
+    "scraped_at": "2026-07-19T07:38:10.402802+00:00",
+    "is_loan": false
+  },
+  {
+    "id": "180375-5007-4754-19.07.2026",
+    "pos": "LM",
+    "player": "M. Misic",
+    "player_id": "180375",
+    "strength": "5.1",
+    "age": 20,
+    "nationality": "Serbien",
+    "from_club": "Cerrick Rangers",
+    "from_club_id": "5007",
+    "to_club": "FK Red Beograd",
+    "to_club_id": "4754",
+    "date": "19.07.2026",
+    "scraped_at": "2026-07-19T07:38:10.402997+00:00",
+    "is_loan": false
+  },
+  {
     "id": "144558-5326-4667-18.07.2026",
     "pos": "ZM",
     "player": "K. Zehra",

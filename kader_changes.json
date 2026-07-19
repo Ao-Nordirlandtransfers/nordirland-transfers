@@ -1,5 +1,21 @@
 [
   {
+    "id": "177723-None-4665-19.07.2026",
+    "date": "19.07.2026",
+    "player_id": "177723",
+    "player": "Pit Gengler",
+    "pos": "RV",
+    "strength": "5.7",
+    "age": 19,
+    "nationality": "Luxemburg",
+    "from_club": "außerhalb Nordirland-1",
+    "from_club_id": null,
+    "to_club": "Newry Village",
+    "to_club_id": "4665",
+    "is_loan": true,
+    "detected_at": "2026-07-19T07:38:40.276461+00:00"
+  },
+  {
     "id": "186262-None-4658-18.07.2026",
     "date": "18.07.2026",
     "player_id": "186262",
