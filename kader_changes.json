@@ -1,5 +1,21 @@
 [
   {
+    "id": "190380-None-4658-20.07.2026",
+    "date": "20.07.2026",
+    "player_id": "190380",
+    "player": "Mike Coke",
+    "pos": "RM",
+    "strength": "3.4",
+    "age": 22,
+    "nationality": "Nordirland",
+    "from_club": "außerhalb Nordirland-1",
+    "from_club_id": null,
+    "to_club": "Glentoran FV",
+    "to_club_id": "4658",
+    "is_loan": false,
+    "detected_at": "2026-07-20T20:57:25.196283+00:00"
+  },
+  {
     "id": "176361-4668-None-20.07.2026",
     "date": "20.07.2026",
     "player_id": "176361",
