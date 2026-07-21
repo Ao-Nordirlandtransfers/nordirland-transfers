@@ -1,5 +1,37 @@
 [
   {
+    "id": "179336-None-4668-21.07.2026",
+    "date": "21.07.2026",
+    "player_id": "179336",
+    "player": "Keith Shanley",
+    "pos": "LM",
+    "strength": "6.0",
+    "age": 19,
+    "nationality": "Nordirland",
+    "from_club": "außerhalb Nordirland-1",
+    "from_club_id": null,
+    "to_club": "Crusaders FV",
+    "to_club_id": "4668",
+    "is_loan": false,
+    "detected_at": "2026-07-21T11:31:27.788230+00:00"
+  },
+  {
+    "id": "167455-None-4660-21.07.2026",
+    "date": "21.07.2026",
+    "player_id": "167455",
+    "player": "David Rusling",
+    "pos": "ZM",
+    "strength": "6.6",
+    "age": 23,
+    "nationality": "Nordirland",
+    "from_club": "außerhalb Nordirland-1",
+    "from_club_id": null,
+    "to_club": "Cliftonville FV",
+    "to_club_id": "4660",
+    "is_loan": false,
+    "detected_at": "2026-07-21T11:31:25.925029+00:00"
+  },
+  {
     "id": "146021-5010-None-21.07.2026",
     "date": "21.07.2026",
     "player_id": "146021",

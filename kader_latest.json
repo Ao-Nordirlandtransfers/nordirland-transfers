@@ -91,6 +91,14 @@
         "nationality": "Portugal"
       },
       {
+        "player_id": "179336",
+        "player": "Keith Shanley",
+        "pos": "LM",
+        "strength": "6.0",
+        "age": 19,
+        "nationality": "Nordirland"
+      },
+      {
         "player_id": "178229",
         "player": "Marek MintÃḂl",
         "pos": "LM RM",
@@ -355,6 +363,14 @@
         "strength": "6.9",
         "age": 24,
         "nationality": "Ungarn"
+      },
+      {
+        "player_id": "167455",
+        "player": "David Rusling",
+        "pos": "ZM",
+        "strength": "6.6",
+        "age": 23,
+        "nationality": "Nordirland"
       },
       {
         "player_id": "152423",
