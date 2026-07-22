@@ -397,14 +397,6 @@
         "nationality": "Nordirland"
       },
       {
-        "player_id": "182844",
-        "player": "Agu Kablbinda",
-        "pos": "ZM",
-        "strength": "4.6",
-        "age": 18,
-        "nationality": "Kongo, Demokratische Republik"
-      },
-      {
         "player_id": "127742",
         "player": "SĂ¸ren Justinussen",
         "pos": "ST",
@@ -863,7 +855,7 @@
         "player": "Craig Bundy",
         "pos": "MD",
         "strength": "4.1",
-        "age": 28,
+        "age": 29,
         "nationality": "Nordirland"
       },
       {
