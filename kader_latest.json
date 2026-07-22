@@ -1525,7 +1525,7 @@
         "player": "Alberto Corrado",
         "pos": "ST",
         "strength": "5.0",
-        "age": 19,
+        "age": 20,
         "nationality": "Italien"
       },
       {
@@ -2119,6 +2119,14 @@
         "strength": "8.8",
         "age": 34,
         "nationality": "Polen"
+      },
+      {
+        "player_id": "190404",
+        "player": "Danny Tara",
+        "pos": "TW",
+        "strength": "4.0",
+        "age": 19,
+        "nationality": "Nordirland"
       },
       {
         "player_id": "105849",
@@ -2984,15 +2992,7 @@
         "pos": "TW",
         "strength": "5.8",
         "age": 34,
-        "nationality": "S├╝dafrika"
-      },
-      {
-        "player_id": "118517",
-        "player": "Ben Michels",
-        "pos": "TW",
-        "strength": "3.0",
-        "age": 37,
-        "nationality": "Luxemburg"
+        "nationality": "Sû¥dafrika"
       },
       {
         "player_id": "177360",
@@ -3048,11 +3048,11 @@
         "pos": "MD",
         "strength": "3.7",
         "age": 36,
-        "nationality": "T├╝rkei"
+        "nationality": "Tû¥rkei"
       },
       {
         "player_id": "159194",
-        "player": "Marinus Sch├╝tz",
+        "player": "Marinus Schû¥tz",
         "pos": "RV",
         "strength": "6.0",
         "age": 24,
@@ -3076,7 +3076,7 @@
       },
       {
         "player_id": "185467",
-        "player": "├ōscar ├ü. Bustos",
+        "player": "ûscar û. Bustos",
         "pos": "LM RM",
         "strength": "6.1",
         "age": 19,
@@ -3128,7 +3128,7 @@
         "pos": "ZM",
         "strength": "7.6",
         "age": 33,
-        "nationality": "Rum├żnien"
+        "nationality": "RumûÊnien"
       },
       {
         "player_id": "177208",
@@ -3156,7 +3156,7 @@
       },
       {
         "player_id": "127446",
-        "player": "M├Īrio Jorge Lobo Zagallo",
+        "player": "MûÀrio Jorge Lobo Zagallo",
         "pos": "ST",
         "strength": "8.3",
         "age": 33,
@@ -3185,6 +3185,14 @@
         "strength": "6.1",
         "age": 35,
         "nationality": "Schweden"
+      },
+      {
+        "player_id": "169390",
+        "player": "Lee Clasper",
+        "pos": "ST",
+        "strength": "6.0",
+        "age": 21,
+        "nationality": "Nordirland"
       },
       {
         "player_id": "114269",
