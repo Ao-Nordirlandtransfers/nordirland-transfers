@@ -1,5 +1,37 @@
 [
   {
+    "id": "148299-5013-339-23.07.2026",
+    "pos": "MD",
+    "player": "C. Vickers",
+    "player_id": "148299",
+    "strength": "8.4",
+    "age": 29,
+    "nationality": "Nordirland",
+    "from_club": "Brantwood FV",
+    "from_club_id": "5013",
+    "to_club": "Avinir Beggen",
+    "to_club_id": "339",
+    "date": "23.07.2026",
+    "scraped_at": "2026-07-23T12:01:45.074744+00:00",
+    "is_loan": false
+  },
+  {
+    "id": "175149-4788-4658-23.07.2026",
+    "pos": "ZM",
+    "player": "H. Savun",
+    "player_id": "175149",
+    "strength": "5.3",
+    "age": 21,
+    "nationality": "TĂĽrkei",
+    "from_club": "Cwmbren Town",
+    "from_club_id": "4788",
+    "to_club": "Glentoran FV",
+    "to_club_id": "4658",
+    "date": "23.07.2026",
+    "scraped_at": "2026-07-23T12:01:45.074909+00:00",
+    "is_loan": false
+  },
+  {
     "id": "113291-15-4667-22.07.2026",
     "pos": "TW",
     "player": "M. Alexandrov",
