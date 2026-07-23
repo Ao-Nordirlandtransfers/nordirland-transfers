@@ -985,7 +985,7 @@
         "player": "Neicer Reasco",
         "pos": "LIB",
         "strength": "7.6",
-        "age": 23,
+        "age": 24,
         "nationality": "Ecuador"
       },
       {
@@ -1975,14 +1975,6 @@
         "nationality": "Ruanda"
       },
       {
-        "player_id": "148299",
-        "player": "Chris Vickers",
-        "pos": "MD",
-        "strength": "8.4",
-        "age": 29,
-        "nationality": "Nordirland"
-      },
-      {
         "player_id": "137894",
         "player": "Manuel Baltard",
         "pos": "MD",
@@ -2392,7 +2384,7 @@
         "pos": "LM",
         "strength": "5.6",
         "age": 21,
-        "nationality": "├ûsterreich"
+        "nationality": "├¢sterreich"
       },
       {
         "player_id": "189578",
@@ -2440,7 +2432,7 @@
         "pos": "ZM",
         "strength": "5.1",
         "age": 32,
-        "nationality": "├ûsterreich"
+        "nationality": "├¢sterreich"
       },
       {
         "player_id": "184461",
@@ -2484,7 +2476,7 @@
       },
       {
         "player_id": "177288",
-        "player": "Delf├¡n Ben├¡tez C├íceres",
+        "player": "Delf├Łn Ben├Łtez C├Īceres",
         "pos": "ST",
         "strength": "5.3",
         "age": 22,
@@ -2949,7 +2941,7 @@
         "player": "Danny Marlin",
         "pos": "ZM",
         "strength": "4.1",
-        "age": 18,
+        "age": 19,
         "nationality": "Nordirland"
       },
       {
@@ -2992,7 +2984,7 @@
         "pos": "TW",
         "strength": "5.8",
         "age": 34,
-        "nationality": "Sû¥dafrika"
+        "nationality": "SÃždafrika"
       },
       {
         "player_id": "177360",
@@ -3048,11 +3040,11 @@
         "pos": "MD",
         "strength": "3.7",
         "age": 36,
-        "nationality": "Tû¥rkei"
+        "nationality": "TÃžrkei"
       },
       {
         "player_id": "159194",
-        "player": "Marinus Schû¥tz",
+        "player": "Marinus SchÃžtz",
         "pos": "RV",
         "strength": "6.0",
         "age": 24,
@@ -3076,7 +3068,7 @@
       },
       {
         "player_id": "185467",
-        "player": "ûscar û. Bustos",
+        "player": "Ãscar Ã. Bustos",
         "pos": "LM RM",
         "strength": "6.1",
         "age": 19,
@@ -3128,7 +3120,7 @@
         "pos": "ZM",
         "strength": "7.6",
         "age": 33,
-        "nationality": "RumûÊnien"
+        "nationality": "RumÃĪnien"
       },
       {
         "player_id": "177208",
@@ -3147,6 +3139,14 @@
         "nationality": "Slowenien"
       },
       {
+        "player_id": "175149",
+        "player": "Havutcu Savun",
+        "pos": "ZM",
+        "strength": "5.3",
+        "age": 21,
+        "nationality": "TÃžrkei"
+      },
+      {
         "player_id": "181373",
         "player": "Graeme Kyran",
         "pos": "ZM",
@@ -3156,7 +3156,7 @@
       },
       {
         "player_id": "127446",
-        "player": "MûÀrio Jorge Lobo Zagallo",
+        "player": "MÃĄrio Jorge Lobo Zagallo",
         "pos": "ST",
         "strength": "8.3",
         "age": 33,
@@ -3637,7 +3637,7 @@
         "player": "Matej Dalmatin",
         "pos": "RM",
         "strength": "4.1",
-        "age": 24,
+        "age": 25,
         "nationality": "Slowenien"
       },
       {

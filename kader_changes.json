@@ -1,5 +1,37 @@
 [
   {
+    "id": "148299-5013-None-23.07.2026",
+    "date": "23.07.2026",
+    "player_id": "148299",
+    "player": "Chris Vickers",
+    "pos": "MD",
+    "strength": "8.4",
+    "age": 29,
+    "nationality": "Nordirland",
+    "from_club": "Brantwood FV",
+    "from_club_id": "5013",
+    "to_club": "außerhalb Nordirland-1",
+    "to_club_id": null,
+    "is_loan": null,
+    "detected_at": "2026-07-23T16:17:53.079713+00:00"
+  },
+  {
+    "id": "175149-None-4658-23.07.2026",
+    "date": "23.07.2026",
+    "player_id": "175149",
+    "player": "Havutcu Savun",
+    "pos": "ZM",
+    "strength": "5.3",
+    "age": 21,
+    "nationality": "TÃžrkei",
+    "from_club": "außerhalb Nordirland-1",
+    "from_club_id": null,
+    "to_club": "Glentoran FV",
+    "to_club_id": "4658",
+    "is_loan": false,
+    "detected_at": "2026-07-23T16:17:53.079691+00:00"
+  },
+  {
     "id": "118517-4658-None-22.07.2026",
     "date": "22.07.2026",
     "player_id": "118517",
