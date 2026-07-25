@@ -1,5 +1,5 @@
 {
-  "date": "24.07.2026",
+  "date": "25.07.2026",
   "clubs": {
     "4668": [
       {
@@ -163,6 +163,14 @@
         "nationality": "Israel"
       },
       {
+        "player_id": "160798",
+        "player": "Alan Boston",
+        "pos": "ZM",
+        "strength": "5.3",
+        "age": 23,
+        "nationality": "Nordirland"
+      },
+      {
         "player_id": "120602",
         "player": "Shinji Kagawa",
         "pos": "ZM",
@@ -299,6 +307,14 @@
         "strength": "7.1",
         "age": 30,
         "nationality": "Saudi-Arabien"
+      },
+      {
+        "player_id": "162562",
+        "player": "Brian Palmer",
+        "pos": "MD",
+        "strength": "6.7",
+        "age": 24,
+        "nationality": "Nordirland"
       },
       {
         "player_id": "160753",
@@ -2134,7 +2150,7 @@
         "pos": "LIB",
         "strength": "5.3",
         "age": 20,
-        "nationality": "TĂĽrkei"
+        "nationality": "TÃžrkei"
       },
       {
         "player_id": "186307",
@@ -2185,8 +2201,16 @@
         "nationality": "Nordirland"
       },
       {
+        "player_id": "126471",
+        "player": "Leonel de JesÃšs Ãlvarez Zuleta",
+        "pos": "LM RM",
+        "strength": "9.1",
+        "age": 32,
+        "nationality": "Kolumbien"
+      },
+      {
         "player_id": "136486",
-        "player": "YounĂ¨s Belhanda",
+        "player": "YounÃĻs Belhanda",
         "pos": "LM RM",
         "strength": "8.0",
         "age": 32,
@@ -2207,6 +2231,14 @@
         "strength": "8.3",
         "age": 36,
         "nationality": "Polen"
+      },
+      {
+        "player_id": "145958",
+        "player": "Alp Rifaat",
+        "pos": "ZM",
+        "strength": "8.6",
+        "age": 28,
+        "nationality": "TÃžrkei"
       },
       {
         "player_id": "122041",
