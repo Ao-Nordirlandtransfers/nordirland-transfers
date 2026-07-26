@@ -265,7 +265,7 @@
         "player": "Oleg Romaniuk",
         "pos": "TW",
         "strength": "1.0",
-        "age": 29,
+        "age": 30,
         "nationality": "Ukraine"
       },
       {
@@ -395,14 +395,6 @@
         "strength": "6.6",
         "age": 25,
         "nationality": "Nordirland"
-      },
-      {
-        "player_id": "161122",
-        "player": "Brian Pass",
-        "pos": "ZM",
-        "strength": "4.9",
-        "age": 24,
-        "nationality": "England"
       },
       {
         "player_id": "161231",
