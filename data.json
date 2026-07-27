@@ -513,6 +513,23 @@
     "is_loan": false
   },
   {
+    "id": "181720-4561-5007-18.07.2026",
+    "pos": "ST",
+    "player": "Ivan Trickovski",
+    "player_id": "181720",
+    "strength": "6.9",
+    "age": 19,
+    "nationality": "Nordmazedonien",
+    "from_club": "Longford Town FV",
+    "from_club_id": "4561",
+    "to_club": "Cerrick Rangers",
+    "to_club_id": "5007",
+    "date": "18.07.2026",
+    "is_loan": true,
+    "scraped_at": "2026-07-27T20:58:23.117989+00:00",
+    "nachgetragen": true
+  },
+  {
     "id": "155737-4668-414-17.07.2026",
     "pos": "MD",
     "player": "R. Decraen",
@@ -1120,6 +1137,23 @@
     "nachgetragen": true
   },
   {
+    "id": "186393-4561-5007-08.07.2026",
+    "pos": "ZM",
+    "player": "Russell Derry",
+    "player_id": "186393",
+    "strength": "5.1",
+    "age": 18,
+    "nationality": "Irland",
+    "from_club": "Longford Town FV",
+    "from_club_id": "4561",
+    "to_club": "Cerrick Rangers",
+    "to_club_id": "5007",
+    "date": "08.07.2026",
+    "is_loan": true,
+    "scraped_at": "2026-07-27T20:58:18.052272+00:00",
+    "nachgetragen": true
+  },
+  {
     "id": "186298-4653-4668-07.07.2026",
     "pos": "RM",
     "player": "Ian Ciaran",
@@ -1168,6 +1202,23 @@
     "date": "07.07.2026",
     "is_loan": true,
     "scraped_at": "2026-07-27T19:38:43.590952+00:00",
+    "nachgetragen": true
+  },
+  {
+    "id": "159985-344-5007-07.07.2026",
+    "pos": "ST",
+    "player": "Mike Greenleaf",
+    "player_id": "159985",
+    "strength": "6.6",
+    "age": 23,
+    "nationality": "England",
+    "from_club": "FV Mondercange",
+    "from_club_id": "344",
+    "to_club": "Cerrick Rangers",
+    "to_club_id": "5007",
+    "date": "07.07.2026",
+    "is_loan": true,
+    "scraped_at": "2026-07-27T20:58:24.787835+00:00",
     "nachgetragen": true
   },
   {
