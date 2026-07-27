@@ -1103,6 +1103,23 @@
     "nachgetragen": true
   },
   {
+    "id": "173967-4561-5007-08.07.2026",
+    "pos": "ZM",
+    "player": "Lysagh Thompson",
+    "player_id": "173967",
+    "strength": "6.4",
+    "age": 20,
+    "nationality": "Irland",
+    "from_club": "Longford Town FV",
+    "from_club_id": "4561",
+    "to_club": "Cerrick Rangers",
+    "to_club_id": "5007",
+    "date": "08.07.2026",
+    "is_loan": true,
+    "scraped_at": "2026-07-27T19:39:01.266493+00:00",
+    "nachgetragen": true
+  },
+  {
     "id": "186298-4653-4668-07.07.2026",
     "pos": "RM",
     "player": "Ian Ciaran",
@@ -1134,6 +1151,23 @@
     "date": "07.07.2026",
     "is_loan": false,
     "scraped_at": "2026-07-27T17:21:34.240745+00:00",
+    "nachgetragen": true
+  },
+  {
+    "id": "179974-5585-5007-07.07.2026",
+    "pos": "MD",
+    "player": "Luiz Felipe Scolari",
+    "player_id": "179974",
+    "strength": "6.1",
+    "age": 22,
+    "nationality": "Brasilien",
+    "from_club": "SC Delémont",
+    "from_club_id": "5585",
+    "to_club": "Cerrick Rangers",
+    "to_club_id": "5007",
+    "date": "07.07.2026",
+    "is_loan": true,
+    "scraped_at": "2026-07-27T19:38:43.590952+00:00",
     "nachgetragen": true
   },
   {
