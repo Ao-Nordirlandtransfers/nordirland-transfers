@@ -340,8 +340,18 @@
     <span class="pos-badge def">Abwehr</span>
     <span class="pos-badge mid">Mittelfeld</span>
     <span class="pos-badge att">Sturm</span>
-    <span><span class="domestic-star">★</span> = beide Vereine aus Nordirland-1</span>
+    <span><span class="domestic-star">★</span> = beide Vereine aus Nordirland1</span>
     <span><span class="loan-badge" style="margin-left:0;">Leihe</span> = Leihgeschäft statt fester Transfer</span>
+  </div>
+
+  <div id="status-box" style="margin-top:1.2rem; padding:0.8rem 1rem; background:var(--parchment-dim); border-radius:4px; font-size:12.5px; color:var(--ink-soft); display:none;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4rem; flex-wrap:wrap; gap:0.4rem;">
+      <span>🔄 Rückwirkende Nachtragung: <b id="status-backfill-count" style="color:var(--pitch);">–</b></span>
+      <span>Letzter Lauf: <b id="status-last-run" style="color:var(--pitch);">–</b></span>
+    </div>
+    <div style="background:#fff; border-radius:3px; height:7px; overflow:hidden;">
+      <div id="status-backfill-bar" style="background:var(--pitch); height:100%; width:0%; transition:width 0.3s;"></div>
+    </div>
   </div>
 </header>
 
@@ -387,7 +397,7 @@
 <main style="margin-top: -1rem;">
   <p class="eyebrow" style="margin-bottom: 0.3rem;">Lückenloser Abgleich</p>
   <h2 style="font-family:'Fraunces',serif; font-weight:600; font-size:1.5rem; color:var(--pitch); margin: 0 0 0.4rem;">Alle Kaderveränderungen</h2>
-  <p class="subtitle" style="margin-bottom:1rem;">Täglicher Vergleich der Kader aller 20 Premiership-Vereine &ndash; erkennt jeden Zu- und Abgang, unabhängig davon, wie viele Transfers an einem Tag passieren. Wechsel außerhalb der Nordirland-1 (Ausland, andere Liga) werden als "außerhalb Nordirland-1" markiert, da dort kein Kader mitverglichen wird.</p>
+  <p class="subtitle" style="margin-bottom:1rem;">Täglicher Vergleich der Kader aller 20 Premiership-Vereine &ndash; erkennt jeden Zu- und Abgang, unabhängig davon, wie viele Transfers an einem Tag passieren. Wechsel außerhalb der Nordirland1 (Ausland, andere Liga) werden als "außerhalb Nordirland1" markiert, da dort kein Kader mitverglichen wird.</p>
   <div class="table-scroll">
     <table id="kader-changes-table">
       <thead>
@@ -511,7 +521,7 @@
     return niClubNames.has(t.from_club) && niClubNames.has(t.to_club);
   }
   function starPrefix(t){
-    return isDomestic(t) ? '<span class="domestic-star" title="Beide Vereine aus Nordirland-1">★</span>' : '';
+    return isDomestic(t) ? '<span class="domestic-star" title="Beide Vereine aus Nordirland1">★</span>' : '';
   }
   function crestImg(clubId){
     if(!clubId) return '';
@@ -659,6 +669,10 @@
   try{
     const res = await fetch('data.json', { cache: 'no-store' });
     rows = await res.json();
+    rows.forEach(t => {
+      if(t.from_club) t.from_club = t.from_club.replace('Nordirland-1', 'Nordirland1');
+      if(t.to_club) t.to_club = t.to_club.replace('Nordirland-1', 'Nordirland1');
+    });
   }catch(e){
     rows = [];
     console.error('Konnte data.json nicht laden:', e);
@@ -719,8 +733,12 @@
   try{
     const res2 = await fetch('kader_changes.json', { cache: 'no-store' });
     const rawChanges = await res2.json();
+    rawChanges.forEach(t => {
+      if(t.from_club) t.from_club = t.from_club.replace('Nordirland-1', 'Nordirland1');
+      if(t.to_club) t.to_club = t.to_club.replace('Nordirland-1', 'Nordirland1');
+    });
 
-    // Fehlende Vereinsnamen ("außerhalb Nordirland-1") mit echten Namen aus
+    // Fehlende Vereinsnamen ("außerhalb Nordirland1") mit echten Namen aus
     // der Transferliste (data.json) auffüllen, wenn derselbe Spieler dort
     // mit einem konkreten Verein auftaucht.
     kaderChanges = rawChanges.map(c => {
@@ -767,6 +785,41 @@
     kaderLatest = await resKaderLatest.json();
   }catch(e){
     console.error('Konnte kader_latest.json nicht laden:', e);
+  }
+
+  // --- Status: Nachtragungs-Fortschritt & letzter Lauf ---
+  try{
+    const resProgress = await fetch('history_progress.json', { cache: 'no-store' });
+    const progress = await resProgress.json();
+    const checkedCount = (progress.checked || []).length;
+
+    const totalPlayers = new Set();
+    Object.values(kaderLatest.clubs || {}).forEach(squad => {
+      squad.forEach(p => totalPlayers.add(p.player_id));
+    });
+    const total = totalPlayers.size;
+
+    const statusBox = document.getElementById('status-box');
+    statusBox.style.display = 'block';
+
+    if(total > 0){
+      const pct = Math.min(100, Math.round((checkedCount / total) * 100));
+      document.getElementById('status-backfill-count').textContent = `${checkedCount} / ${total} Spieler geprüft (${pct}%)`;
+      document.getElementById('status-backfill-bar').style.width = `${pct}%`;
+    }else{
+      document.getElementById('status-backfill-count').textContent = `${checkedCount} Spieler geprüft`;
+    }
+
+    if(progress.last_run){
+      const d = new Date(progress.last_run);
+      document.getElementById('status-last-run').textContent = d.toLocaleString('de-DE', {
+        day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit'
+      });
+    }else{
+      document.getElementById('status-last-run').textContent = 'noch kein Lauf';
+    }
+  }catch(e){
+    console.error('Konnte history_progress.json nicht laden:', e);
   }
 
   // --- Alle aktuellen Leihspieler, liga-weit ---
