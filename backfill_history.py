@@ -197,7 +197,10 @@ def main() -> int:
 
     existing.sort(key=sort_key, reverse=True)
     save_json(DATA_FILE, existing)
-    save_json(PROGRESS_FILE, {"checked": sorted(checked)})
+    save_json(PROGRESS_FILE, {
+        "checked": sorted(checked),
+        "last_run": datetime.now(timezone.utc).isoformat(),
+    })
 
     print(f"{found_count} nachgetragene Transfers gefunden. "
           f"{len(checked)}/{len(all_players)} Spieler insgesamt geprüft.")
