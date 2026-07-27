@@ -1,5 +1,37 @@
 [
   {
+    "id": "115405-4660-5638-27.07.2026",
+    "pos": "RM",
+    "player": "R. Lust├╝",
+    "player_id": "115405",
+    "strength": "8.3",
+    "age": 32,
+    "nationality": "D├żnemark",
+    "from_club": "Cliftonville FV",
+    "from_club_id": "4660",
+    "to_club": "Peterborough Soccer",
+    "to_club_id": "5638",
+    "date": "27.07.2026",
+    "scraped_at": "2026-07-27T10:58:27.405561+00:00",
+    "is_loan": false
+  },
+  {
+    "id": "162563-89-4660-27.07.2026",
+    "pos": "MD",
+    "player": "A. Stace",
+    "player_id": "162563",
+    "strength": "7.1",
+    "age": 25,
+    "nationality": "Nordirland",
+    "from_club": "Manchester Town",
+    "from_club_id": "89",
+    "to_club": "Cliftonville FV",
+    "to_club_id": "4660",
+    "date": "27.07.2026",
+    "scraped_at": "2026-07-27T10:58:27.405710+00:00",
+    "is_loan": false
+  },
+  {
     "id": "150830-5004-5853-26.07.2026",
     "pos": "LM",
     "player": "L. Janos",
