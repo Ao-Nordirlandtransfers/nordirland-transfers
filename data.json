@@ -1,5 +1,37 @@
 [
   {
+    "id": "125301-5013-41-28.07.2026",
+    "pos": "ST",
+    "player": "S. Bucknell",
+    "player_id": "125301",
+    "strength": "6.7",
+    "age": 29,
+    "nationality": "Nordirland",
+    "from_club": "Brantwood FV",
+    "from_club_id": "5013",
+    "to_club": "CfB Lû¥beck",
+    "to_club_id": "41",
+    "date": "28.07.2026",
+    "scraped_at": "2026-07-28T16:52:25.677325+00:00",
+    "is_loan": false
+  },
+  {
+    "id": "180693-4668-354-28.07.2026",
+    "pos": "RM",
+    "player": "M. Rusedski",
+    "player_id": "180693",
+    "strength": "5.1",
+    "age": 20,
+    "nationality": "Polen",
+    "from_club": "Crusaders FV",
+    "from_club_id": "4668",
+    "to_club": "Pulonia Beuthen",
+    "to_club_id": "354",
+    "date": "28.07.2026",
+    "scraped_at": "2026-07-28T16:52:25.677470+00:00",
+    "is_loan": false
+  },
+  {
     "id": "115405-4660-5638-27.07.2026",
     "pos": "RM",
     "player": "R. Lust├╝",
