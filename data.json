@@ -630,6 +630,23 @@
     "nachgetragen": true
   },
   {
+    "id": "177288-488-4665-18.07.2026",
+    "pos": "ST",
+    "player": "Delf├¡n Ben├¡tez C├íceres",
+    "player_id": "177288",
+    "strength": "5.3",
+    "age": 22,
+    "nationality": "Paraguay",
+    "from_club": "DVD Leganés",
+    "from_club_id": "488",
+    "to_club": "Newry Village",
+    "to_club_id": "4665",
+    "date": "18.07.2026",
+    "is_loan": true,
+    "scraped_at": "2026-07-28T20:00:00.632117+00:00",
+    "nachgetragen": true
+  },
+  {
     "id": "155737-4668-414-17.07.2026",
     "pos": "MD",
     "player": "R. Decraen",
@@ -693,6 +710,23 @@
     "date": "16.07.2026",
     "scraped_at": "2026-07-16T07:33:03.735204+00:00",
     "is_loan": false
+  },
+  {
+    "id": "178673-626-4665-16.07.2026",
+    "pos": "ST",
+    "player": "Stewart Cowburn",
+    "player_id": "178673",
+    "strength": "5.3",
+    "age": 20,
+    "nationality": "Schottland",
+    "from_club": "FV Dundee",
+    "from_club_id": "626",
+    "to_club": "Newry Village",
+    "to_club_id": "4665",
+    "date": "16.07.2026",
+    "is_loan": true,
+    "scraped_at": "2026-07-28T19:59:58.753343+00:00",
+    "nachgetragen": true
   },
   {
     "id": "111462-5010-5167-15.07.2026",
