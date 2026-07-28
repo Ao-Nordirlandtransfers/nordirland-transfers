@@ -192,6 +192,23 @@
     "is_loan": false
   },
   {
+    "id": "172199-275-5010-24.07.2026",
+    "pos": "ZM",
+    "player": "Edgar Steven Davids",
+    "player_id": "172199",
+    "strength": "7.6",
+    "age": 22,
+    "nationality": "Niederlande",
+    "from_club": "AEK Athin",
+    "from_club_id": "275",
+    "to_club": "Ballymoney Soccer",
+    "to_club_id": "5010",
+    "date": "24.07.2026",
+    "is_loan": true,
+    "scraped_at": "2026-07-28T18:20:56.741287+00:00",
+    "nachgetragen": true
+  },
+  {
     "id": "148299-5013-339-23.07.2026",
     "pos": "MD",
     "player": "C. Vickers",
@@ -595,6 +612,23 @@
     "is_loan": false
   },
   {
+    "id": "142612-4668-5010-17.07.2026",
+    "pos": "ZM",
+    "player": "Steve Ham",
+    "player_id": "142612",
+    "strength": "1.3",
+    "age": 29,
+    "nationality": "Nordirland",
+    "from_club": "Crusaders FV",
+    "from_club_id": "4668",
+    "to_club": "Ballymoney Soccer",
+    "to_club_id": "5010",
+    "date": "17.07.2026",
+    "is_loan": false,
+    "scraped_at": "2026-07-28T18:20:58.387992+00:00",
+    "nachgetragen": true
+  },
+  {
     "id": "178229-4653-4668-16.07.2026",
     "pos": "LM RM",
     "player": "M. MintĂˇl",
@@ -950,6 +984,23 @@
     "date": "13.07.2026",
     "is_loan": true,
     "scraped_at": "2026-07-25T00:40:59.642446+00:00",
+    "nachgetragen": true
+  },
+  {
+    "id": "190212-None-5010-13.07.2026",
+    "pos": "LM RM",
+    "player": "Leo Stonefield",
+    "player_id": "190212",
+    "strength": "3.1",
+    "age": 17,
+    "nationality": "Nordirland",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Ballymoney Soccer",
+    "to_club_id": "5010",
+    "date": "13.07.2026",
+    "is_loan": false,
+    "scraped_at": "2026-07-28T18:20:49.585888+00:00",
     "nachgetragen": true
   },
   {
