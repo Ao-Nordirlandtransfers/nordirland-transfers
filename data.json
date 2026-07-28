@@ -288,6 +288,23 @@
     "is_loan": false
   },
   {
+    "id": "190404-None-5010-22.07.2026",
+    "pos": "TW",
+    "player": "Danny Tara",
+    "player_id": "190404",
+    "strength": "4.0",
+    "age": 19,
+    "nationality": "Nordirland",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Ballymoney Soccer",
+    "to_club_id": "5010",
+    "date": "22.07.2026",
+    "is_loan": false,
+    "scraped_at": "2026-07-28T17:43:06.178013+00:00",
+    "nachgetragen": true
+  },
+  {
     "id": "146021-5010-184-21.07.2026",
     "pos": "RV",
     "player": "J. Herivelto",
@@ -738,6 +755,23 @@
     "date": "14.07.2026",
     "scraped_at": "2026-07-15T11:13:16.225561+00:00",
     "is_loan": false
+  },
+  {
+    "id": "158951-5809-5010-14.07.2026",
+    "pos": "LV RV",
+    "player": "Andy Calthrop",
+    "player_id": "158951",
+    "strength": "1.3",
+    "age": 24,
+    "nationality": "Nordirland",
+    "from_club": "SV Drautal",
+    "from_club_id": "5809",
+    "to_club": "Ballymoney Soccer",
+    "to_club_id": "5010",
+    "date": "14.07.2026",
+    "is_loan": false,
+    "scraped_at": "2026-07-28T17:43:15.076473+00:00",
+    "nachgetragen": true
   },
   {
     "id": "103169-5010-5212-13.07.2026",
