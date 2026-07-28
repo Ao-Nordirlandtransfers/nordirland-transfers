@@ -467,6 +467,23 @@
     "is_loan": false
   },
   {
+    "id": "177723-5606-4665-19.07.2026",
+    "pos": "RV",
+    "player": "Pit Gengler",
+    "player_id": "177723",
+    "strength": "5.7",
+    "age": 19,
+    "nationality": "Luxemburg",
+    "from_club": "FV Viktoria 1889 Berlin",
+    "from_club_id": "5606",
+    "to_club": "Newry Village",
+    "to_club_id": "4665",
+    "date": "19.07.2026",
+    "is_loan": true,
+    "scraped_at": "2026-07-28T19:54:04.196626+00:00",
+    "nachgetragen": true
+  },
+  {
     "id": "144558-5326-4667-18.07.2026",
     "pos": "ZM",
     "player": "K. Zehra",
@@ -593,6 +610,23 @@
     "date": "18.07.2026",
     "is_loan": true,
     "scraped_at": "2026-07-27T20:58:23.117989+00:00",
+    "nachgetragen": true
+  },
+  {
+    "id": "183555-488-4665-18.07.2026",
+    "pos": "MD",
+    "player": "Laurent Leduc",
+    "player_id": "183555",
+    "strength": "5.0",
+    "age": 21,
+    "nationality": "Martinique",
+    "from_club": "DVD Leganés",
+    "from_club_id": "488",
+    "to_club": "Newry Village",
+    "to_club_id": "4665",
+    "date": "18.07.2026",
+    "is_loan": true,
+    "scraped_at": "2026-07-28T19:53:55.543089+00:00",
     "nachgetragen": true
   },
   {
@@ -1107,6 +1141,23 @@
     "to_club_id": "431",
     "date": "12.07.2026",
     "scraped_at": "2026-07-11T23:05:19.376421+00:00"
+  },
+  {
+    "id": "168418-5110-4665-12.07.2026",
+    "pos": "LV RV",
+    "player": "Nestor Jasseng",
+    "player_id": "168418",
+    "strength": "5.1",
+    "age": 23,
+    "nationality": "Schweiz",
+    "from_club": "FV Winterthur",
+    "from_club_id": "5110",
+    "to_club": "Newry Village",
+    "to_club_id": "4665",
+    "date": "12.07.2026",
+    "is_loan": true,
+    "scraped_at": "2026-07-28T19:53:53.924097+00:00",
+    "nachgetragen": true
   },
   {
     "id": "169256-4660-5013-11.07.2026",
