@@ -1489,6 +1489,23 @@
     "nachgetragen": true
   },
   {
+    "id": "189738-None-4659-06.07.2026",
+    "pos": "TW",
+    "player": "Michael Brodie",
+    "player_id": "189738",
+    "strength": "4.8",
+    "age": 18,
+    "nationality": "Nordirland",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Linfield FV",
+    "to_club_id": "4659",
+    "date": "06.07.2026",
+    "is_loan": false,
+    "scraped_at": "2026-07-29T08:13:13.368023+00:00",
+    "nachgetragen": true
+  },
+  {
     "id": "161332-5010-334-01.07.2026",
     "pos": "TW",
     "player": "J. Castro Madriz",
