@@ -1,5 +1,5 @@
 {
-  "date": "28.07.2026",
+  "date": "29.07.2026",
   "clubs": {
     "4668": [
       {
@@ -927,7 +927,7 @@
         "player": "Peter Cauchois",
         "pos": "RM",
         "strength": "2.7",
-        "age": 30,
+        "age": 31,
         "nationality": "Nordirland"
       },
       {
@@ -1059,14 +1059,6 @@
         "strength": "6.6",
         "age": 25,
         "nationality": "Nordirland"
-      },
-      {
-        "player_id": "143263",
-        "player": "Tim Chalk",
-        "pos": "ZM",
-        "strength": "8.6",
-        "age": 28,
-        "nationality": "England"
       },
       {
         "player_id": "154561",
@@ -1951,14 +1943,6 @@
         "nationality": "Nordirland"
       },
       {
-        "player_id": "186297",
-        "player": "Emmanuel Promesse",
-        "pos": "LIB",
-        "strength": "6.1",
-        "age": 19,
-        "nationality": "Saint Lucia"
-      },
-      {
         "player_id": "148291",
         "player": "David Gossip",
         "pos": "LIB",
@@ -2209,6 +2193,14 @@
         "nationality": "Polen"
       },
       {
+        "player_id": "143263",
+        "player": "Tim Chalk",
+        "pos": "ZM",
+        "strength": "8.6",
+        "age": 28,
+        "nationality": "England"
+      },
+      {
         "player_id": "145958",
         "player": "Alp Rifaat",
         "pos": "ZM",
@@ -2247,14 +2239,6 @@
         "strength": "8.9",
         "age": 30,
         "nationality": "Frankreich"
-      },
-      {
-        "player_id": "126668",
-        "player": "Oleg Sustrov",
-        "pos": "ST",
-        "strength": "8.4",
-        "age": 31,
-        "nationality": "Estland"
       },
       {
         "player_id": "186468",
