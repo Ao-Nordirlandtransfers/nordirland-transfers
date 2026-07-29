@@ -1404,6 +1404,23 @@
     "nachgetragen": true
   },
   {
+    "id": "180104-235-5011-10.07.2026",
+    "pos": "ZM",
+    "player": "Thomas Hain",
+    "player_id": "180104",
+    "strength": "6.7",
+    "age": 19,
+    "nationality": "Ă–sterreich",
+    "from_club": "Voborg FF",
+    "from_club_id": "235",
+    "to_club": "Bangor FV",
+    "to_club_id": "5011",
+    "date": "10.07.2026",
+    "is_loan": true,
+    "scraped_at": "2026-07-29T17:52:40.572725+00:00",
+    "nachgetragen": true
+  },
+  {
     "id": "183431-5377-4668-08.07.2026",
     "pos": "LV",
     "player": "Danijel Graso",
@@ -1486,6 +1503,23 @@
     "date": "08.07.2026",
     "is_loan": true,
     "scraped_at": "2026-07-27T20:58:18.052272+00:00",
+    "nachgetragen": true
+  },
+  {
+    "id": "185271-122-5011-08.07.2026",
+    "pos": "RM",
+    "player": "Carlo Ferrara",
+    "player_id": "185271",
+    "strength": "7.7",
+    "age": 19,
+    "nationality": "Italien",
+    "from_club": "FV Bologna",
+    "from_club_id": "122",
+    "to_club": "Bangor FV",
+    "to_club_id": "5011",
+    "date": "08.07.2026",
+    "is_loan": true,
+    "scraped_at": "2026-07-29T17:52:37.166769+00:00",
     "nachgetragen": true
   },
   {
