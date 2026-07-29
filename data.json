@@ -712,6 +712,23 @@
     "nachgetragen": true
   },
   {
+    "id": "186262-5010-4658-18.07.2026",
+    "pos": "ZM",
+    "player": "Martin Srebotnik",
+    "player_id": "186262",
+    "strength": "5.7",
+    "age": 19,
+    "nationality": "Slowenien",
+    "from_club": "Ballymoney Soccer",
+    "from_club_id": "5010",
+    "to_club": "Glentoran FV",
+    "to_club_id": "4658",
+    "date": "18.07.2026",
+    "is_loan": true,
+    "scraped_at": "2026-07-29T17:12:32.532106+00:00",
+    "nachgetragen": true
+  },
+  {
     "id": "155737-4668-414-17.07.2026",
     "pos": "MD",
     "player": "R. Decraen",
