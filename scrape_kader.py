@@ -66,7 +66,7 @@ def fetch_kader(session: requests.Session, club_id: str, attempts: int = 2, retr
     if resp is None:
         raise last_error
 
-    resp.encoding = resp.apparent_encoding or "utf-8"
+    resp.encoding = "utf-8"  # Seite liefert UTF-8; automatische Erkennung riet gelegentlich falsch
     soup = BeautifulSoup(resp.text, "html.parser")
 
     # Die Kader-Tabelle anhand ihrer Spaltenüberschriften finden (robuster
@@ -129,7 +129,7 @@ def fetch_loan_status(session: requests.Session, player_id: str, club_id: str):
             timeout=20,
         )
         resp.raise_for_status()
-        resp.encoding = resp.apparent_encoding or "utf-8"
+        resp.encoding = "utf-8"  # Seite liefert UTF-8; automatische Erkennung riet gelegentlich falsch
         soup = BeautifulSoup(resp.text, "html.parser")
     except requests.RequestException:
         return None
@@ -255,6 +255,13 @@ def main() -> int:
     joined = {}  # player_id -> (club_id, player_info)
 
     for club_id, players in current_snapshot.items():
+        if club_id not in previous_clubs:
+            # Für diesen Verein gibt es noch keinen echten Vergleichsstand
+            # (z.B. weil frühere Läufe an Timeouts gescheitert sind) - nur
+            # als Basis übernehmen, nicht den ganzen Kader als "neu" werten.
+            print(f"  Verein {club_id}: kein vorheriger Stand, nur als Basis übernommen.")
+            continue
+
         prev_players = player_index(previous_clubs.get(club_id, []))
         curr_players = player_index(players)
 
@@ -293,9 +300,9 @@ def main() -> int:
             "strength": info["strength"],
             "age": info["age"],
             "nationality": info["nationality"],
-            "from_club": club_names.get(from_club_id, "außerhalb Nordirland-1" if from_club_id is None else from_club_id),
+            "from_club": club_names.get(from_club_id, "außerhalb Nordirland1" if from_club_id is None else from_club_id),
             "from_club_id": from_club_id,
-            "to_club": club_names.get(to_club_id, "außerhalb Nordirland-1" if to_club_id is None else to_club_id),
+            "to_club": club_names.get(to_club_id, "außerhalb Nordirland1" if to_club_id is None else to_club_id),
             "to_club_id": to_club_id,
             "is_loan": is_loan,
             "detected_at": datetime.now(timezone.utc).isoformat(),
@@ -304,11 +311,23 @@ def main() -> int:
         new_count += 1
 
     changes.sort(key=lambda c: c["detected_at"], reverse=True)
+
+    # Nachträglich Leihe-Status für ältere Einträge ohne "is_loan" auffüllen
+    # (nur bei bekanntem Zielverein, begrenzt pro Lauf).
+    backfilled = 0
+    for c in changes:
+        if backfilled >= 5:
+            break
+        if ("is_loan" not in c or c["is_loan"] is None) and c.get("to_club_id"):
+            time.sleep(1)
+            c["is_loan"] = fetch_loan_status(session, c.get("player_id"), c.get("to_club_id"))
+            backfilled += 1
+
     save_json(CHANGES_FILE, changes)
     merged_clubs = {**previous_clubs, **current_snapshot}
     save_json(SNAPSHOT_FILE, {"date": today, "clubs": merged_clubs})
 
-    print(f"{new_count} Kaderveränderungen erkannt. Gesamt gespeichert: {len(changes)}")
+    print(f"{new_count} Kaderveränderungen erkannt. {backfilled} ältere Einträge mit Leihe-Status nachgetragen. Gesamt gespeichert: {len(changes)}")
     return 0
 
 

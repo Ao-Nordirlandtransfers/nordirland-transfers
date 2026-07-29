@@ -28,7 +28,13 @@ HEADERS = {
                   "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Language": "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7",
+    "Accept-Encoding": "gzip, deflate, br",
     "Connection": "keep-alive",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
 }
 
 DATE_RE = re.compile(r"\d{2}\.\d{2}\.\d{4}")
@@ -141,7 +147,7 @@ def fetch_loan_status(session: requests.Session, player_id: str, club_id: str):
             timeout=20,
         )
         resp.raise_for_status()
-        resp.encoding = resp.apparent_encoding or "utf-8"
+        resp.encoding = "utf-8"  # Seite liefert UTF-8; automatische Erkennung riet gelegentlich falsch
         soup = BeautifulSoup(resp.text, "html.parser")
     except requests.RequestException:
         return None
@@ -196,7 +202,7 @@ def fetch_with_retry(session: requests.Session, url: str, attempts: int = 2, del
         try:
             resp = session.get(url, timeout=timeout)
             resp.raise_for_status()
-            resp.encoding = resp.apparent_encoding or "utf-8"
+            resp.encoding = "utf-8"  # Seite liefert UTF-8; automatische Erkennung riet gelegentlich falsch
             return resp.text
         except requests.RequestException as e:
             last_error = e
@@ -239,8 +245,21 @@ def main() -> int:
             return datetime.min
 
     existing.sort(key=sort_key, reverse=True)
+
+    # Nachträglich Leihe-Status für ältere Einträge ohne "is_loan" auffüllen
+    # (z.B. aus der Zeit vor Einführung dieser Funktion). Nur eine begrenzte
+    # Anzahl pro Lauf, um die Seite nicht zusätzlich zu belasten.
+    backfilled = 0
+    for t in existing:
+        if backfilled >= 5:
+            break
+        if "is_loan" not in t or t["is_loan"] is None:
+            time.sleep(1)
+            t["is_loan"] = fetch_loan_status(session, t.get("player_id"), t.get("to_club_id"))
+            backfilled += 1
+
     save(existing)
-    print(f"{new_count} neue Transfers hinzugefügt. Gesamt gespeichert: {len(existing)}")
+    print(f"{new_count} neue Transfers hinzugefügt. {backfilled} ältere Einträge mit Leihe-Status nachgetragen. Gesamt gespeichert: {len(existing)}")
     return 0
 
 
