@@ -1421,6 +1421,23 @@
     "nachgetragen": true
   },
   {
+    "id": "184682-235-5011-10.07.2026",
+    "pos": "ST",
+    "player": "SĂ¸ren Bogh",
+    "player_id": "184682",
+    "strength": "4.9",
+    "age": 19,
+    "nationality": "DĂ¤nemark",
+    "from_club": "Voborg FF",
+    "from_club_id": "235",
+    "to_club": "Bangor FV",
+    "to_club_id": "5011",
+    "date": "10.07.2026",
+    "is_loan": true,
+    "scraped_at": "2026-07-29T18:38:00.528953+00:00",
+    "nachgetragen": true
+  },
+  {
     "id": "183431-5377-4668-08.07.2026",
     "pos": "LV",
     "player": "Danijel Graso",
