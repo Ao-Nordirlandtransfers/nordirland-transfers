@@ -483,6 +483,23 @@
     "nachgetragen": true
   },
   {
+    "id": "190380-None-4658-20.07.2026",
+    "pos": "RM",
+    "player": "Mike Coke",
+    "player_id": "190380",
+    "strength": "3.4",
+    "age": 22,
+    "nationality": "Nordirland",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Glentoran FV",
+    "to_club_id": "4658",
+    "date": "20.07.2026",
+    "is_loan": false,
+    "scraped_at": "2026-07-29T16:18:07.094080+00:00",
+    "nachgetragen": true
+  },
+  {
     "id": "177984-4660-5691-19.07.2026",
     "pos": "TW",
     "player": "D. Losier",
@@ -924,6 +941,23 @@
     "nachgetragen": true
   },
   {
+    "id": "179779-4538-4658-14.07.2026",
+    "pos": "LM",
+    "player": "Idrissa Gueye",
+    "player_id": "179779",
+    "strength": "6.9",
+    "age": 22,
+    "nationality": "Senegal",
+    "from_club": "MyPe Anjalankoski",
+    "from_club_id": "4538",
+    "to_club": "Glentoran FV",
+    "to_club_id": "4658",
+    "date": "14.07.2026",
+    "is_loan": true,
+    "scraped_at": "2026-07-29T16:17:53.121068+00:00",
+    "nachgetragen": true
+  },
+  {
     "id": "103169-5010-5212-13.07.2026",
     "pos": "ZM",
     "player": "A. JuliĂŁo",
@@ -1117,6 +1151,40 @@
     "date": "13.07.2026",
     "is_loan": false,
     "scraped_at": "2026-07-28T18:20:49.585888+00:00",
+    "nachgetragen": true
+  },
+  {
+    "id": "185467-485-4658-13.07.2026",
+    "pos": "LM RM",
+    "player": "ûscar û. Bustos",
+    "player_id": "185467",
+    "strength": "6.1",
+    "age": 19,
+    "nationality": "Spanien",
+    "from_club": "CV Córdoba",
+    "from_club_id": "485",
+    "to_club": "Glentoran FV",
+    "to_club_id": "4658",
+    "date": "13.07.2026",
+    "is_loan": true,
+    "scraped_at": "2026-07-29T16:17:56.671665+00:00",
+    "nachgetragen": true
+  },
+  {
+    "id": "182196-410-4658-13.07.2026",
+    "pos": "RM",
+    "player": "Bart Goor",
+    "player_id": "182196",
+    "strength": "6.7",
+    "age": 21,
+    "nationality": "Belgien",
+    "from_club": "Sont Truidense VV",
+    "from_club_id": "410",
+    "to_club": "Glentoran FV",
+    "to_club_id": "4658",
+    "date": "13.07.2026",
+    "is_loan": true,
+    "scraped_at": "2026-07-29T16:17:58.467894+00:00",
     "nachgetragen": true
   },
   {
