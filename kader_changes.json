@@ -1,5 +1,37 @@
 [
   {
+    "id": "160753-4660-None-30.07.2026",
+    "date": "30.07.2026",
+    "player_id": "160753",
+    "player": "Roberto Caprara",
+    "pos": "MD",
+    "strength": "6.4",
+    "age": 23,
+    "nationality": "Italien",
+    "from_club": "Cliftonville FV",
+    "from_club_id": "4660",
+    "to_club": "außerhalb Nordirland1",
+    "to_club_id": null,
+    "is_loan": null,
+    "detected_at": "2026-07-30T12:04:18.050175+00:00"
+  },
+  {
+    "id": "137985-4660-None-30.07.2026",
+    "date": "30.07.2026",
+    "player_id": "137985",
+    "player": "Saleh Al-Dawod",
+    "pos": "MD",
+    "strength": "7.1",
+    "age": 30,
+    "nationality": "Saudi-Arabien",
+    "from_club": "Cliftonville FV",
+    "from_club_id": "4660",
+    "to_club": "außerhalb Nordirland1",
+    "to_club_id": null,
+    "is_loan": null,
+    "detected_at": "2026-07-30T12:04:18.050158+00:00"
+  },
+  {
     "id": "126668-5010-None-29.07.2026",
     "date": "29.07.2026",
     "player_id": "126668",
@@ -909,7 +941,7 @@
     "to_club": "Brantwood FV",
     "to_club_id": "5013",
     "detected_at": "2026-07-11T23:05:57.243761+00:00",
-    "is_loan": null
+    "is_loan": false
   },
   {
     "id": "165264-4668-None-11.07.2026",
@@ -940,7 +972,7 @@
     "to_club": "Glentoran FV",
     "to_club_id": "4658",
     "detected_at": "2026-07-11T23:05:57.243738+00:00",
-    "is_loan": null
+    "is_loan": false
   },
   {
     "id": "172094-5011-None-11.07.2026",
@@ -986,6 +1018,6 @@
     "to_club": "Omagh Village",
     "to_club_id": "4662",
     "detected_at": "2026-07-11T23:05:57.243709+00:00",
-    "is_loan": null
+    "is_loan": false
   }
 ]

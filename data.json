@@ -1,5 +1,53 @@
 [
   {
+    "id": "137985-4660-5010-30.07.2026",
+    "pos": "MD",
+    "player": "S. Al-Dawod",
+    "player_id": "137985",
+    "strength": "7.1",
+    "age": 30,
+    "nationality": "Saudi-Arabien",
+    "from_club": "Cliftonville FV",
+    "from_club_id": "4660",
+    "to_club": "Ballymoney Soccer",
+    "to_club_id": "5010",
+    "date": "30.07.2026",
+    "scraped_at": "2026-07-30T12:03:37.999072+00:00",
+    "is_loan": false
+  },
+  {
+    "id": "160753-4660-4861-30.07.2026",
+    "pos": "MD",
+    "player": "R. Caprara",
+    "player_id": "160753",
+    "strength": "6.4",
+    "age": 23,
+    "nationality": "Italien",
+    "from_club": "Cliftonville FV",
+    "from_club_id": "4660",
+    "to_club": "HFK Søndarjylland",
+    "to_club_id": "4861",
+    "date": "30.07.2026",
+    "scraped_at": "2026-07-30T12:03:37.999293+00:00",
+    "is_loan": false
+  },
+  {
+    "id": "173982-418-5015-30.07.2026",
+    "pos": "ST",
+    "player": "G. Heirman",
+    "player_id": "173982",
+    "strength": "5.7",
+    "age": 22,
+    "nationality": "Belgien",
+    "from_club": "Stendard Liège",
+    "from_club_id": "418",
+    "to_club": "Loughgall FV",
+    "to_club_id": "5015",
+    "date": "30.07.2026",
+    "scraped_at": "2026-07-30T12:03:37.999429+00:00",
+    "is_loan": false
+  },
+  {
     "id": "143263-4661-5010-29.07.2026",
     "pos": "ZM",
     "player": "T. Chalk",
@@ -1217,7 +1265,8 @@
     "to_club": "Omagh Village",
     "to_club_id": "4662",
     "date": "12.07.2026",
-    "scraped_at": "2026-07-11T23:05:19.375795+00:00"
+    "scraped_at": "2026-07-11T23:05:19.375795+00:00",
+    "is_loan": false
   },
   {
     "id": "165264-4668-5854-12.07.2026",
@@ -1232,7 +1281,8 @@
     "to_club": "Dumbarton FV",
     "to_club_id": "5854",
     "date": "12.07.2026",
-    "scraped_at": "2026-07-11T23:05:19.375941+00:00"
+    "scraped_at": "2026-07-11T23:05:19.375941+00:00",
+    "is_loan": false
   },
   {
     "id": "177208-275-4658-12.07.2026",
@@ -1247,7 +1297,8 @@
     "to_club": "Glentoran FV",
     "to_club_id": "4658",
     "date": "12.07.2026",
-    "scraped_at": "2026-07-11T23:05:19.376046+00:00"
+    "scraped_at": "2026-07-11T23:05:19.376046+00:00",
+    "is_loan": false
   },
   {
     "id": "122810-5281-4667-12.07.2026",
@@ -1262,7 +1313,8 @@
     "to_club": "Losburn Distillery",
     "to_club_id": "4667",
     "date": "12.07.2026",
-    "scraped_at": "2026-07-11T23:05:19.376144+00:00"
+    "scraped_at": "2026-07-11T23:05:19.376144+00:00",
+    "is_loan": false
   },
   {
     "id": "172094-5011-5793-12.07.2026",
@@ -1277,7 +1329,8 @@
     "to_club": "DVD Guijuelo",
     "to_club_id": "5793",
     "date": "12.07.2026",
-    "scraped_at": "2026-07-11T23:05:19.376238+00:00"
+    "scraped_at": "2026-07-11T23:05:19.376238+00:00",
+    "is_loan": false
   },
   {
     "id": "186369-192-5013-12.07.2026",

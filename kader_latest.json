@@ -4,7 +4,7 @@
     "4668": [
       {
         "player_id": "176665",
-        "player": "Roman BÃỳrki",
+        "player": "Roman Bürki",
         "pos": "TW",
         "strength": "6.0",
         "age": 23,
@@ -44,11 +44,11 @@
       },
       {
         "player_id": "172033",
-        "player": "Janus SkarÃḞenni",
+        "player": "Janus Skarðenni",
         "pos": "LV RV",
         "strength": "6.7",
         "age": 21,
-        "nationality": "FÃĊrÃ¶er"
+        "nationality": "Färöer"
       },
       {
         "player_id": "138341",
@@ -60,7 +60,7 @@
       },
       {
         "player_id": "106172",
-        "player": "JuliÃḂn Ceballos",
+        "player": "Julián Ceballos",
         "pos": "MD",
         "strength": "8.6",
         "age": 35,
@@ -100,7 +100,7 @@
       },
       {
         "player_id": "178229",
-        "player": "Marek MintÃḂl",
+        "player": "Marek Mintál",
         "pos": "LM RM",
         "strength": "6.6",
         "age": 22,
@@ -144,7 +144,7 @@
         "pos": "ZM",
         "strength": "7.7",
         "age": 26,
-        "nationality": "DÃĊnemark"
+        "nationality": "Dänemark"
       },
       {
         "player_id": "162083",
@@ -266,7 +266,7 @@
         "pos": "LIB",
         "strength": "7.0",
         "age": 30,
-        "nationality": "Ă–sterreich"
+        "nationality": "Österreich"
       },
       {
         "player_id": "145763",
@@ -278,7 +278,7 @@
       },
       {
         "player_id": "161141",
-        "player": "Vedran DubravÄŤiÄ‡",
+        "player": "Vedran Dubravčić",
         "pos": "LV RV",
         "strength": "6.3",
         "age": 24,
@@ -301,28 +301,12 @@
         "nationality": "Nordirland"
       },
       {
-        "player_id": "137985",
-        "player": "Saleh Al-Dawod",
-        "pos": "MD",
-        "strength": "7.1",
-        "age": 30,
-        "nationality": "Saudi-Arabien"
-      },
-      {
         "player_id": "162562",
         "player": "Brian Palmer",
         "pos": "MD",
         "strength": "6.7",
         "age": 24,
         "nationality": "Nordirland"
-      },
-      {
-        "player_id": "160753",
-        "player": "Roberto Caprara",
-        "pos": "MD",
-        "strength": "6.4",
-        "age": 23,
-        "nationality": "Italien"
       },
       {
         "player_id": "151880",
@@ -350,11 +334,11 @@
       },
       {
         "player_id": "179103",
-        "player": "Abraham LĂ¸kin",
+        "player": "Abraham Løkin",
         "pos": "RM",
         "strength": "6.9",
         "age": 22,
-        "nationality": "FĂ¤rĂ¶er"
+        "nationality": "Färöer"
       },
       {
         "player_id": "168160",
@@ -362,11 +346,11 @@
         "pos": "RM",
         "strength": "6.3",
         "age": 22,
-        "nationality": "DĂ¤nemark"
+        "nationality": "Dänemark"
       },
       {
         "player_id": "158691",
-        "player": "RĂłbert PĂˇtzay",
+        "player": "Róbert Pátzay",
         "pos": "ZM",
         "strength": "6.9",
         "age": 24,
@@ -398,11 +382,11 @@
       },
       {
         "player_id": "127742",
-        "player": "SĂ¸ren Justinussen",
+        "player": "Søren Justinussen",
         "pos": "ST",
         "strength": "7.9",
         "age": 33,
-        "nationality": "FĂ¤rĂ¶er"
+        "nationality": "Färöer"
       },
       {
         "player_id": "135690",
@@ -472,7 +456,7 @@
       },
       {
         "player_id": "123973",
-        "player": "Bertrand MouniĂ©",
+        "player": "Bertrand Mounié",
         "pos": "LV",
         "strength": "5.1",
         "age": 36,
@@ -488,7 +472,7 @@
       },
       {
         "player_id": "122374",
-        "player": "Jacinto BarquĂ­n",
+        "player": "Jacinto Barquín",
         "pos": "MD",
         "strength": "5.9",
         "age": 34,
@@ -604,7 +588,7 @@
         "pos": "ST",
         "strength": "3.6",
         "age": 22,
-        "nationality": "Ă–sterreich"
+        "nationality": "Österreich"
       }
     ],
     "5012": [
@@ -614,11 +598,11 @@
         "pos": "TW",
         "strength": "6.8",
         "age": 23,
-        "nationality": "SĂĽdkorea"
+        "nationality": "Südkorea"
       },
       {
         "player_id": "161969",
-        "player": "Leonel de JesĂşs Velasco",
+        "player": "Leonel de Jesús Velasco",
         "pos": "TW",
         "strength": "5.6",
         "age": 24,
@@ -646,7 +630,7 @@
         "pos": "LIB",
         "strength": "7.3",
         "age": 29,
-        "nationality": "SĂĽdafrika"
+        "nationality": "Südafrika"
       },
       {
         "player_id": "141295",
@@ -702,7 +686,7 @@
         "pos": "LM RM",
         "strength": "8.3",
         "age": 29,
-        "nationality": "TĂĽrkei"
+        "nationality": "Türkei"
       },
       {
         "player_id": "136298",
