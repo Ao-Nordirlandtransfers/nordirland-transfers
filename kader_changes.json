@@ -1,5 +1,37 @@
 [
   {
+    "id": "173982-None-5015-30.07.2026",
+    "date": "30.07.2026",
+    "player_id": "173982",
+    "player": "Gert Heirman",
+    "pos": "ST",
+    "strength": "5.7",
+    "age": 22,
+    "nationality": "Belgien",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Loughgall FV",
+    "to_club_id": "5015",
+    "is_loan": false,
+    "detected_at": "2026-07-30T18:22:19.551870+00:00"
+  },
+  {
+    "id": "137985-None-5010-30.07.2026",
+    "date": "30.07.2026",
+    "player_id": "137985",
+    "player": "Saleh Al-Dawod",
+    "pos": "MD",
+    "strength": "7.1",
+    "age": 30,
+    "nationality": "Saudi-Arabien",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Ballymoney Soccer",
+    "to_club_id": "5010",
+    "is_loan": false,
+    "detected_at": "2026-07-30T18:22:17.846348+00:00"
+  },
+  {
     "id": "160753-4660-None-30.07.2026",
     "date": "30.07.2026",
     "player_id": "160753",
