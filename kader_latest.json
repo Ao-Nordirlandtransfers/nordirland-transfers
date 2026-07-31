@@ -1,5 +1,5 @@
 {
-  "date": "30.07.2026",
+  "date": "31.07.2026",
   "clubs": {
     "4668": [
       {
@@ -145,14 +145,6 @@
         "strength": "7.7",
         "age": 26,
         "nationality": "Dänemark"
-      },
-      {
-        "player_id": "162083",
-        "player": "Oz Sayar",
-        "pos": "ZM",
-        "strength": "6.0",
-        "age": 24,
-        "nationality": "Israel"
       },
       {
         "player_id": "160798",
@@ -1587,14 +1579,6 @@
         "nationality": "Deutschland"
       },
       {
-        "player_id": "177611",
-        "player": "Carl Tad",
-        "pos": "RV",
-        "strength": "5.3",
-        "age": 21,
-        "nationality": "Nordirland"
-      },
-      {
         "player_id": "184820",
         "player": "Chris Kynan",
         "pos": "RV",
@@ -1924,14 +1908,6 @@
         "pos": "LIB",
         "strength": "6.3",
         "age": 33,
-        "nationality": "Nordirland"
-      },
-      {
-        "player_id": "148291",
-        "player": "David Gossip",
-        "pos": "LIB",
-        "strength": "5.0",
-        "age": 27,
         "nationality": "Nordirland"
       },
       {

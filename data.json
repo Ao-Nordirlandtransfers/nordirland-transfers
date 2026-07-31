@@ -1,5 +1,53 @@
 [
   {
+    "id": "162083-4668-5313-31.07.2026",
+    "pos": "ZM",
+    "player": "O. Sayar",
+    "player_id": "162083",
+    "strength": "6.0",
+    "age": 24,
+    "nationality": "Israel",
+    "from_club": "Crusaders FV",
+    "from_club_id": "4668",
+    "to_club": "SCN St. Pölten",
+    "to_club_id": "5313",
+    "date": "31.07.2026",
+    "scraped_at": "2026-07-31T09:34:52.568010+00:00",
+    "is_loan": false
+  },
+  {
+    "id": "177611-5007-524-31.07.2026",
+    "pos": "RV",
+    "player": "C. Tad",
+    "player_id": "177611",
+    "strength": "5.3",
+    "age": 21,
+    "nationality": "Nordirland",
+    "from_club": "Cerrick Rangers",
+    "from_club_id": "5007",
+    "to_club": "Norwich Town",
+    "to_club_id": "524",
+    "date": "31.07.2026",
+    "scraped_at": "2026-07-31T09:34:52.568172+00:00",
+    "is_loan": false
+  },
+  {
+    "id": "148291-5013-5779-31.07.2026",
+    "pos": "LIB",
+    "player": "D. Gossip",
+    "player_id": "148291",
+    "strength": "5.0",
+    "age": 27,
+    "nationality": "Nordirland",
+    "from_club": "Brantwood FV",
+    "from_club_id": "5013",
+    "to_club": "Umeå SK",
+    "to_club_id": "5779",
+    "date": "31.07.2026",
+    "scraped_at": "2026-07-31T09:34:52.568304+00:00",
+    "is_loan": false
+  },
+  {
     "id": "137985-4660-5010-30.07.2026",
     "pos": "MD",
     "player": "S. Al-Dawod",
@@ -1777,7 +1825,8 @@
     "to_club": "FV Bologna",
     "to_club_id": "122",
     "date": "01.07.2026",
-    "scraped_at": "2026-07-11T00:00:00+00:00"
+    "scraped_at": "2026-07-11T00:00:00+00:00",
+    "is_loan": false
   },
   {
     "id": "174393-5005-337-01.07.2026",
@@ -1792,6 +1841,7 @@
     "to_club": "FV Wiltz 71",
     "to_club_id": "337",
     "date": "01.07.2026",
-    "scraped_at": "2026-07-11T00:00:00+00:00"
+    "scraped_at": "2026-07-11T00:00:00+00:00",
+    "is_loan": false
   }
 ]
