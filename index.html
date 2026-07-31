@@ -257,6 +257,7 @@
   a.player-link:hover, a.club-link:hover{
     text-decoration: underline;
   }
+  nav a:hover{ color: var(--pitch) !important; }
   td.route{
     font-size: 13px;
     color: var(--ink-soft);
@@ -321,6 +322,17 @@
   </div>
 </div>
 
+<nav style="position: sticky; top: 0; z-index: 20; background: #fff; border-bottom: 1px solid var(--line); overflow-x: auto; white-space: nowrap;">
+  <div style="max-width: 980px; margin: 0 auto; padding: 0.55rem 1.5rem; display: flex; gap: 1.3rem; font-family: 'Space Grotesk', sans-serif; font-size: 12.5px;">
+    <a href="#transfers" style="color: var(--ink-soft); text-decoration: none;">Transfers</a>
+    <a href="#kaderveraenderungen" style="color: var(--ink-soft); text-decoration: none;">Kaderveränderungen</a>
+    <a href="#leihspieler" style="color: var(--ink-soft); text-decoration: none;">Leihspieler</a>
+    <a href="#top11" style="color: var(--ink-soft); text-decoration: none;">Top11</a>
+    <a href="#flop11" style="color: var(--ink-soft); text-decoration: none;">Flop11</a>
+    <a href="#vereine" style="color: var(--ink-soft); text-decoration: none;">Vereine</a>
+  </div>
+</nav>
+
 <header>
   <p class="eyebrow">Anstoss Online &middot; Community-Auswertung</p>
   <h1>Nordirland <em>Transferzentrale</em></h1>
@@ -364,7 +376,7 @@
   </label>
 </div>
 
-<main>
+<main id="transfers">
   <div class="table-scroll">
     <table id="transfer-table">
       <thead>
@@ -384,7 +396,7 @@
   <div class="empty-state" id="empty-state" style="display:none;">Keine Transfers gefunden. Filter zurücksetzen?</div>
 </main>
 
-<main style="margin-top: -1rem;">
+<main id="kaderveraenderungen" style="margin-top: -1rem;">
   <p class="eyebrow" style="margin-bottom: 0.3rem;">Lückenloser Abgleich</p>
   <h2 style="font-family:'Fraunces',serif; font-weight:600; font-size:1.5rem; color:var(--pitch); margin: 0 0 0.4rem;">Alle Kaderveränderungen</h2>
   <p class="subtitle" style="margin-bottom:1rem;">Täglicher Vergleich der Kader aller 20 Premiership-Vereine &ndash; erkennt jeden Zu- und Abgang, unabhängig davon, wie viele Transfers an einem Tag passieren. Wechsel außerhalb der Nordirland1 (Ausland, andere Liga) werden als "außerhalb Nordirland1" markiert, da dort kein Kader mitverglichen wird.</p>
@@ -407,7 +419,7 @@
   <div class="empty-state" id="kader-changes-empty" style="display:none;">Noch keine Kaderveränderungen erfasst. Nach dem zweiten Lauf des Bots erscheinen hier Daten.</div>
 </main>
 
-<main style="margin-top: -1rem;">
+<main id="top11" style="margin-top: -1rem;">
   <p class="eyebrow" style="margin-bottom: 0.3rem;">Community-Wahl</p>
   <h2 style="font-family:'Fraunces',serif; font-weight:600; font-size:1.5rem; color:var(--pitch); margin: 0 0 0.4rem;">Top11 Spieltag 1</h2>
   <p class="subtitle" style="margin-bottom:1rem;">Die beste Elf nach Spielbericht-Noten von Spieltag 1 (1,0 = beste Note). Spieler- und Vereinsnamen sind anklickbar und führen zum jeweiligen Profil.</p>
@@ -531,7 +543,7 @@
 
 </main>
 
-<main style="margin-top: 2rem;">
+<main id="flop11" style="margin-top: 2rem;">
   <p class="eyebrow" style="margin-bottom: 0.3rem;">Community-Wahl</p>
   <h2 style="font-family:'Fraunces',serif; font-weight:600; font-size:1.5rem; color:var(--gold); margin: 0 0 0.4rem;">Flop11 Spieltag 1</h2>
   <p class="subtitle" style="margin-bottom:1rem;">Die schlechteste Elf nach Spielbericht-Noten von Spieltag 1 (6,0 = schlechteste Note). Spieler- und Vereinsnamen sind anklickbar und führen zum jeweiligen Profil.</p>
@@ -655,7 +667,7 @@
 
 </main>
 
-<main style="margin-top: -1rem;">
+<main id="leihspieler" style="margin-top: -1rem;">
   <p class="eyebrow" style="margin-bottom: 0.3rem;">Liga-weit</p>
   <h2 style="font-family:'Fraunces',serif; font-weight:600; font-size:1.5rem; color:var(--pitch); margin: 0 0 0.4rem;">Alle aktuellen Leihspieler</h2>
   <p class="subtitle" style="margin-bottom:1rem;">Alle Spieler, die laut manueller Prüfung gerade bei einem Verein auf Leihbasis spielen &ndash; unabhängig davon, ob dazu ein Transfer-Ereignis erfasst wurde.</p>
@@ -677,7 +689,7 @@
   <div class="empty-state" id="all-loans-empty" style="display:none;">Keine Leihspieler erfasst.</div>
 </main>
 
-<main style="margin-top: -1rem;">
+<main id="vereine" style="margin-top: -1rem;">
   <p class="eyebrow" style="margin-bottom: 0.3rem;">Vereins-Ansicht</p>
   <h2 style="font-family:'Fraunces',serif; font-weight:600; font-size:1.5rem; color:var(--pitch); margin: 0 0 0.4rem;">Zugänge &amp; Abgänge pro Verein</h2>
   <p class="subtitle" style="margin-bottom:1rem;">Verein wählen, um seine Transfers wie bei Transfermarkt gegenüberzustellen &ndash; links die Zugänge, rechts die Abgänge.</p>
@@ -900,7 +912,10 @@
     });
   });
 
-  document.getElementById('search').addEventListener('input', render);
+  document.getElementById('search').addEventListener('input', () => {
+    render();
+    renderKaderChanges();
+  });
   document.getElementById('filter-pos').addEventListener('change', render);
   document.getElementById('filter-nat').addEventListener('change', render);
 
@@ -941,6 +956,7 @@
   let kaderChanges = [];
 
   function renderKaderChanges(){
+    const search = document.getElementById('search').value.trim().toLowerCase();
     const domesticOnly = document.getElementById('filter-domestic').checked;
     const typeFilter = document.getElementById('filter-type').value;
     const body = document.getElementById('kader-changes-body');
@@ -948,6 +964,9 @@
     let filtered = domesticOnly ? kaderChanges.filter(isDomestic) : kaderChanges;
     if(typeFilter === 'loan') filtered = filtered.filter(t => t.is_loan === true);
     if(typeFilter === 'transfer') filtered = filtered.filter(t => t.is_loan === false);
+    if(search){
+      filtered = filtered.filter(t => `${t.player} ${t.from_club} ${t.to_club}`.toLowerCase().includes(search));
+    }
     if(!filtered.length){
       body.innerHTML = '';
       empty.style.display = 'block';
