@@ -1,5 +1,21 @@
 [
   {
+    "id": "114269-4658-455-01.08.2026",
+    "pos": "ST",
+    "player": "A. Feijo",
+    "player_id": "114269",
+    "strength": "5.3",
+    "age": 33,
+    "nationality": "Portugal",
+    "from_club": "Glentoran FV",
+    "from_club_id": "4658",
+    "to_club": "SK Lohhof",
+    "to_club_id": "455",
+    "date": "01.08.2026",
+    "scraped_at": "2026-08-01T07:39:25.841173+00:00",
+    "is_loan": false
+  },
+  {
     "id": "162083-4668-5313-31.07.2026",
     "pos": "ZM",
     "player": "O. Sayar",
