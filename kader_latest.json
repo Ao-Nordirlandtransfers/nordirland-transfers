@@ -2893,7 +2893,7 @@
         "player": "Martin Hester",
         "pos": "ZM",
         "strength": "6.0",
-        "age": 22,
+        "age": 23,
         "nationality": "Nordirland"
       },
       {
@@ -3007,7 +3007,7 @@
         "player": "Marinus Schütz",
         "pos": "RV",
         "strength": "6.0",
-        "age": 24,
+        "age": 25,
         "nationality": "Deutschland"
       },
       {
@@ -3147,14 +3147,6 @@
         "nationality": "Nordirland"
       },
       {
-        "player_id": "114269",
-        "player": "Alastra Feijo",
-        "pos": "ST",
-        "strength": "5.3",
-        "age": 33,
-        "nationality": "Portugal"
-      },
-      {
         "player_id": "103728",
         "player": "Thomas Dries",
         "pos": "ST",
@@ -3173,11 +3165,11 @@
         "nationality": "Tschechien"
       },
       {
-        "player_id": "155075",
-        "player": "Paul Lingard",
+        "player_id": "190673",
+        "player": "Martin Jarvis",
         "pos": "TW",
-        "strength": "1.8",
-        "age": 24,
+        "strength": "3.8",
+        "age": 18,
         "nationality": "Nordirland"
       },
       {

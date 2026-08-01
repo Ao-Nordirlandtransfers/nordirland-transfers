@@ -16,6 +16,23 @@
     "is_loan": false
   },
   {
+    "id": "190673-None-5015-01.08.2026",
+    "pos": "TW",
+    "player": "Martin Jarvis",
+    "player_id": "190673",
+    "strength": "3.8",
+    "age": 18,
+    "nationality": "Nordirland",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Loughgall FV",
+    "to_club_id": "5015",
+    "date": "01.08.2026",
+    "is_loan": false,
+    "scraped_at": "2026-08-01T14:49:19.528803+00:00",
+    "nachgetragen": true
+  },
+  {
     "id": "162083-4668-5313-31.07.2026",
     "pos": "ZM",
     "player": "O. Sayar",
