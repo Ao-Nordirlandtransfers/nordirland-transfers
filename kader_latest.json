@@ -83,14 +83,6 @@
         "nationality": "Serbien"
       },
       {
-        "player_id": "180559",
-        "player": "Cassiano dos Anjos",
-        "pos": "MD",
-        "strength": "4.4",
-        "age": 19,
-        "nationality": "Portugal"
-      },
-      {
         "player_id": "179336",
         "player": "Keith Shanley",
         "pos": "LM",
@@ -681,6 +673,14 @@
         "nationality": "Türkei"
       },
       {
+        "player_id": "179145",
+        "player": "Tomas Narciso",
+        "pos": "LM RM",
+        "strength": "6.9",
+        "age": 20,
+        "nationality": "Italien"
+      },
+      {
         "player_id": "136298",
         "player": "Michael Earith",
         "pos": "RM",
@@ -709,7 +709,7 @@
         "player": "Mark Cronan",
         "pos": "ZM",
         "strength": "5.1",
-        "age": 20,
+        "age": 21,
         "nationality": "Nordirland"
       },
       {
@@ -2201,6 +2201,14 @@
         "nationality": "Nordirland"
       },
       {
+        "player_id": "125141",
+        "player": "Carl Coulson",
+        "pos": "ST",
+        "strength": "9.6",
+        "age": 32,
+        "nationality": "Nordirland"
+      },
+      {
         "player_id": "142832",
         "player": "Romain Bizet",
         "pos": "ST",
@@ -3179,6 +3187,14 @@
         "strength": "5.7",
         "age": 31,
         "nationality": "Nordirland"
+      },
+      {
+        "player_id": "162691",
+        "player": "Patrice Buron",
+        "pos": "LIB",
+        "strength": "5.3",
+        "age": 24,
+        "nationality": "Frankreich"
       },
       {
         "player_id": "114520",
