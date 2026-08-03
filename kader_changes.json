@@ -1,5 +1,21 @@
 [
   {
+    "id": "158691-4660-None-03.08.2026",
+    "date": "03.08.2026",
+    "player_id": "158691",
+    "player": "Róbert Pátzay",
+    "pos": "ZM",
+    "strength": "6.9",
+    "age": 24,
+    "nationality": "Ungarn",
+    "from_club": "Cliftonville FV",
+    "from_club_id": "4660",
+    "to_club": "außerhalb Nordirland1",
+    "to_club_id": null,
+    "is_loan": null,
+    "detected_at": "2026-08-03T12:00:47.564169+00:00"
+  },
+  {
     "id": "180559-4668-None-02.08.2026",
     "date": "02.08.2026",
     "player_id": "180559",

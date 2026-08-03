@@ -1,5 +1,5 @@
 {
-  "date": "02.08.2026",
+  "date": "03.08.2026",
   "clubs": {
     "4668": [
       {
@@ -331,14 +331,6 @@
         "strength": "6.3",
         "age": 22,
         "nationality": "Dänemark"
-      },
-      {
-        "player_id": "158691",
-        "player": "Róbert Pátzay",
-        "pos": "ZM",
-        "strength": "6.9",
-        "age": 24,
-        "nationality": "Ungarn"
       },
       {
         "player_id": "167455",

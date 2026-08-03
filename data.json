@@ -1,5 +1,37 @@
 [
   {
+    "id": "158691-4660-5056-03.08.2026",
+    "pos": "ZM",
+    "player": "R. Pátzay",
+    "player_id": "158691",
+    "strength": "6.9",
+    "age": 24,
+    "nationality": "Ungarn",
+    "from_club": "Cliftonville FV",
+    "from_club_id": "4660",
+    "to_club": "Verzim SC",
+    "to_club_id": "5056",
+    "date": "03.08.2026",
+    "scraped_at": "2026-08-03T12:00:16.686924+00:00",
+    "is_loan": false
+  },
+  {
+    "id": "122288-4890-5007-03.08.2026",
+    "pos": "TW",
+    "player": "B. Kakalisson",
+    "player_id": "122288",
+    "strength": "1.0",
+    "age": 30,
+    "nationality": "Island",
+    "from_club": "Veasa PS",
+    "from_club_id": "4890",
+    "to_club": "Cerrick Rangers",
+    "to_club_id": "5007",
+    "date": "03.08.2026",
+    "scraped_at": "2026-08-03T12:00:16.687037+00:00",
+    "is_loan": false
+  },
+  {
     "id": "125141-89-5010-02.08.2026",
     "pos": "ST",
     "player": "C. Coulson",
