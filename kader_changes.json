@@ -1,5 +1,21 @@
 [
   {
+    "id": "122288-None-5007-03.08.2026",
+    "date": "03.08.2026",
+    "player_id": "122288",
+    "player": "Birkir Kakalisson",
+    "pos": "TW",
+    "strength": "1.0",
+    "age": 30,
+    "nationality": "Island",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Cerrick Rangers",
+    "to_club_id": "5007",
+    "is_loan": false,
+    "detected_at": "2026-08-03T14:03:19.205008+00:00"
+  },
+  {
     "id": "158691-4660-None-03.08.2026",
     "date": "03.08.2026",
     "player_id": "158691",
