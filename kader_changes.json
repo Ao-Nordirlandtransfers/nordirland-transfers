@@ -1,5 +1,21 @@
 [
   {
+    "id": "122041-5010-None-04.08.2026",
+    "date": "04.08.2026",
+    "player_id": "122041",
+    "player": "Marcel Koller",
+    "pos": "ZM",
+    "strength": "8.4",
+    "age": 31,
+    "nationality": "Schweiz",
+    "from_club": "Ballymoney Soccer",
+    "from_club_id": "5010",
+    "to_club": "außerhalb Nordirland1",
+    "to_club_id": null,
+    "is_loan": null,
+    "detected_at": "2026-08-04T08:11:23.424148+00:00"
+  },
+  {
     "id": "122288-None-5007-03.08.2026",
     "date": "03.08.2026",
     "player_id": "122288",

@@ -1,5 +1,21 @@
 [
   {
+    "id": "122041-5010-5339-04.08.2026",
+    "pos": "ZM",
+    "player": "M. Koller",
+    "player_id": "122041",
+    "strength": "8.4",
+    "age": 31,
+    "nationality": "Schweiz",
+    "from_club": "Ballymoney Soccer",
+    "from_club_id": "5010",
+    "to_club": "Wolfsberger AK",
+    "to_club_id": "5339",
+    "date": "04.08.2026",
+    "scraped_at": "2026-08-04T08:09:53.162720+00:00",
+    "is_loan": false
+  },
+  {
     "id": "158691-4660-5056-03.08.2026",
     "pos": "ZM",
     "player": "R. Pátzay",

@@ -2177,14 +2177,6 @@
         "nationality": "Türkei"
       },
       {
-        "player_id": "122041",
-        "player": "Marcel Koller",
-        "pos": "ZM",
-        "strength": "8.4",
-        "age": 31,
-        "nationality": "Schweiz"
-      },
-      {
         "player_id": "172199",
         "player": "Edgar Steven Davids",
         "pos": "ZM",
@@ -3613,7 +3605,7 @@
         "player": "Jozef Kocuvan",
         "pos": "RM",
         "strength": "4.1",
-        "age": 34,
+        "age": 35,
         "nationality": "Slowenien"
       },
       {
