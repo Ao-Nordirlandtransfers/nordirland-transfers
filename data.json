@@ -16,6 +16,23 @@
     "is_loan": false
   },
   {
+    "id": "190944-None-5015-04.08.2026",
+    "pos": "LV",
+    "player": "Kristian Baxter",
+    "player_id": "190944",
+    "strength": "4.1",
+    "age": 17,
+    "nationality": "Nordirland",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Loughgall FV",
+    "to_club_id": "5015",
+    "date": "04.08.2026",
+    "is_loan": false,
+    "scraped_at": "2026-08-04T21:01:36.143938+00:00",
+    "nachgetragen": true
+  },
+  {
     "id": "158691-4660-5056-03.08.2026",
     "pos": "ZM",
     "player": "R. Pátzay",
