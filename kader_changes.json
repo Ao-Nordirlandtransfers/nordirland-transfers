@@ -1,5 +1,21 @@
 [
   {
+    "id": "184799-5012-None-05.08.2026",
+    "date": "05.08.2026",
+    "player_id": "184799",
+    "player": "Alain Preston",
+    "pos": "MD",
+    "strength": "4.1",
+    "age": 18,
+    "nationality": "Nordirland",
+    "from_club": "Ballyclare Comrádaís",
+    "from_club_id": "5012",
+    "to_club": "außerhalb Nordirland1",
+    "to_club_id": null,
+    "is_loan": null,
+    "detected_at": "2026-08-05T12:22:56.941184+00:00"
+  },
+  {
     "id": "190944-None-5015-04.08.2026",
     "date": "04.08.2026",
     "player_id": "190944",

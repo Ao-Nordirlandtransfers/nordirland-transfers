@@ -1,5 +1,21 @@
 [
   {
+    "id": "184799-5012-638-05.08.2026",
+    "pos": "MD",
+    "player": "A. Preston",
+    "player_id": "184799",
+    "strength": "4.1",
+    "age": 18,
+    "nationality": "Nordirland",
+    "from_club": "Ballyclare Comrádaís",
+    "from_club_id": "5012",
+    "to_club": "Diósgyöri FV",
+    "to_club_id": "638",
+    "date": "05.08.2026",
+    "scraped_at": "2026-08-05T12:22:30.797093+00:00",
+    "is_loan": false
+  },
+  {
     "id": "122041-5010-5339-04.08.2026",
     "pos": "ZM",
     "player": "M. Koller",
