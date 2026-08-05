@@ -1,5 +1,21 @@
 [
   {
+    "id": "190951-None-5015-05.08.2026",
+    "date": "05.08.2026",
+    "player_id": "190951",
+    "player": "Andy Selva",
+    "pos": "ST",
+    "strength": "5.7",
+    "age": 18,
+    "nationality": "San Marino",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Loughgall FV",
+    "to_club_id": "5015",
+    "is_loan": false,
+    "detected_at": "2026-08-05T16:56:55.831022+00:00"
+  },
+  {
     "id": "184799-5012-None-05.08.2026",
     "date": "05.08.2026",
     "player_id": "184799",
