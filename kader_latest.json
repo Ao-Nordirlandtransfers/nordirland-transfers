@@ -1,5 +1,5 @@
 {
-  "date": "05.08.2026",
+  "date": "06.08.2026",
   "clubs": {
     "4668": [
       {
@@ -33,6 +33,14 @@
         "strength": "6.4",
         "age": 19,
         "nationality": "Kroatien"
+      },
+      {
+        "player_id": "185760",
+        "player": "Patrick James Coleman McNair",
+        "pos": "LV",
+        "strength": "6.0",
+        "age": 22,
+        "nationality": "Nordirland"
       },
       {
         "player_id": "171563",
@@ -3047,7 +3055,7 @@
         "player": "David Lush",
         "pos": "RM",
         "strength": "3.7",
-        "age": 32,
+        "age": 33,
         "nationality": "Nordirland"
       },
       {
