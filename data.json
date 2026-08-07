@@ -64,6 +64,23 @@
     "is_loan": false
   },
   {
+    "id": "190984-None-4669-06.08.2026",
+    "pos": "RV",
+    "player": "Eusebio Antonio Lagos González",
+    "player_id": "190984",
+    "strength": "4.6",
+    "age": 17,
+    "nationality": "Guatemala",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Institute FV",
+    "to_club_id": "4669",
+    "date": "06.08.2026",
+    "is_loan": false,
+    "scraped_at": "2026-08-07T08:38:50.106455+00:00",
+    "nachgetragen": true
+  },
+  {
     "id": "184799-5012-638-05.08.2026",
     "pos": "MD",
     "player": "A. Preston",
