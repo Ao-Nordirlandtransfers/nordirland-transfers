@@ -1,5 +1,37 @@
 [
   {
+    "id": "127443-358-5010-08.08.2026",
+    "pos": "RM",
+    "player": "G. Dallemagne",
+    "player_id": "127443",
+    "strength": "9.7",
+    "age": 31,
+    "nationality": "Frankreich",
+    "from_club": "MKS Pugon Stettin",
+    "from_club_id": "358",
+    "to_club": "Ballymoney Soccer",
+    "to_club_id": "5010",
+    "date": "08.08.2026",
+    "scraped_at": "2026-08-08T00:05:48.420984+00:00",
+    "is_loan": false
+  },
+  {
+    "id": "139753-5013-4660-08.08.2026",
+    "pos": "LM",
+    "player": "R. Ferrington",
+    "player_id": "139753",
+    "strength": "7.6",
+    "age": 30,
+    "nationality": "Nordirland",
+    "from_club": "Brantwood FV",
+    "from_club_id": "5013",
+    "to_club": "Cliftonville FV",
+    "to_club_id": "4660",
+    "date": "08.08.2026",
+    "scraped_at": "2026-08-08T00:05:48.421144+00:00",
+    "is_loan": false
+  },
+  {
     "id": "113276-5015-4590-07.08.2026",
     "pos": "LM RM",
     "player": "S. Mallett",
@@ -46,6 +78,23 @@
     "date": "07.08.2026",
     "scraped_at": "2026-08-07T01:52:00.256832+00:00",
     "is_loan": false
+  },
+  {
+    "id": "191010-None-5007-07.08.2026",
+    "pos": "TW",
+    "player": "Trevor Stcroix",
+    "player_id": "191010",
+    "strength": "3.2",
+    "age": 21,
+    "nationality": "Saint Lucia",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Cerrick Rangers",
+    "to_club_id": "5007",
+    "date": "07.08.2026",
+    "is_loan": false,
+    "scraped_at": "2026-08-08T00:06:21.308147+00:00",
+    "nachgetragen": true
   },
   {
     "id": "185760-5212-4668-06.08.2026",
