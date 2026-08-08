@@ -1,5 +1,21 @@
 [
   {
+    "id": "139753-None-4660-08.08.2026",
+    "date": "08.08.2026",
+    "player_id": "139753",
+    "player": "Richard Ferrington",
+    "pos": "LM",
+    "strength": "7.6",
+    "age": 30,
+    "nationality": "Nordirland",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Cliftonville FV",
+    "to_club_id": "4660",
+    "is_loan": false,
+    "detected_at": "2026-08-08T11:59:44.188084+00:00"
+  },
+  {
     "id": "191010-None-5007-08.08.2026",
     "date": "08.08.2026",
     "player_id": "191010",
