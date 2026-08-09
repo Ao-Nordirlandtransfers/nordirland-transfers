@@ -1975,14 +1975,6 @@
         "nationality": "Libanon"
       },
       {
-        "player_id": "139753",
-        "player": "Richard Ferrington",
-        "pos": "LM",
-        "strength": "7.6",
-        "age": 30,
-        "nationality": "Nordirland"
-      },
-      {
         "player_id": "139433",
         "player": "Michal Korski",
         "pos": "RM",
@@ -2175,6 +2167,14 @@
         "strength": "3.1",
         "age": 17,
         "nationality": "Nordirland"
+      },
+      {
+        "player_id": "127443",
+        "player": "Gaël Dallemagne",
+        "pos": "RM",
+        "strength": "9.7",
+        "age": 31,
+        "nationality": "Frankreich"
       },
       {
         "player_id": "91754",

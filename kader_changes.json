@@ -1,5 +1,37 @@
 [
   {
+    "id": "139753-5013-None-09.08.2026",
+    "date": "09.08.2026",
+    "player_id": "139753",
+    "player": "Richard Ferrington",
+    "pos": "LM",
+    "strength": "7.6",
+    "age": 30,
+    "nationality": "Nordirland",
+    "from_club": "Brantwood FV",
+    "from_club_id": "5013",
+    "to_club": "außerhalb Nordirland1",
+    "to_club_id": null,
+    "is_loan": null,
+    "detected_at": "2026-08-09T07:59:11.328969+00:00"
+  },
+  {
+    "id": "127443-None-5010-09.08.2026",
+    "date": "09.08.2026",
+    "player_id": "127443",
+    "player": "Gaël Dallemagne",
+    "pos": "RM",
+    "strength": "9.7",
+    "age": 31,
+    "nationality": "Frankreich",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Ballymoney Soccer",
+    "to_club_id": "5010",
+    "is_loan": false,
+    "detected_at": "2026-08-09T07:59:11.328948+00:00"
+  },
+  {
     "id": "111773-4661-None-09.08.2026",
     "date": "09.08.2026",
     "player_id": "111773",
