@@ -16,6 +16,23 @@
     "is_loan": false
   },
   {
+    "id": "191042-None-4658-09.08.2026",
+    "pos": "ZM",
+    "player": "David Grady",
+    "player_id": "191042",
+    "strength": "5.9",
+    "age": 18,
+    "nationality": "Nordirland",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Glentoran FV",
+    "to_club_id": "4658",
+    "date": "09.08.2026",
+    "is_loan": false,
+    "scraped_at": "2026-08-09T18:05:03.202660+00:00",
+    "nachgetragen": true
+  },
+  {
     "id": "127443-358-5010-08.08.2026",
     "pos": "RM",
     "player": "G. Dallemagne",

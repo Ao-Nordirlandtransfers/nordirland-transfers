@@ -3107,6 +3107,14 @@
         "nationality": "Algerien"
       },
       {
+        "player_id": "191042",
+        "player": "David Grady",
+        "pos": "ZM",
+        "strength": "5.9",
+        "age": 18,
+        "nationality": "Nordirland"
+      },
+      {
         "player_id": "186262",
         "player": "Martin Srebotnik",
         "pos": "ZM",
@@ -3135,7 +3143,7 @@
         "player": "Mário Jorge Lobo Zagallo",
         "pos": "ST",
         "strength": "8.3",
-        "age": 33,
+        "age": 34,
         "nationality": "Brasilien"
       },
       {

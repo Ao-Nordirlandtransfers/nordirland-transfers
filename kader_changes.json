@@ -1,5 +1,21 @@
 [
   {
+    "id": "191042-None-4658-09.08.2026",
+    "date": "09.08.2026",
+    "player_id": "191042",
+    "player": "David Grady",
+    "pos": "ZM",
+    "strength": "5.9",
+    "age": 18,
+    "nationality": "Nordirland",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Glentoran FV",
+    "to_club_id": "4658",
+    "is_loan": false,
+    "detected_at": "2026-08-09T18:05:00.650794+00:00"
+  },
+  {
     "id": "139753-5013-None-09.08.2026",
     "date": "09.08.2026",
     "player_id": "139753",
