@@ -1,5 +1,21 @@
 [
   {
+    "id": "179462-410-5013-10.08.2026",
+    "pos": "ZM",
+    "player": "R. Hoppe",
+    "player_id": "179462",
+    "strength": "4.7",
+    "age": 19,
+    "nationality": "Deutschland",
+    "from_club": "Sont Truidense VV",
+    "from_club_id": "410",
+    "to_club": "Brantwood FV",
+    "to_club_id": "5013",
+    "date": "10.08.2026",
+    "scraped_at": "2026-08-10T00:04:43.078067+00:00",
+    "is_loan": false
+  },
+  {
     "id": "111773-4661-339-09.08.2026",
     "pos": "MD",
     "player": "R. Willmoth",
