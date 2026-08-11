@@ -1227,7 +1227,7 @@
         "player": "Jamie Duane",
         "pos": "LM",
         "strength": "5.6",
-        "age": 20,
+        "age": 21,
         "nationality": "Nordirland"
       },
       {
@@ -1397,7 +1397,7 @@
         "player": "Steve Harden",
         "pos": "RV",
         "strength": "7.7",
-        "age": 30,
+        "age": 31,
         "nationality": "England"
       },
       {
@@ -1617,14 +1617,6 @@
         "strength": "3.7",
         "age": 24,
         "nationality": "Bosnien-Herzegowina"
-      },
-      {
-        "player_id": "169140",
-        "player": "Sean Kevin",
-        "pos": "RM",
-        "strength": "5.7",
-        "age": 21,
-        "nationality": "Nordirland"
       },
       {
         "player_id": "180579",
@@ -2161,14 +2153,6 @@
         "nationality": "Kolumbien"
       },
       {
-        "player_id": "136486",
-        "player": "Younès Belhanda",
-        "pos": "LM RM",
-        "strength": "8.0",
-        "age": 32,
-        "nationality": "Marokko"
-      },
-      {
         "player_id": "190212",
         "player": "Leo Stonefield",
         "pos": "LM RM",
@@ -2311,7 +2295,7 @@
         "player": "Nestor Jasseng",
         "pos": "LV RV",
         "strength": "5.1",
-        "age": 23,
+        "age": 24,
         "nationality": "Schweiz"
       },
       {
@@ -3229,14 +3213,6 @@
         "nationality": "Frankreich"
       },
       {
-        "player_id": "114520",
-        "player": "Russell Heaton",
-        "pos": "LV",
-        "strength": "5.7",
-        "age": 32,
-        "nationality": "Nordirland"
-      },
-      {
         "player_id": "161558",
         "player": "Kenny Thoday",
         "pos": "LV",
@@ -3685,7 +3661,7 @@
         "player": "Michael Drexler",
         "pos": "ST",
         "strength": "5.7",
-        "age": 26,
+        "age": 27,
         "nationality": "Deutschland"
       },
       {
