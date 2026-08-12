@@ -1,5 +1,37 @@
 [
   {
+    "id": "147424-5004-5033-13.08.2026",
+    "pos": "MD",
+    "player": "Y. Benayoun",
+    "player_id": "147424",
+    "strength": "4.7",
+    "age": 31,
+    "nationality": "Frankreich",
+    "from_club": "Lurgan Gaelic",
+    "from_club_id": "5004",
+    "to_club": "FV Wörgl",
+    "to_club_id": "5033",
+    "date": "13.08.2026",
+    "scraped_at": "2026-08-12T23:47:17.436005+00:00",
+    "is_loan": false
+  },
+  {
+    "id": "150671-4668-5013-13.08.2026",
+    "pos": "ZM",
+    "player": "P. Bright",
+    "player_id": "150671",
+    "strength": "3.3",
+    "age": 32,
+    "nationality": "Nordirland",
+    "from_club": "Crusaders FV",
+    "from_club_id": "4668",
+    "to_club": "Brantwood FV",
+    "to_club_id": "5013",
+    "date": "13.08.2026",
+    "scraped_at": "2026-08-12T23:47:17.436171+00:00",
+    "is_loan": false
+  },
+  {
     "id": "136486-5010-146-11.08.2026",
     "pos": "LM RM",
     "player": "Y. Belhanda",
