@@ -1,5 +1,5 @@
 {
-  "date": "12.08.2026",
+  "date": "13.08.2026",
   "clubs": {
     "4668": [
       {
@@ -2003,7 +2003,7 @@
         "player": "Neil Coxon",
         "pos": "ZM",
         "strength": "5.9",
-        "age": 21,
+        "age": 22,
         "nationality": "Nordirland"
       },
       {
@@ -2036,6 +2036,14 @@
         "pos": "ZM",
         "strength": "3.7",
         "age": 20,
+        "nationality": "Nordirland"
+      },
+      {
+        "player_id": "150671",
+        "player": "Patrick Bright",
+        "pos": "ZM",
+        "strength": "3.3",
+        "age": 32,
         "nationality": "Nordirland"
       },
       {
