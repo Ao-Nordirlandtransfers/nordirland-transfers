@@ -1,5 +1,5 @@
 {
-  "date": "13.08.2026",
+  "date": "14.08.2026",
   "clubs": {
     "4668": [
       {
@@ -1999,6 +1999,14 @@
         "nationality": "Nordirland"
       },
       {
+        "player_id": "184898",
+        "player": "Chris Slaymaker",
+        "pos": "ZM",
+        "strength": "5.3",
+        "age": 18,
+        "nationality": "England"
+      },
+      {
         "player_id": "190664",
         "player": "Bocar Calcine",
         "pos": "ZM",
@@ -2505,7 +2513,7 @@
         "player": "Jarkko Turunen",
         "pos": "MD",
         "strength": "5.0",
-        "age": 31,
+        "age": 32,
         "nationality": "Finnland"
       },
       {

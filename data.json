@@ -1,5 +1,21 @@
 [
   {
+    "id": "184898-547-5013-14.08.2026",
+    "pos": "ZM",
+    "player": "C. Slaymaker",
+    "player_id": "184898",
+    "strength": "5.3",
+    "age": 18,
+    "nationality": "England",
+    "from_club": "Buurnemouth",
+    "from_club_id": "547",
+    "to_club": "Brantwood FV",
+    "to_club_id": "5013",
+    "date": "14.08.2026",
+    "scraped_at": "2026-08-14T06:20:54.927661+00:00",
+    "is_loan": false
+  },
+  {
     "id": "147424-5004-5033-13.08.2026",
     "pos": "MD",
     "player": "Y. Benayoun",

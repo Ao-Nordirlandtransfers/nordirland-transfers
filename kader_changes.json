@@ -1,5 +1,21 @@
 [
   {
+    "id": "184898-None-5013-14.08.2026",
+    "date": "14.08.2026",
+    "player_id": "184898",
+    "player": "Chris Slaymaker",
+    "pos": "ZM",
+    "strength": "5.3",
+    "age": 18,
+    "nationality": "England",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Brantwood FV",
+    "to_club_id": "5013",
+    "is_loan": false,
+    "detected_at": "2026-08-14T06:21:23.529723+00:00"
+  },
+  {
     "id": "150671-4668-None-13.08.2026",
     "date": "13.08.2026",
     "player_id": "150671",
