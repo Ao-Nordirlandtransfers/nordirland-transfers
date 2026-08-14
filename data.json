@@ -1,5 +1,37 @@
 [
   {
+    "id": "184707-184-5013-15.08.2026",
+    "pos": "RV",
+    "player": "H. Ruben Gola",
+    "player_id": "184707",
+    "strength": "5.1",
+    "age": 18,
+    "nationality": "Portugal",
+    "from_club": "FV Porto",
+    "from_club_id": "184",
+    "to_club": "Brantwood FV",
+    "to_club_id": "5013",
+    "date": "15.08.2026",
+    "scraped_at": "2026-08-14T23:26:30.822586+00:00",
+    "is_loan": false
+  },
+  {
+    "id": "171563-4668-5616-15.08.2026",
+    "pos": "LV",
+    "player": "B. Hiley",
+    "player_id": "171563",
+    "strength": "4.3",
+    "age": 21,
+    "nationality": "Nordirland",
+    "from_club": "Crusaders FV",
+    "from_club_id": "4668",
+    "to_club": "FSK Baunatal",
+    "to_club_id": "5616",
+    "date": "15.08.2026",
+    "scraped_at": "2026-08-14T23:26:30.822745+00:00",
+    "is_loan": false
+  },
+  {
     "id": "184898-547-5013-14.08.2026",
     "pos": "ZM",
     "player": "C. Slaymaker",
