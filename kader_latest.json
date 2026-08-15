@@ -1499,6 +1499,14 @@
     ],
     "5007": [
       {
+        "player_id": "191123",
+        "player": "Andres Barrios",
+        "pos": "TW",
+        "strength": "5.2",
+        "age": 17,
+        "nationality": "Chile"
+      },
+      {
         "player_id": "182691",
         "player": "Mark Ahearn",
         "pos": "TW",
