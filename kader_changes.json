@@ -1,5 +1,37 @@
 [
   {
+    "id": "171563-4668-None-15.08.2026",
+    "date": "15.08.2026",
+    "player_id": "171563",
+    "player": "Bruce Hiley",
+    "pos": "LV",
+    "strength": "4.3",
+    "age": 21,
+    "nationality": "Nordirland",
+    "from_club": "Crusaders FV",
+    "from_club_id": "4668",
+    "to_club": "außerhalb Nordirland1",
+    "to_club_id": null,
+    "is_loan": null,
+    "detected_at": "2026-08-15T11:25:08.839554+00:00"
+  },
+  {
+    "id": "175043-None-5012-15.08.2026",
+    "date": "15.08.2026",
+    "player_id": "175043",
+    "player": "Tobias Lindt",
+    "pos": "MD",
+    "strength": "6.0",
+    "age": 23,
+    "nationality": "Schweden",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Ballyclare Comrádaís",
+    "to_club_id": "5012",
+    "is_loan": true,
+    "detected_at": "2026-08-15T11:25:08.839535+00:00"
+  },
+  {
     "id": "184707-None-5013-15.08.2026",
     "date": "15.08.2026",
     "player_id": "184707",

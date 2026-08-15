@@ -32,6 +32,23 @@
     "is_loan": false
   },
   {
+    "id": "175043-5573-5012-15.08.2026",
+    "pos": "MD",
+    "player": "Tobias Lindt",
+    "player_id": "175043",
+    "strength": "6.0",
+    "age": 23,
+    "nationality": "Schweden",
+    "from_club": "Jünköpings Södra IF",
+    "from_club_id": "5573",
+    "to_club": "Ballyclare Comrádaís",
+    "to_club_id": "5012",
+    "date": "15.08.2026",
+    "is_loan": true,
+    "scraped_at": "2026-08-15T11:25:12.022802+00:00",
+    "nachgetragen": true
+  },
+  {
     "id": "184898-547-5013-14.08.2026",
     "pos": "ZM",
     "player": "C. Slaymaker",

@@ -43,14 +43,6 @@
         "nationality": "Nordirland"
       },
       {
-        "player_id": "171563",
-        "player": "Bruce Hiley",
-        "pos": "LV",
-        "strength": "4.3",
-        "age": 21,
-        "nationality": "Nordirland"
-      },
-      {
         "player_id": "172033",
         "player": "Janus Skarðenni",
         "pos": "LV RV",
@@ -639,6 +631,14 @@
         "strength": "8.0",
         "age": 22,
         "nationality": "England"
+      },
+      {
+        "player_id": "175043",
+        "player": "Tobias Lindt",
+        "pos": "MD",
+        "strength": "6.0",
+        "age": 23,
+        "nationality": "Schweden"
       },
       {
         "player_id": "181712",
