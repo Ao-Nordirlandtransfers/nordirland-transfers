@@ -262,8 +262,8 @@
     font-size: 13px;
     color: var(--ink-soft);
     white-space: normal;
-    min-width: 220px;
-    max-width: 320px;
+    min-width: 320px;
+    max-width: 460px;
   }
   td.route b{ color: var(--ink); font-weight: 600; }
   td.route .arrow-icon{ color: var(--gold); margin: 0 0.35rem; }
@@ -359,6 +359,18 @@
     <span><span class="domestic-star">★</span> = beide Vereine aus Nordirland1</span>
     <span><span class="loan-badge" style="margin-left:0;">Leihe</span> = Leihgeschäft statt fester Transfer</span>
   </div>
+
+  <div style="margin-top:1.6rem; padding:1rem 1.2rem; background:var(--parchment-dim); border-radius:6px;">
+    <p style="font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:var(--pitch); margin:0 0 0.6rem;">Was diese Seite kann</p>
+    <ul style="margin:0; padding-left:1.1rem; font-size:13px; line-height:1.9; color:var(--ink-soft);">
+      <li><a href="#transfers" style="color:var(--ink);">Transfers</a> &ndash; automatisch erfasste Wechsel mit Suche &amp; Filtern (Position, Nationalität, Leihe/Transfer, nur Nordirland-intern)</li>
+      <li><a href="#kaderveraenderungen" style="color:var(--ink);">Kaderveränderungen</a> &ndash; lückenloser täglicher Abgleich aller 20 Kader, erkennt auch Wechsel, die die Transferliste verpasst</li>
+      <li><a href="#leihspieler" style="color:var(--ink);">Leihspieler</a> &ndash; alle aktuell verliehenen Spieler liga-weit auf einen Blick</li>
+      <li><a href="#top11" style="color:var(--ink);">Top11 / Flop11</a> &ndash; beste und schlechteste Aufstellung nach Spielbericht-Noten, mit Vereinswappen und anklickbaren Profilen</li>
+      <li><a href="#vereine" style="color:var(--ink);">Vereins-Ansicht</a> &ndash; Zugänge, Abgänge und aktuelle Leihspieler für einen einzelnen Verein</li>
+      <li><a href="#uebersicht" style="color:var(--ink);">Übersicht</a> &ndash; Zugänge, Abgänge und Leihen je Verein in einer Tabelle</li>
+    </ul>
+  </div>
 </header>
 
 <div class="controls">
@@ -398,6 +410,7 @@
     </table>
   </div>
   <div class="empty-state" id="empty-state" style="display:none;">Keine Transfers gefunden. Filter zurücksetzen?</div>
+  <p id="transfers-limit-note" style="font-size:12px; color:var(--ink-soft); margin-top:0.5rem;"></p>
 </main>
 
 <main id="kaderveraenderungen" style="margin-top: -1rem;">
@@ -421,6 +434,7 @@
     </table>
   </div>
   <div class="empty-state" id="kader-changes-empty" style="display:none;">Noch keine Kaderveränderungen erfasst. Nach dem zweiten Lauf des Bots erscheinen hier Daten.</div>
+  <p id="kaderchanges-limit-note" style="font-size:12px; color:var(--ink-soft); margin-top:0.5rem;"></p>
 </main>
 
 <main id="top11" style="margin-top: -1rem;">
@@ -912,7 +926,10 @@
     }
     empty.style.display = 'none';
 
-    body.innerHTML = filtered.map(t => `
+    const totalCount = filtered.length;
+    const shown = filtered.slice(0, 50);
+
+    body.innerHTML = shown.map(t => `
       <tr>
         <td class="date">${t.date || '–'}</td>
         <td class="pos">${posBadge(t.pos)}</td>
@@ -923,6 +940,11 @@
         <td class="route"><b>${crestImg(t.from_club_id)}${clubLink(t.from_club, t.from_club_id)}</b><span class="arrow-icon">&rarr;</span><b>${crestImg(t.to_club_id)}${clubLink(t.to_club, t.to_club_id)}</b>${loanBadge(t)}</td>
       </tr>
     `).join('');
+
+    const noteEl = document.getElementById('transfers-limit-note');
+    if(noteEl){
+      noteEl.textContent = totalCount > 50 ? `Zeige die neuesten 50 von ${totalCount} Treffern.` : '';
+    }
   }
 
   document.querySelectorAll('thead th').forEach(th => {
@@ -997,7 +1019,9 @@
     }
     empty.style.display = 'none';
     const sorted = [...filtered].sort((a,b) => parseDate(b.date) - parseDate(a.date));
-    body.innerHTML = sorted.map(t => `
+    const totalCount = sorted.length;
+    const shown = sorted.slice(0, 50);
+    body.innerHTML = shown.map(t => `
       <tr>
         <td class="date">${t.date || '–'}</td>
         <td class="pos">${posBadge(t.pos)}</td>
@@ -1008,6 +1032,10 @@
         <td class="route"><b>${crestImg(t.from_club_id)}${clubLink(t.from_club, t.from_club_id)}</b><span class="arrow-icon">&rarr;</span><b>${crestImg(t.to_club_id)}${clubLink(t.to_club, t.to_club_id)}</b>${loanBadge(t)}</td>
       </tr>
     `).join('');
+    const noteEl2 = document.getElementById('kaderchanges-limit-note');
+    if(noteEl2){
+      noteEl2.textContent = totalCount > 50 ? `Zeige die neuesten 50 von ${totalCount} Treffern.` : '';
+    }
   }
 
   try{
