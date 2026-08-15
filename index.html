@@ -261,6 +261,9 @@
   td.route{
     font-size: 13px;
     color: var(--ink-soft);
+    white-space: normal;
+    min-width: 220px;
+    max-width: 320px;
   }
   td.route b{ color: var(--ink); font-weight: 600; }
   td.route .arrow-icon{ color: var(--gold); margin: 0 0.35rem; }
@@ -330,6 +333,7 @@
     <a href="#top11" style="color: var(--ink-soft); text-decoration: none;">Top11</a>
     <a href="#flop11" style="color: var(--ink-soft); text-decoration: none;">Flop11</a>
     <a href="#vereine" style="color: var(--ink-soft); text-decoration: none;">Vereine</a>
+    <a href="#uebersicht" style="color: var(--ink-soft); text-decoration: none;">Übersicht</a>
   </div>
 </nav>
 
@@ -733,6 +737,25 @@
   <div class="empty-state" id="club-none-selected">Wähle oben einen Verein aus, um seine Zu- und Abgänge zu sehen.</div>
 </main>
 
+<main id="uebersicht" style="margin-top: -1rem;">
+  <p class="eyebrow" style="margin-bottom: 0.3rem;">Gesamtüberblick</p>
+  <h2 style="font-family:'Fraunces',serif; font-weight:600; font-size:1.5rem; color:var(--pitch); margin: 0 0 0.4rem;">Deals pro Verein</h2>
+  <p class="subtitle" style="margin-bottom:1rem;">Zugänge, Abgänge und Leihgeschäfte je Verein auf einen Blick.</p>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>Verein</th>
+          <th>Zugänge</th>
+          <th>Abgänge</th>
+          <th>Leihen</th>
+        </tr>
+      </thead>
+      <tbody id="club-summary-body"></tbody>
+    </table>
+  </div>
+</main>
+
 <footer>
   Datenquelle: <a href="https://www.anstoss-online.de/?do=land&land_id=240" target="_blank" rel="noopener">anstoss-online.de &ndash; Länderseite Nordirland</a>.
   Diese Seite ist ein inoffizielles Community-Projekt und aktualisiert sich automatisch einmal nachts.
@@ -1034,6 +1057,46 @@
     return true;
   });
   updateExtraStats(allTransfers);
+
+  // --- Deals pro Verein ---
+  try{
+    function isLoanEntry(t){
+      const manual = manualLoans[t.player_id];
+      return manual !== undefined ? manual === true : t.is_loan === true;
+    }
+
+    const summary = {}; // club name -> {in, out, loans}
+    clubsList.forEach(c => { summary[c.name] = { in: 0, out: 0, loans: 0, id: c.id }; });
+
+    allTransfers.forEach(t => {
+      if(t.to_club && summary[t.to_club]){
+        summary[t.to_club].in++;
+        if(isLoanEntry(t)) summary[t.to_club].loans++;
+      }
+      if(t.from_club && summary[t.from_club]){
+        summary[t.from_club].out++;
+        if(isLoanEntry(t)) summary[t.from_club].loans++;
+      }
+    });
+
+    const summaryBody = document.getElementById('club-summary-body');
+    summaryBody.innerHTML = clubsList
+      .slice()
+      .sort((a, b) => a.name.localeCompare(b.name, 'de'))
+      .map(c => {
+        const s = summary[c.name];
+        return `
+          <tr>
+            <td class="route">${crestImg(c.id)}${clubLink(c.name, c.id)}</td>
+            <td class="num">${s.in}</td>
+            <td class="num">${s.out}</td>
+            <td class="num">${s.loans}</td>
+          </tr>
+        `;
+      }).join('');
+  }catch(e){
+    console.error('Fehler beim Aufbau der Deals-Übersicht:', e);
+  }
 
   // --- Vereins-Ansicht: Zugänge links, Abgänge rechts ---
   let kaderLatest = { clubs: {} };
