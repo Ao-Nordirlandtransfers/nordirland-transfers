@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nordirland Transferzentrale &middot; Anstoss Online</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pitch: #0C7C3D;
+    --pitch-light: #129651;
+    --parchment: #FFFFFF;
+    --parchment-dim: #EAF5EE;
+    --ink: #0B211A;
+    --ink-soft: #4F5F58;
+    --gold: #D6252F;
+    --gold-soft: #FFFFFF;
+    --line: #D7E8DC;
+    --pos-tw: #1E6FD9;
+    --pos-def: #1B9E5A;
+    --pos-mid: #E0A62B;
+    --pos-att: #D6252F;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body{
+    margin: 0;
+    background: var(--parchment);
+    color: var(--ink);
+    font-family: 'Space Grotesk', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ---------- Ticker ---------- */
+  .ticker-wrap{
+    background: var(--pitch);
+    border-bottom: 2px solid var(--gold);
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+  }
+  .ticker-wrap::after{
+    content: "";
+    position: absolute; inset: 0;
+    pointer-events: none;
+    background: linear-gradient(90deg, var(--pitch) 0%, transparent 6%, transparent 94%, var(--pitch) 100%);
+  }
+  .ticker{
+    display: inline-flex;
+    padding: 9px 0;
+    animation: scroll-left 90s linear infinite;
+    will-change: transform;
+  }
+  .ticker span{
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    color: var(--gold-soft);
+    letter-spacing: 0.02em;
+    padding: 0 2.2rem;
+    border-right: 1px solid rgba(255,255,255,0.35);
+  }
+  @keyframes scroll-left{
+    from{ transform: translateX(0); }
+    to{ transform: translateX(-50%); }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .ticker{ animation: none; }
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 1.5rem;
+  }
+  .eyebrow{
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin: 0 0 0.6rem;
+  }
+  h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(2.1rem, 5vw, 3.1rem);
+    line-height: 1.05;
+    margin: 0 0 0.5rem;
+    color: var(--pitch);
+  }
+  h1 em{
+    font-style: italic;
+    font-weight: 500;
+    color: var(--gold);
+  }
+  .subtitle{
+    color: var(--ink-soft);
+    font-size: 15.5px;
+    max-width: 46ch;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .stat-row{
+    display: flex;
+    gap: 2.2rem;
+    margin-top: 1.8rem;
+    flex-wrap: wrap;
+  }
+  .stat{
+    border-left: 2px solid var(--line);
+    padding-left: 0.7rem;
+  }
+  .stat .num{
+    font-family: 'Space Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--pitch);
+    display: block;
+  }
+  .stat .label{
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+  }
+
+  /* ---------- Controls ---------- */
+  .controls{
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .controls input[type="text"],
+  .controls select{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    padding: 0.6rem 0.85rem;
+    border: 1.5px solid var(--line);
+    background: #fff;
+    color: var(--ink);
+    border-radius: 3px;
+  }
+  .controls input[type="text"]{
+    flex: 1 1 220px;
+  }
+  .controls input[type="text"]:focus,
+  .controls select:focus{
+    outline: 2px solid var(--gold);
+    outline-offset: 1px;
+    border-color: var(--gold);
+  }
+
+  /* ---------- Table ---------- */
+  main{
+    max-width: 980px;
+    margin: 1.4rem auto 4rem;
+    padding: 0 1.5rem;
+  }
+  .table-scroll{
+    overflow-x: auto;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    background: #fff;
+  }
+  table{
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 720px;
+  }
+  thead th{
+    position: sticky;
+    top: 0;
+    background: var(--pitch);
+    color: var(--parchment);
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.75rem 0.9rem;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+  }
+  thead th:hover{ background: var(--pitch-light); }
+  thead th .arrow{ color: var(--gold); margin-left: 4px; font-size: 10px; }
+
+  tbody tr{
+    border-top: 1px solid var(--parchment-dim);
+    transition: background 0.12s ease;
+  }
+  tbody tr:nth-child(even){ background: #F3FBF6; }
+  tbody tr:hover{ background: #E1F4E8; }
+
+  td{
+    padding: 0.65rem 0.9rem;
+    font-size: 13.5px;
+    white-space: nowrap;
+  }
+  td.player{
+    font-weight: 600;
+    color: var(--pitch);
+  }
+  td.pos{
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .pos-badge{
+    display: inline-block;
+    padding: 2px 7px;
+    border-radius: 3px;
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
+  .pos-badge.tw{ background: var(--pos-tw); }
+  .pos-badge.def{ background: var(--pos-def); }
+  .pos-badge.mid{ background: var(--pos-mid); color: #3A2C05; }
+  .pos-badge.att{ background: var(--pos-att); }
+  .pos-badge.neutral{ background: #9AA8A1; }
+  .domestic-star{
+    color: var(--pos-mid);
+    margin-right: 3px;
+    font-size: 12px;
+  }
+  .loan-badge{
+    display: inline-block;
+    padding: 1px 6px;
+    margin-left: 6px;
+    border-radius: 3px;
+    background: #E7EEF7;
+    color: #2B4C7A;
+    font-size: 10.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    vertical-align: middle;
+  }
+  a.player-link, a.club-link{
+    color: inherit;
+    text-decoration: none;
+  }
+  a.player-link:hover, a.club-link:hover{
+    text-decoration: underline;
+  }
+  nav a:hover{ color: var(--pitch) !important; }
+  td.route{
+    font-size: 13px;
+    color: var(--ink-soft);
+    white-space: normal;
+    min-width: 220px;
+    max-width: 320px;
+  }
+  td.route b{ color: var(--ink); font-weight: 600; }
+  td.route .arrow-icon{ color: var(--gold); margin: 0 0.35rem; }
+  td.num{ font-family: 'Space Mono', monospace; }
+  td.date{ font-family: 'Space Mono', monospace; color: var(--ink-soft); font-size: 12.5px; }
+
+  .crest{
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    vertical-align: -3px;
+    margin-right: 4px;
+    border-radius: 2px;
+  }
+
+  .checkbox-label{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 13px;
+    color: var(--ink-soft);
+    cursor: pointer;
+    user-select: none;
+  }
+  .checkbox-label input{ accent-color: var(--pitch); width: 15px; height: 15px; }
+
+  .empty-state{
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--ink-soft);
+    font-size: 14px;
+  }
+
+  footer{
+    max-width: 980px;
+    margin: 0 auto 3rem;
+    padding: 1rem 1.5rem 0;
+    border-top: 1px solid var(--line);
+    padding-top: 1.2rem;
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+  footer a{ color: var(--pitch); }
+
+  #club-columns{ display:none; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+  @media (max-width: 640px){
+    #club-columns{ grid-template-columns: 1fr; }
+  }
+
+  :focus-visible{ outline: 2px solid var(--gold); outline-offset: 2px; }
+</style>
+</head>
+<body>
+
+<div class="ticker-wrap">
+  <div class="ticker" id="ticker">
+    <!-- wird per JS befüllt (zweifach für nahtlose Schleife) -->
+  </div>
+</div>
+
+<nav style="position: sticky; top: 0; z-index: 20; background: #fff; border-bottom: 1px solid var(--line); overflow-x: auto; white-space: nowrap;">
+  <div style="max-width: 980px; margin: 0 auto; padding: 0.55rem 1.5rem; display: flex; gap: 1.3rem; font-family: 'Space Grotesk', sans-serif; font-size: 12.5px;">
+    <a href="#transfers" style="color: var(--ink-soft); text-decoration: none;">Transfers</a>
+    <a href="#kaderveraenderungen" style="color: var(--ink-soft); text-decoration: none;">Kaderveränderungen</a>
+    <a href="#leihspieler" style="color: var(--ink-soft); text-decoration: none;">Leihspieler</a>
+    <a href="#top11" style="color: var(--ink-soft); text-decoration: none;">Top11</a>
+    <a href="#flop11" style="color: var(--ink-soft); text-decoration: none;">Flop11</a>
+    <a href="#vereine" style="color: var(--ink-soft); text-decoration: none;">Vereine</a>
+    <a href="#uebersicht" style="color: var(--ink-soft); text-decoration: none;">Übersicht</a>
+  </div>
+</nav>
+
+<header>
+  <p class="eyebrow">Anstoss Online &middot; Community-Auswertung</p>
+  <h1>Nordirland <em>Transferzentrale</em></h1>
+  <p class="subtitle">Alle bislang erfassten Transfers rund um nordirische Vereine &ndash; automatisch gesammelt aus der öffentlichen Länderseite, angelehnt an eine Transfermarkt-Ansicht.</p>
+
+  <div class="stat-row">
+    <div class="stat"><span class="num" id="stat-total">&ndash;</span><span class="label">Transfers erfasst</span></div>
+    <div class="stat"><span class="num" id="stat-clubs">&ndash;</span><span class="label">Vereine beteiligt</span></div>
+    <div class="stat"><span class="num" id="stat-updated">&ndash;</span><span class="label">Zuletzt aktualisiert</span></div>
+    <div class="stat"><span class="num" id="stat-active-club" style="font-size:1.1rem;">&ndash;</span><span class="label">Aktivster Verein</span></div>
+    <div class="stat"><span class="num" id="stat-top-in" style="font-size:1.1rem;">&ndash;</span><span class="label">Stärkster Zugang</span></div>
+    <div class="stat"><span class="num" id="stat-top-out" style="font-size:1.1rem;">&ndash;</span><span class="label">Stärkster Abgang</span></div>
+  </div>
+
+  <div style="margin-top:1.4rem; display:flex; gap:1.1rem; flex-wrap:wrap; align-items:center; font-size:12px; color:var(--ink-soft);">
+    <span class="pos-badge tw">TW</span>
+    <span class="pos-badge def">Abwehr</span>
+    <span class="pos-badge mid">Mittelfeld</span>
+    <span class="pos-badge att">Sturm</span>
+    <span><span class="domestic-star">★</span> = beide Vereine aus Nordirland1</span>
+    <span><span class="loan-badge" style="margin-left:0;">Leihe</span> = Leihgeschäft statt fester Transfer</span>
+  </div>
+</header>
+
+<div class="controls">
+  <input type="text" id="search" placeholder="Spieler oder Verein suchen…" aria-label="Suche">
+  <select id="filter-pos" aria-label="Position filtern">
+    <option value="">Alle Positionen</option>
+  </select>
+  <select id="filter-nat" aria-label="Nationalität filtern">
+    <option value="">Alle Nationalitäten</option>
+  </select>
+  <select id="filter-type" aria-label="Leihe oder Transfer filtern">
+    <option value="">Leihe &amp; Transfer</option>
+    <option value="loan">Nur Leihen</option>
+    <option value="transfer">Nur Transfers</option>
+  </select>
+  <label class="checkbox-label">
+    <input type="checkbox" id="filter-domestic">
+    Nur Nordirland-intern <span class="domestic-star" style="margin:0;">★</span>
+  </label>
+</div>
+
+<main id="transfers">
+  <div class="table-scroll">
+    <table id="transfer-table">
+      <thead>
+        <tr>
+          <th data-key="date">Datum</th>
+          <th data-key="pos">Pos.</th>
+          <th data-key="player">Spieler</th>
+          <th data-key="nationality">Nat.</th>
+          <th data-key="strength">Stärke</th>
+          <th data-key="age">Alter</th>
+          <th data-key="from_club">Von &rarr; Nach</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+  </div>
+  <div class="empty-state" id="empty-state" style="display:none;">Keine Transfers gefunden. Filter zurücksetzen?</div>
+</main>
+
+<main id="kaderveraenderungen" style="margin-top: -1rem;">
+  <p class="eyebrow" style="margin-bottom: 0.3rem;">Lückenloser Abgleich</p>
+  <h2 style="font-family:'Fraunces',serif; font-weight:600; font-size:1.5rem; color:var(--pitch); margin: 0 0 0.4rem;">Alle Kaderveränderungen</h2>
+  <p class="subtitle" style="margin-bottom:1rem;">Täglicher Vergleich der Kader aller 20 Premiership-Vereine &ndash; erkennt jeden Zu- und Abgang, unabhängig davon, wie viele Transfers an einem Tag passieren. Wechsel außerhalb der Nordirland1 (Ausland, andere Liga) werden als "außerhalb Nordirland1" markiert, da dort kein Kader mitverglichen wird.</p>
+  <div class="table-scroll">
+    <table id="kader-changes-table">
+      <thead>
+        <tr>
+          <th data-key2="date">Datum</th>
+          <th data-key2="pos">Pos.</th>
+          <th data-key2="player">Spieler</th>
+          <th data-key2="nationality">Nat.</th>
+          <th data-key2="strength">Stärke</th>
+          <th data-key2="age">Alter</th>
+          <th data-key2="from_club">Von &rarr; Nach</th>
+        </tr>
+      </thead>
+      <tbody id="kader-changes-body"></tbody>
+    </table>
+  </div>
+  <div class="empty-state" id="kader-changes-empty" style="display:none;">Noch keine Kaderveränderungen erfasst. Nach dem zweiten Lauf des Bots erscheinen hier Daten.</div>
+</main>
+
+<main id="top11" style="margin-top: -1rem;">
+  <p class="eyebrow" style="margin-bottom: 0.3rem;">Community-Wahl</p>
+  <h2 style="font-family:'Fraunces',serif; font-weight:600; font-size:1.5rem; color:var(--pitch); margin: 0 0 0.4rem;">Top11 Spieltag 1</h2>
+  <p class="subtitle" style="margin-bottom:1rem;">Die beste Elf nach Spielbericht-Noten von Spieltag 1 (1,0 = beste Note). Spieler- und Vereinsnamen sind anklickbar und führen zum jeweiligen Profil.</p>
+  <div style="max-width:960px; margin:0 auto;">
+<svg viewBox="0 0 940 600" width="100%" role="img" aria-label="Top11 Spieltag 1, 4-3-3 Aufstellung">
+<rect x="10" y="10" width="920" height="580" rx="20" fill="#0C7C3D"/>
+<line x1="30" y1="298" x2="910" y2="298" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="1"/>
+<circle cx="470" cy="298" r="60" fill="none" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="1"/>
+
+<g>
+<rect x="30" y="40" width="260" height="92" rx="9" fill="#FFFFFF"/>
+<rect x="44" y="54" width="50" height="24" rx="4" fill="#D6252F"/>
+<text x="69" y="70" font-size="13" font-weight="700" text-anchor="middle" fill="#FFFFFF">ST</text>
+<text x="44" y="90" font-size="16" font-weight="700" fill="#0B211A"><a class="player-link" href="https://www.anstoss-online.de/?do=spieler&spieler_id=167011" target="_blank">Bernhard Orsolits (1)</a></text>
+<image href="https://www.anstoss-online.de/images/wappen/90/wappen5012.png" x="44" y="99" width="18" height="18"/>
+<text x="67" y="110" font-size="13" fill="#4F5F58"><a class="club-link" href="https://www.anstoss-online.de/?do=verein&verein_id=5012" target="_blank">Ballyclare</a></text>
+<text x="276" y="110" font-size="15" font-weight="700" text-anchor="end" fill="#0C7C3D">1,5</text>
+</g>
+
+<g>
+<rect x="340" y="40" width="260" height="92" rx="9" fill="#FFFFFF"/>
+<rect x="354" y="54" width="50" height="24" rx="4" fill="#D6252F"/>
+<text x="379" y="70" font-size="13" font-weight="700" text-anchor="middle" fill="#FFFFFF">ST</text>
+<text x="354" y="90" font-size="16" font-weight="700" fill="#0B211A"><a class="player-link" href="https://www.anstoss-online.de/?do=spieler&spieler_id=142832" target="_blank">Romain Bizet (1)</a></text>
+<image href="https://www.anstoss-online.de/images/wappen/90/wappen5010.png" x="354" y="99" width="18" height="18"/>
+<text x="377" y="110" font-size="13" fill="#4F5F58"><a class="club-link" href="https://www.anstoss-online.de/?do=verein&verein_id=5010" target="_blank">Ballymoney</a></text>
+<text x="586" y="110" font-size="15" font-weight="700" text-anchor="end" fill="#0C7C3D">1,5</text>
+</g>
+
+<g>
+<rect x="650" y="40" width="260" height="92" rx="9" fill="#FFFFFF"/>
+<rect x="664" y="54" width="50" height="24" rx="4" fill="#D6252F"/>
+<text x="689" y="70" font-size="13" font-weight="700" text-anchor="middle" fill="#FFFFFF">ST</text>
+<text x="664" y="90" font-size="16" font-weight="700" fill="#0B211A"><a class="player-link" href="https://www.anstoss-online.de/?do=spieler&spieler_id=168713" target="_blank">Martyn Mowat (1)</a></text>
+<image href="https://www.anstoss-online.de/images/wappen/90/wappen5013.png" x="664" y="99" width="18" height="18"/>
+<text x="687" y="110" font-size="13" fill="#4F5F58"><a class="club-link" href="https://www.anstoss-online.de/?do=verein&verein_id=5013" target="_blank">Brantwood</a></text>
+<text x="896" y="110" font-size="15" font-weight="700" text-anchor="end" fill="#0C7C3D">2,0</text>
+</g>
+
+<g>
+<rect x="30" y="180" width="260" height="92" rx="9" fill="#FFFFFF"/>
+<rect x="44" y="194" width="50" height="24" rx="4" fill="#E0A62B"/>
+<text x="69" y="210" font-size="13" font-weight="700" text-anchor="middle" fill="#3A2C05">LM</text>
+<text x="44" y="230" font-size="16" font-weight="700" fill="#0B211A"><a class="player-link" href="https://www.anstoss-online.de/?do=spieler&spieler_id=136486" target="_blank">Younes Belhanda (1)</a></text>
+<image href="https://www.anstoss-online.de/images/wappen/90/wappen5010.png" x="44" y="239" width="18" height="18"/>
+<text x="67" y="250" font-size="13" fill="#4F5F58"><a class="club-link" href="https://www.anstoss-online.de/?do=verein&verein_id=5010" target="_blank">Ballymoney</a></text>
+<text x="276" y="250" font-size="15" font-weight="700" text-anchor="end" fill="#0C7C3D">1,5</text>
+</g>
+
+<g>
+<rect x="340" y="180" width="260" height="92" rx="9" fill="#FFFFFF"/>
+<rect x="354" y="194" width="50" height="24" rx="4" fill="#E0A62B"/>
+<text x="379" y="210" font-size="13" font-weight="700" text-anchor="middle" fill="#3A2C05">ZM</text>
+<text x="354" y="230" font-size="16" font-weight="700" fill="#0B211A"><a class="player-link" href="https://www.anstoss-online.de/?do=spieler&spieler_id=139433" target="_blank">Michal Korski (1)</a></text>
+<image href="https://www.anstoss-online.de/images/wappen/90/wappen5013.png" x="354" y="239" width="18" height="18"/>
+<text x="377" y="250" font-size="13" fill="#4F5F58"><a class="club-link" href="https://www.anstoss-online.de/?do=verein&verein_id=5013" target="_blank">Brantwood</a></text>
+<text x="586" y="250" font-size="15" font-weight="700" text-anchor="end" fill="#0C7C3D">1,5</text>
+</g>
+
+<g>
+<rect x="650" y="180" width="260" height="92" rx="9" fill="#FFFFFF"/>
+<rect x="664" y="194" width="50" height="24" rx="4" fill="#E0A62B"/>
+<text x="689" y="210" font-size="13" font-weight="700" text-anchor="middle" fill="#3A2C05">RM</text>
+<text x="664" y="230" font-size="16" font-weight="700" fill="#0B211A"><a class="player-link" href="https://www.anstoss-online.de/?do=spieler&spieler_id=136298" target="_blank">Michael Earith (1)</a></text>
+<image href="https://www.anstoss-online.de/images/wappen/90/wappen5012.png" x="664" y="239" width="18" height="18"/>
+<text x="687" y="250" font-size="13" fill="#4F5F58"><a class="club-link" href="https://www.anstoss-online.de/?do=verein&verein_id=5012" target="_blank">Ballyclare</a></text>
+<text x="896" y="250" font-size="15" font-weight="700" text-anchor="end" fill="#0C7C3D">1,0</text>
+</g>
+
+<g>
+<rect x="30" y="320" width="190" height="92" rx="9" fill="#FFFFFF"/>
+<rect x="42" y="334" width="46" height="22" rx="4" fill="#1B9E5A"/>
+<text x="65" y="349" font-size="12" font-weight="700" text-anchor="middle" fill="#FFFFFF">LV</text>
+<text x="42" y="368" font-size="15" font-weight="700" fill="#0B211A"><a class="player-link" href="https://www.anstoss-online.de/?do=spieler&spieler_id=145763" target="_blank">Jon Suffling (1)</a></text>
+<image href="https://www.anstoss-online.de/images/wappen/90/wappen4660.png" x="42" y="377" width="18" height="18"/>
+<text x="64" y="386" font-size="12" fill="#4F5F58"><a class="club-link" href="https://www.anstoss-online.de/?do=verein&verein_id=4660" target="_blank">Cliftonville</a></text>
+<text x="208" y="386" font-size="14" font-weight="700" text-anchor="end" fill="#0C7C3D">2,0</text>
+</g>
+
+<g>
+<rect x="260" y="320" width="190" height="92" rx="9" fill="#FFFFFF"/>
+<rect x="272" y="334" width="46" height="22" rx="4" fill="#1B9E5A"/>
+<text x="295" y="349" font-size="12" font-weight="700" text-anchor="middle" fill="#FFFFFF">LIB</text>
+<text x="272" y="368" font-size="15" font-weight="700" fill="#0B211A"><a class="player-link" href="https://www.anstoss-online.de/?do=spieler&spieler_id=124854" target="_blank">Matthew Fielder (1)</a></text>
+<image href="https://www.anstoss-online.de/images/wappen/90/wappen5011.png" x="272" y="377" width="18" height="18"/>
+<text x="294" y="386" font-size="12" fill="#4F5F58"><a class="club-link" href="https://www.anstoss-online.de/?do=verein&verein_id=5011" target="_blank">Bangor FV</a></text>
+<text x="438" y="386" font-size="14" font-weight="700" text-anchor="end" fill="#0C7C3D">2,0</text>
+</g>
+
+<g>
+<rect x="490" y="320" width="190" height="92" rx="9" fill="#FFFFFF"/>
+<rect x="502" y="334" width="46" height="22" rx="4" fill="#1B9E5A"/>
+<text x="525" y="349" font-size="12" font-weight="700" text-anchor="middle" fill="#FFFFFF">MD</text>
+<text x="502" y="368" font-size="15" font-weight="700" fill="#0B211A"><a class="player-link" href="https://www.anstoss-online.de/?do=spieler&spieler_id=168179" target="_blank">Rob Sturrock (1)</a></text>
+<image href="https://www.anstoss-online.de/images/wappen/90/wappen5007.png" x="502" y="377" width="18" height="18"/>
+<text x="524" y="386" font-size="12" fill="#4F5F58"><a class="club-link" href="https://www.anstoss-online.de/?do=verein&verein_id=5007" target="_blank">Cerrick Rang.</a></text>
+<text x="668" y="386" font-size="14" font-weight="700" text-anchor="end" fill="#0C7C3D">2,5</text>
+</g>
+
+<g>
+<rect x="720" y="320" width="190" height="92" rx="9" fill="#FFFFFF"/>
+<rect x="732" y="334" width="46" height="22" rx="4" fill="#1B9E5A"/>
+<text x="755" y="349" font-size="12" font-weight="700" text-anchor="middle" fill="#FFFFFF">RV</text>
+<text x="732" y="368" font-size="15" font-weight="700" fill="#0B211A"><a class="player-link" href="https://www.anstoss-online.de/?do=spieler&spieler_id=157941" target="_blank">Lee Burchfield (1)</a></text>
+<image href="https://www.anstoss-online.de/images/wappen/90/wappen4661.png" x="732" y="377" width="18" height="18"/>
+<text x="754" y="386" font-size="12" fill="#4F5F58"><a class="club-link" href="https://www.anstoss-online.de/?do=verein&verein_id=4661" target="_blank">Portadown</a></text>
+<text x="898" y="386" font-size="14" font-weight="700" text-anchor="end" fill="#0C7C3D">1,5</text>
+</g>
+
+<g>
+<rect x="330" y="460" width="280" height="92" rx="9" fill="#FFFFFF"/>
+<rect x="344" y="474" width="50" height="24" rx="4" fill="#1E6FD9"/>
+<text x="369" y="490" font-size="13" font-weight="700" text-anchor="middle" fill="#FFFFFF">TW</text>
+<text x="344" y="514" font-size="16" font-weight="700" fill="#0B211A"><a class="player-link" href="https://www.anstoss-online.de/?do=spieler&spieler_id=168640" target="_blank">Leon Winnink (1)</a></text>
+<image href="https://www.anstoss-online.de/images/wappen/90/wappen4673.png" x="344" y="521" width="18" height="18"/>
+<text x="367" y="532" font-size="13" fill="#4F5F58"><a class="club-link" href="https://www.anstoss-online.de/?do=verein&verein_id=4673" target="_blank">Larne FV</a></text>
+<text x="596" y="532" font-size="15" font-weight="700" text-anchor="end" fill="#0C7C3D">1,5</text>
+</g>
+</svg>
+</div>
+
+</main>
+
+<main id="flop11" style="margin-top: 2rem;">
+  <p class="eyebrow" style="margin-bottom: 0.3rem;">Community-Wahl</p>
+  <h2 style="font-family:'Fraunces',serif; font-weight:600; font-size:1.5rem; color:var(--gold); margin: 0 0 0.4rem;">Flop11 Spieltag 1</h2>
+  <p class="subtitle" style="margin-bottom:1rem;">Die schlechteste Elf nach Spielbericht-Noten von Spieltag 1 (6,0 = schlechteste Note). Spieler- und Vereinsnamen sind anklickbar und führen zum jeweiligen Profil.</p>
+  <div style="max-width:960px; margin:0 auto;">
+<svg viewBox="0 0 940 600" width="100%" role="img" aria-label="Flop11 Spieltag 1, 4-3-3 Aufstellung">
+<rect x="10" y="10" width="920" height="580" rx="20" fill="#7A2020"/>
+<line x1="30" y1="298" x2="910" y2="298" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="1"/>
+<circle cx="470" cy="298" r="60" fill="none" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="1"/>
+
+<g>
+<rect x="30" y="40" width="260" height="92" rx="9" fill="#FFFFFF"/>
+<rect x="44" y="54" width="50" height="24" rx="4" fill="#D6252F"/>
+<text x="69" y="70" font-size="13" font-weight="700" text-anchor="middle" fill="#FFFFFF">ST</text>
+<text x="44" y="90" font-size="16" font-weight="700" fill="#0B211A"><a class="player-link" href="https://www.anstoss-online.de/?do=spieler&spieler_id=127011" target="_blank">Lorenzo Hivju</a></text>
+<image href="https://www.anstoss-online.de/images/wappen/90/wappen5012.png" x="44" y="99" width="18" height="18"/>
+<text x="67" y="110" font-size="13" fill="#4F5F58"><a class="club-link" href="https://www.anstoss-online.de/?do=verein&verein_id=5012" target="_blank">Ballyclare</a></text>
+<text x="276" y="110" font-size="15" font-weight="700" text-anchor="end" fill="#A32D2D">6,0</text>
+</g>
+
+<g>
+<rect x="340" y="40" width="260" height="92" rx="9" fill="#FFFFFF"/>
+<rect x="354" y="54" width="50" height="24" rx="4" fill="#D6252F"/>
+<text x="379" y="70" font-size="13" font-weight="700" text-anchor="middle" fill="#FFFFFF">ST</text>
+<text x="354" y="90" font-size="16" font-weight="700" fill="#0B211A"><a class="player-link" href="https://www.anstoss-online.de/?do=spieler&spieler_id=160380" target="_blank">Paul Trehearne</a></text>
+<image href="https://www.anstoss-online.de/images/wappen/90/wappen5011.png" x="354" y="99" width="18" height="18"/>
+<text x="377" y="110" font-size="13" fill="#4F5F58"><a class="club-link" href="https://www.anstoss-online.de/?do=verein&verein_id=5011" target="_blank">Bangor FV</a></text>
+<text x="586" y="110" font-size="15" font-weight="700" text-anchor="end" fill="#A32D2D">5,0</text>
+</g>
+
+<g>
+<rect x="650" y="40" width="260" height="92" rx="9" fill="#FFFFFF"/>
+<rect x="664" y="54" width="50" height="24" rx="4" fill="#D6252F"/>
+<text x="689" y="70" font-size="13" font-weight="700" text-anchor="middle" fill="#FFFFFF">ST</text>
+<text x="664" y="90" font-size="16" font-weight="700" fill="#0B211A"><a class="player-link" href="https://www.anstoss-online.de/?do=spieler&spieler_id=120087" target="_blank">Fabio Capitanio</a></text>
+<image href="https://www.anstoss-online.de/images/wappen/90/wappen4662.png" x="664" y="99" width="18" height="18"/>
+<text x="687" y="110" font-size="13" fill="#4F5F58"><a class="club-link" href="https://www.anstoss-online.de/?do=verein&verein_id=4662" target="_blank">Omagh Village</a></text>
+<text x="896" y="110" font-size="15" font-weight="700" text-anchor="end" fill="#A32D2D">5,0</text>
+</g>
+
+<g>
+<rect x="30" y="180" width="260" height="92" rx="9" fill="#FFFFFF"/>
+<rect x="44" y="194" width="50" height="24" rx="4" fill="#E0A62B"/>
+<text x="69" y="210" font-size="13" font-weight="700" text-anchor="middle" fill="#3A2C05">LM</text>
+<text x="44" y="230" font-size="16" font-weight="700" fill="#0B211A"><a class="player-link" href="https://www.anstoss-online.de/?do=spieler&spieler_id=147756" target="_blank">Kyle Perman</a></text>
+<image href="https://www.anstoss-online.de/images/wappen/90/wappen4673.png" x="44" y="239" width="18" height="18"/>
+<text x="67" y="250" font-size="13" fill="#4F5F58"><a class="club-link" href="https://www.anstoss-online.de/?do=verein&verein_id=4673" target="_blank">Larne FV</a></text>
+<text x="276" y="250" font-size="15" font-weight="700" text-anchor="end" fill="#A32D2D">5,5</text>
+</g>
+
+<g>
+<rect x="340" y="180" width="260" height="92" rx="9" fill="#FFFFFF"/>
+<rect x="354" y="194" width="50" height="24" rx="4" fill="#E0A62B"/>
+<text x="379" y="210" font-size="13" font-weight="700" text-anchor="middle" fill="#3A2C05">ZM</text>
+<text x="354" y="230" font-size="16" font-weight="700" fill="#0B211A"><a class="player-link" href="https://www.anstoss-online.de/?do=spieler&spieler_id=162099" target="_blank">Gareth Nixon</a></text>
+<image href="https://www.anstoss-online.de/images/wappen/90/wappen5014.png" x="354" y="239" width="18" height="18"/>
+<text x="377" y="250" font-size="13" fill="#4F5F58"><a class="club-link" href="https://www.anstoss-online.de/?do=verein&verein_id=5014" target="_blank">Moyola Place</a></text>
+<text x="586" y="250" font-size="15" font-weight="700" text-anchor="end" fill="#A32D2D">5,5</text>
+</g>
+
+<g>
+<rect x="650" y="180" width="260" height="92" rx="9" fill="#FFFFFF"/>
+<rect x="664" y="194" width="50" height="24" rx="4" fill="#E0A62B"/>
+<text x="689" y="210" font-size="13" font-weight="700" text-anchor="middle" fill="#3A2C05">RM</text>
+<text x="664" y="230" font-size="16" font-weight="700" fill="#0B211A"><a class="player-link" href="https://www.anstoss-online.de/?do=spieler&spieler_id=186298" target="_blank">Ian Ciaran</a></text>
+<image href="https://www.anstoss-online.de/images/wappen/90/wappen4668.png" x="664" y="239" width="18" height="18"/>
+<text x="687" y="250" font-size="13" fill="#4F5F58"><a class="club-link" href="https://www.anstoss-online.de/?do=verein&verein_id=4668" target="_blank">Crusaders FV</a></text>
+<text x="896" y="250" font-size="15" font-weight="700" text-anchor="end" fill="#A32D2D">6,0</text>
+</g>
+
+<g>
+<rect x="30" y="320" width="190" height="92" rx="9" fill="#FFFFFF"/>
+<rect x="42" y="334" width="46" height="22" rx="4" fill="#1B9E5A"/>
+<text x="65" y="349" font-size="12" font-weight="700" text-anchor="middle" fill="#FFFFFF">LV</text>
+<text x="42" y="368" font-size="15" font-weight="700" fill="#0B211A"><a class="player-link" href="https://www.anstoss-online.de/?do=spieler&spieler_id=164298" target="_blank">David Recknell</a></text>
+<image href="https://www.anstoss-online.de/images/wappen/90/wappen5014.png" x="42" y="377" width="18" height="18"/>
+<text x="64" y="386" font-size="12" fill="#4F5F58"><a class="club-link" href="https://www.anstoss-online.de/?do=verein&verein_id=5014" target="_blank">Moyola Place</a></text>
+<text x="208" y="386" font-size="14" font-weight="700" text-anchor="end" fill="#A32D2D">5,5</text>
+</g>
+
+<g>
+<rect x="260" y="320" width="190" height="92" rx="9" fill="#FFFFFF"/>
+<rect x="272" y="334" width="46" height="22" rx="4" fill="#1B9E5A"/>
+<text x="295" y="349" font-size="12" font-weight="700" text-anchor="middle" fill="#FFFFFF">MD</text>
+<text x="272" y="368" font-size="15" font-weight="700" fill="#0B211A"><a class="player-link" href="https://www.anstoss-online.de/?do=spieler&spieler_id=135655" target="_blank">Nicolas Colmazio</a></text>
+<image href="https://www.anstoss-online.de/images/wappen/90/wappen5014.png" x="272" y="377" width="18" height="18"/>
+<text x="294" y="386" font-size="12" fill="#4F5F58"><a class="club-link" href="https://www.anstoss-online.de/?do=verein&verein_id=5014" target="_blank">Moyola Place</a></text>
+<text x="438" y="386" font-size="14" font-weight="700" text-anchor="end" fill="#A32D2D">6,0</text>
+</g>
+
+<g>
+<rect x="490" y="320" width="190" height="92" rx="9" fill="#FFFFFF"/>
+<rect x="502" y="334" width="46" height="22" rx="4" fill="#1B9E5A"/>
+<text x="525" y="349" font-size="12" font-weight="700" text-anchor="middle" fill="#FFFFFF">MD</text>
+<text x="502" y="368" font-size="15" font-weight="700" fill="#0B211A"><a class="player-link" href="https://www.anstoss-online.de/?do=spieler&spieler_id=165087" target="_blank">Paul Berrisford</a></text>
+<image href="https://www.anstoss-online.de/images/wappen/90/wappen5011.png" x="502" y="377" width="18" height="18"/>
+<text x="524" y="386" font-size="12" fill="#4F5F58"><a class="club-link" href="https://www.anstoss-online.de/?do=verein&verein_id=5011" target="_blank">Bangor FV</a></text>
+<text x="668" y="386" font-size="14" font-weight="700" text-anchor="end" fill="#A32D2D">5,5</text>
+</g>
+
+<g>
+<rect x="720" y="320" width="190" height="92" rx="9" fill="#FFFFFF"/>
+<rect x="732" y="334" width="46" height="22" rx="4" fill="#1B9E5A"/>
+<text x="755" y="349" font-size="12" font-weight="700" text-anchor="middle" fill="#FFFFFF">RV</text>
+<text x="732" y="368" font-size="15" font-weight="700" fill="#0B211A"><a class="player-link" href="https://www.anstoss-online.de/?do=spieler&spieler_id=184372" target="_blank">Dean Sizmur</a></text>
+<image href="https://www.anstoss-online.de/images/wappen/90/wappen4673.png" x="732" y="377" width="18" height="18"/>
+<text x="754" y="386" font-size="12" fill="#4F5F58"><a class="club-link" href="https://www.anstoss-online.de/?do=verein&verein_id=4673" target="_blank">Larne FV</a></text>
+<text x="898" y="386" font-size="14" font-weight="700" text-anchor="end" fill="#A32D2D">6,0</text>
+</g>
+
+<g>
+<rect x="330" y="460" width="280" height="92" rx="9" fill="#FFFFFF"/>
+<rect x="344" y="474" width="50" height="24" rx="4" fill="#1E6FD9"/>
+<text x="369" y="490" font-size="13" font-weight="700" text-anchor="middle" fill="#FFFFFF">TW</text>
+<text x="344" y="514" font-size="16" font-weight="700" fill="#0B211A"><a class="player-link" href="https://www.anstoss-online.de/?do=spieler&spieler_id=189738" target="_blank">Michael Brodie</a></text>
+<image href="https://www.anstoss-online.de/images/wappen/90/wappen4659.png" x="344" y="521" width="18" height="18"/>
+<text x="367" y="532" font-size="13" fill="#4F5F58"><a class="club-link" href="https://www.anstoss-online.de/?do=verein&verein_id=4659" target="_blank">Linfield FV</a></text>
+<text x="596" y="532" font-size="15" font-weight="700" text-anchor="end" fill="#A32D2D">4,5</text>
+</g>
+</svg>
+</div>
+
+</main>
+
+<main id="leihspieler" style="margin-top: -1rem;">
+  <p class="eyebrow" style="margin-bottom: 0.3rem;">Liga-weit</p>
+  <h2 style="font-family:'Fraunces',serif; font-weight:600; font-size:1.5rem; color:var(--pitch); margin: 0 0 0.4rem;">Alle aktuellen Leihspieler</h2>
+  <p class="subtitle" style="margin-bottom:1rem;">Alle Spieler, die laut manueller Prüfung gerade bei einem Verein auf Leihbasis spielen &ndash; unabhängig davon, ob dazu ein Transfer-Ereignis erfasst wurde.</p>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>Spieler</th>
+          <th>Pos.</th>
+          <th>Verein</th>
+          <th>Stärke</th>
+          <th>Alter</th>
+          <th>Nat.</th>
+        </tr>
+      </thead>
+      <tbody id="all-loans-body"></tbody>
+    </table>
+  </div>
+  <div class="empty-state" id="all-loans-empty" style="display:none;">Keine Leihspieler erfasst.</div>
+</main>
+
+<main id="vereine" style="margin-top: -1rem;">
+  <p class="eyebrow" style="margin-bottom: 0.3rem;">Vereins-Ansicht</p>
+  <h2 style="font-family:'Fraunces',serif; font-weight:600; font-size:1.5rem; color:var(--pitch); margin: 0 0 0.4rem;">Zugänge &amp; Abgänge pro Verein</h2>
+  <p class="subtitle" style="margin-bottom:1rem;">Verein wählen, um seine Transfers wie bei Transfermarkt gegenüberzustellen &ndash; links die Zugänge, rechts die Abgänge.</p>
+
+  <select id="club-select" aria-label="Verein wählen" style="font-family:'Space Grotesk',sans-serif; font-size:14px; padding:0.6rem 0.85rem; border:1.5px solid var(--line); background:#fff; color:var(--ink); border-radius:3px; margin-bottom:1.2rem; min-width:240px;">
+    <option value="">Verein auswählen…</option>
+  </select>
+
+  <div id="club-columns" style="display:none;">
+    <div>
+      <h3 style="font-family:'Space Grotesk',sans-serif; font-size:13px; text-transform:uppercase; letter-spacing:0.06em; color:var(--pitch); border-bottom:2px solid var(--pitch); padding-bottom:0.4rem; margin:0 0 0.6rem;">Zugänge</h3>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Datum</th><th>Spieler</th><th>Stärke</th><th>Alter</th><th>Von</th></tr></thead>
+          <tbody id="club-in-body"></tbody>
+        </table>
+      </div>
+      <div class="empty-state" id="club-in-empty" style="display:none;">Keine Zugänge erfasst.</div>
+    </div>
+    <div>
+      <h3 style="font-family:'Space Grotesk',sans-serif; font-size:13px; text-transform:uppercase; letter-spacing:0.06em; color:var(--gold); border-bottom:2px solid var(--gold); padding-bottom:0.4rem; margin:0 0 0.6rem;">Abgänge</h3>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Datum</th><th>Spieler</th><th>Stärke</th><th>Alter</th><th>Nach</th></tr></thead>
+          <tbody id="club-out-body"></tbody>
+        </table>
+      </div>
+      <div class="empty-state" id="club-out-empty" style="display:none;">Keine Abgänge erfasst.</div>
+    </div>
+    <div style="grid-column: 1 / -1;">
+      <h3 style="font-family:'Space Grotesk',sans-serif; font-size:13px; text-transform:uppercase; letter-spacing:0.06em; color:#2B4C7A; border-bottom:2px solid #2B4C7A; padding-bottom:0.4rem; margin:1.4rem 0 0.6rem;">Aktuell ausgeliehen (im Kader)</h3>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Spieler</th><th>Pos.</th><th>Stärke</th><th>Alter</th><th>Nat.</th></tr></thead>
+          <tbody id="club-loans-body"></tbody>
+        </table>
+      </div>
+      <div class="empty-state" id="club-loans-empty" style="display:none;">Keine bekannten Leihspieler im aktuellen Kader.</div>
+    </div>
+  </div>
+  <div class="empty-state" id="club-none-selected">Wähle oben einen Verein aus, um seine Zu- und Abgänge zu sehen.</div>
+</main>
+
+<main id="uebersicht" style="margin-top: -1rem;">
+  <p class="eyebrow" style="margin-bottom: 0.3rem;">Gesamtüberblick</p>
+  <h2 style="font-family:'Fraunces',serif; font-weight:600; font-size:1.5rem; color:var(--pitch); margin: 0 0 0.4rem;">Deals pro Verein</h2>
+  <p class="subtitle" style="margin-bottom:1rem;">Zugänge, Abgänge und Leihgeschäfte je Verein auf einen Blick.</p>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>Verein</th>
+          <th>Zugänge</th>
+          <th>Abgänge</th>
+          <th>Leihen</th>
+        </tr>
+      </thead>
+      <tbody id="club-summary-body"></tbody>
+    </table>
+  </div>
+</main>
+
+<footer>
+  Datenquelle: <a href="https://www.anstoss-online.de/?do=land&land_id=240" target="_blank" rel="noopener">anstoss-online.de &ndash; Länderseite Nordirland</a>.
+  Diese Seite ist ein inoffizielles Community-Projekt und aktualisiert sich automatisch einmal nachts.
+</footer>
+
+<script>
+(async function(){
+  let rows = [];
+  let sortKey = 'date';
+  let sortDir = -1; // neueste zuerst
+
+  function parseDate(d){
+    if(!d) return new Date(0);
+    const [day, month, year] = d.split('.').map(Number);
+    return new Date(year, month - 1, day);
+  }
+
+  function classifyPosition(pos){
+    if(!pos) return 'neutral';
+    const first = pos.split(/\s+/)[0];
+    if(first === 'TW') return 'tw';
+    if(['LIB','MD','LV','RV','IV'].includes(first)) return 'def';
+    if(['DM','ZM','LM','RM','OM','ML','MR'].includes(first)) return 'mid';
+    if(['ST','MS','STL','STR'].includes(first)) return 'att';
+    return 'neutral';
+  }
+
+  function posBadge(pos){
+    if(!pos) return '–';
+    return `<span class="pos-badge ${classifyPosition(pos)}">${pos}</span>`;
+  }
+
+  let niClubNames = new Set();
+  let manualLoans = {};
+  function isDomestic(t){
+    return niClubNames.has(t.from_club) && niClubNames.has(t.to_club);
+  }
+  function starPrefix(t){
+    return isDomestic(t) ? '<span class="domestic-star" title="Beide Vereine aus Nordirland1">★</span>' : '';
+  }
+  function crestImg(clubId){
+    if(!clubId) return '';
+    return `<img class="crest" loading="lazy" alt="" src="https://www.anstoss-online.de/images/wappen/90/wappen${clubId}.png" onerror="this.style.display='none'">`;
+  }
+  function loanBadge(t){
+    const manual = manualLoans[t.player_id];
+    const isLoan = manual !== undefined ? manual : t.is_loan;
+    return isLoan === true ? '<span class="loan-badge" title="Leihe">Leihe</span>' : '';
+  }
+  function playerLink(t){
+    if(!t.player) return '–';
+    if(!t.player_id) return t.player;
+    return `<a class="player-link" href="https://www.anstoss-online.de/?do=spieler&spieler_id=${t.player_id}" target="_blank" rel="noopener">${t.player}</a>`;
+  }
+  function clubLink(name, id){
+    if(!name) return '?';
+    if(!id) return name;
+    return `<a class="club-link" href="https://www.anstoss-online.de/?do=verein&verein_id=${id}" target="_blank" rel="noopener">${name}</a>`;
+  }
+
+  function fillTicker(data){
+    const el = document.getElementById('ticker');
+    if(!data.length){ el.innerHTML = '<span>Noch keine Transfers erfasst.</span>'; return; }
+    const items = data.slice(0, 12).map(t => {
+      const kind = t.is_loan === true ? '&nbsp;[Leihe]' : (t.is_loan === false ? '&nbsp;[Kauf]' : '');
+      return `<span>${t.date} &nbsp;&bull;&nbsp; ${t.player} (${t.strength || '–'}, ${t.age ?? '?'} J.) &nbsp;${t.from_club} &rarr; ${t.to_club}${kind}</span>`;
+    });
+    // doppelt, damit die Schleife nahtlos wirkt
+    el.innerHTML = items.join('') + items.join('');
+  }
+
+  function populateFilters(data){
+    const posSel = document.getElementById('filter-pos');
+    const natSel = document.getElementById('filter-nat');
+    const positions = [...new Set(data.map(t => t.pos).filter(Boolean))].sort();
+    const nats = [...new Set(data.map(t => t.nationality).filter(Boolean))].sort();
+    positions.forEach(p => posSel.insertAdjacentHTML('beforeend', `<option value="${p}">${p}</option>`));
+    nats.forEach(n => natSel.insertAdjacentHTML('beforeend', `<option value="${n}">${n}</option>`));
+  }
+
+  function updateStats(data){
+    document.getElementById('stat-total').textContent = data.length;
+    const clubs = new Set();
+    data.forEach(t => { if(t.from_club) clubs.add(t.from_club); if(t.to_club) clubs.add(t.to_club); });
+    document.getElementById('stat-clubs').textContent = clubs.size;
+    const latest = data.reduce((acc, t) => {
+      const d = parseDate(t.date);
+      return d > acc ? d : acc;
+    }, new Date(0));
+    document.getElementById('stat-updated').textContent = latest.getTime() > 0
+      ? latest.toLocaleDateString('de-DE')
+      : '–';
+  }
+
+  function updateExtraStats(allTransfers){
+    const counts = {};
+    allTransfers.forEach(t => {
+      if(t.from_club) counts[t.from_club] = (counts[t.from_club] || 0) + 1;
+      if(t.to_club) counts[t.to_club] = (counts[t.to_club] || 0) + 1;
+    });
+    const topClub = Object.entries(counts).sort((a, b) => b[1] - a[1])[0];
+    document.getElementById('stat-active-club').textContent = topClub ? `${topClub[0]} (${topClub[1]})` : '–';
+
+    const strongestIn = allTransfers
+      .filter(t => t.strength && niClubNames.has(t.to_club))
+      .sort((a, b) => parseFloat(b.strength) - parseFloat(a.strength))[0];
+    document.getElementById('stat-top-in').textContent = strongestIn
+      ? `${strongestIn.strength} – ${strongestIn.player} (${strongestIn.to_club})`
+      : '–';
+
+    const strongestOut = allTransfers
+      .filter(t => t.strength && niClubNames.has(t.from_club))
+      .sort((a, b) => parseFloat(b.strength) - parseFloat(a.strength))[0];
+    document.getElementById('stat-top-out').textContent = strongestOut
+      ? `${strongestOut.strength} – ${strongestOut.player} (${strongestOut.from_club})`
+      : '–';
+  }
+
+  function render(){
+    const search = document.getElementById('search').value.trim().toLowerCase();
+    const posFilter = document.getElementById('filter-pos').value;
+    const natFilter = document.getElementById('filter-nat').value;
+    const domesticOnly = document.getElementById('filter-domestic').checked;
+    const typeFilter = document.getElementById('filter-type').value;
+
+    let filtered = rows.filter(t => {
+      if(posFilter && t.pos !== posFilter) return false;
+      if(natFilter && t.nationality !== natFilter) return false;
+      if(domesticOnly && !isDomestic(t)) return false;
+      if(typeFilter === 'loan' && t.is_loan !== true) return false;
+      if(typeFilter === 'transfer' && t.is_loan !== false) return false;
+      if(search){
+        const hay = `${t.player} ${t.from_club} ${t.to_club}`.toLowerCase();
+        if(!hay.includes(search)) return false;
+      }
+      return true;
+    });
+
+    filtered.sort((a, b) => {
+      let va = a[sortKey], vb = b[sortKey];
+      if(sortKey === 'date'){ va = parseDate(a.date); vb = parseDate(b.date); }
+      if(sortKey === 'strength' || sortKey === 'age'){ va = parseFloat(va) || 0; vb = parseFloat(vb) || 0; }
+      if(va < vb) return -1 * sortDir;
+      if(va > vb) return 1 * sortDir;
+      return 0;
+    });
+
+    const body = document.getElementById('table-body');
+    const empty = document.getElementById('empty-state');
+    if(!filtered.length){
+      body.innerHTML = '';
+      empty.style.display = 'block';
+      return;
+    }
+    empty.style.display = 'none';
+
+    body.innerHTML = filtered.map(t => `
+      <tr>
+        <td class="date">${t.date || '–'}</td>
+        <td class="pos">${posBadge(t.pos)}</td>
+        <td class="player">${starPrefix(t)}${playerLink(t)}</td>
+        <td>${t.nationality || '–'}</td>
+        <td class="num">${t.strength || '–'}</td>
+        <td class="num">${t.age ?? '–'}</td>
+        <td class="route"><b>${crestImg(t.from_club_id)}${clubLink(t.from_club, t.from_club_id)}</b><span class="arrow-icon">&rarr;</span><b>${crestImg(t.to_club_id)}${clubLink(t.to_club, t.to_club_id)}</b>${loanBadge(t)}</td>
+      </tr>
+    `).join('');
+  }
+
+  document.querySelectorAll('thead th').forEach(th => {
+    th.addEventListener('click', () => {
+      const key = th.dataset.key;
+      if(sortKey === key){ sortDir *= -1; } else { sortKey = key; sortDir = 1; }
+      document.querySelectorAll('thead th .arrow').forEach(a => a.remove());
+      th.insertAdjacentHTML('beforeend', `<span class="arrow">${sortDir === 1 ? '▲' : '▼'}</span>`);
+      render();
+    });
+  });
+
+  document.getElementById('search').addEventListener('input', () => {
+    render();
+    renderKaderChanges();
+  });
+  document.getElementById('filter-pos').addEventListener('change', render);
+  document.getElementById('filter-nat').addEventListener('change', render);
+
+  try{
+    const res = await fetch('data.json', { cache: 'no-store' });
+    rows = await res.json();
+    rows.forEach(t => {
+      if(t.from_club) t.from_club = t.from_club.replace('Nordirland-1', 'Nordirland1');
+      if(t.to_club) t.to_club = t.to_club.replace('Nordirland-1', 'Nordirland1');
+    });
+  }catch(e){
+    rows = [];
+    console.error('Konnte data.json nicht laden:', e);
+  }
+
+  let clubsList = [];
+  try{
+    const resClubsEarly = await fetch('clubs.json', { cache: 'no-store' });
+    clubsList = await resClubsEarly.json();
+    niClubNames = new Set(clubsList.map(c => c.name));
+  }catch(e){
+    console.error('Konnte clubs.json nicht laden:', e);
+  }
+
+  try{
+    const resLoans = await fetch('manual_loans.json', { cache: 'no-store' });
+    manualLoans = await resLoans.json();
+  }catch(e){
+    console.error('Konnte manual_loans.json nicht laden:', e);
+  }
+
+  fillTicker(rows);
+  populateFilters(rows);
+  updateStats(rows);
+  render();
+
+  // --- Kaderveränderungen (zweite Tabelle) ---
+  let kaderChanges = [];
+
+  function renderKaderChanges(){
+    const search = document.getElementById('search').value.trim().toLowerCase();
+    const domesticOnly = document.getElementById('filter-domestic').checked;
+    const typeFilter = document.getElementById('filter-type').value;
+    const body = document.getElementById('kader-changes-body');
+    const empty = document.getElementById('kader-changes-empty');
+    let filtered = domesticOnly ? kaderChanges.filter(isDomestic) : kaderChanges;
+    if(typeFilter === 'loan') filtered = filtered.filter(t => t.is_loan === true);
+    if(typeFilter === 'transfer') filtered = filtered.filter(t => t.is_loan === false);
+    if(search){
+      filtered = filtered.filter(t => `${t.player} ${t.from_club} ${t.to_club}`.toLowerCase().includes(search));
+    }
+    if(!filtered.length){
+      body.innerHTML = '';
+      empty.style.display = 'block';
+      return;
+    }
+    empty.style.display = 'none';
+    const sorted = [...filtered].sort((a,b) => parseDate(b.date) - parseDate(a.date));
+    body.innerHTML = sorted.map(t => `
+      <tr>
+        <td class="date">${t.date || '–'}</td>
+        <td class="pos">${posBadge(t.pos)}</td>
+        <td class="player">${starPrefix(t)}${playerLink(t)}</td>
+        <td>${t.nationality || '–'}</td>
+        <td class="num">${t.strength || '–'}</td>
+        <td class="num">${t.age ?? '–'}</td>
+        <td class="route"><b>${crestImg(t.from_club_id)}${clubLink(t.from_club, t.from_club_id)}</b><span class="arrow-icon">&rarr;</span><b>${crestImg(t.to_club_id)}${clubLink(t.to_club, t.to_club_id)}</b>${loanBadge(t)}</td>
+      </tr>
+    `).join('');
+  }
+
+  try{
+    const res2 = await fetch('kader_changes.json', { cache: 'no-store' });
+    const rawChanges = await res2.json();
+    rawChanges.forEach(t => {
+      if(t.from_club) t.from_club = t.from_club.replace('Nordirland-1', 'Nordirland1');
+      if(t.to_club) t.to_club = t.to_club.replace('Nordirland-1', 'Nordirland1');
+    });
+
+    // Fehlende Vereinsnamen ("außerhalb Nordirland1") mit echten Namen aus
+    // der Transferliste (data.json) auffüllen, wenn derselbe Spieler dort
+    // mit einem konkreten Verein auftaucht.
+    kaderChanges = rawChanges.map(c => {
+      const enriched = { ...c };
+      if(!c.from_club_id){
+        const match = rows.find(r => r.player_id === c.player_id && r.to_club === c.to_club);
+        if(match) enriched.from_club = match.from_club;
+      }
+      if(!c.to_club_id){
+        const match = rows.find(r => r.player_id === c.player_id && r.from_club === c.from_club);
+        if(match) enriched.to_club = match.to_club;
+      }
+      return enriched;
+    });
+    renderKaderChanges();
+  }catch(e){
+    console.error('Konnte kader_changes.json nicht laden:', e);
+    document.getElementById('kader-changes-empty').style.display = 'block';
+  }
+
+  document.getElementById('filter-domestic').addEventListener('change', () => {
+    render();
+    renderKaderChanges();
+  });
+  document.getElementById('filter-type').addEventListener('change', () => {
+    render();
+    renderKaderChanges();
+  });
+
+  // Beide Datenquellen kombinieren, Duplikate (gleicher Spieler+Datum+Route) rausfiltern
+  const seenTransfer = new Set();
+  const allTransfers = [...rows, ...kaderChanges].filter(t => {
+    const key = `${t.player_id || t.player}-${t.date}-${t.from_club}-${t.to_club}`;
+    if(seenTransfer.has(key)) return false;
+    seenTransfer.add(key);
+    return true;
+  });
+  updateExtraStats(allTransfers);
+
+  // --- Deals pro Verein ---
+  try{
+    function isLoanEntry(t){
+      const manual = manualLoans[t.player_id];
+      return manual !== undefined ? manual === true : t.is_loan === true;
+    }
+
+    const summary = {}; // club name -> {in, out, loans}
+    clubsList.forEach(c => { summary[c.name] = { in: 0, out: 0, loans: 0, id: c.id }; });
+
+    allTransfers.forEach(t => {
+      if(t.to_club && summary[t.to_club]){
+        summary[t.to_club].in++;
+        if(isLoanEntry(t)) summary[t.to_club].loans++;
+      }
+      if(t.from_club && summary[t.from_club]){
+        summary[t.from_club].out++;
+        if(isLoanEntry(t)) summary[t.from_club].loans++;
+      }
+    });
+
+    const summaryBody = document.getElementById('club-summary-body');
+    summaryBody.innerHTML = clubsList
+      .slice()
+      .sort((a, b) => a.name.localeCompare(b.name, 'de'))
+      .map(c => {
+        const s = summary[c.name];
+        return `
+          <tr>
+            <td class="route">${crestImg(c.id)}${clubLink(c.name, c.id)}</td>
+            <td class="num">${s.in}</td>
+            <td class="num">${s.out}</td>
+            <td class="num">${s.loans}</td>
+          </tr>
+        `;
+      }).join('');
+  }catch(e){
+    console.error('Fehler beim Aufbau der Deals-Übersicht:', e);
+  }
+
+  // --- Vereins-Ansicht: Zugänge links, Abgänge rechts ---
+  let kaderLatest = { clubs: {} };
+  try{
+    const resKaderLatest = await fetch('kader_latest.json', { cache: 'no-store' });
+    kaderLatest = await resKaderLatest.json();
+  }catch(e){
+    console.error('Konnte kader_latest.json nicht laden:', e);
+  }
+
+  // --- Alle aktuellen Leihspieler, liga-weit ---
+  try{
+    const clubIdToName = {};
+    clubsList.forEach(c => { clubIdToName[c.id] = c.name; });
+
+    const allLoanedPlayers = [];
+    Object.entries(kaderLatest.clubs || {}).forEach(([clubId, squad]) => {
+      squad.forEach(p => {
+        if(manualLoans[p.player_id] === true){
+          allLoanedPlayers.push({ ...p, club_id: clubId, club_name: clubIdToName[clubId] || clubId });
+        }
+      });
+    });
+    allLoanedPlayers.sort((a, b) => (a.club_name || '').localeCompare(b.club_name || '', 'de'));
+
+    const allLoansBody = document.getElementById('all-loans-body');
+    const allLoansEmpty = document.getElementById('all-loans-empty');
+    if(!allLoanedPlayers.length){
+      allLoansBody.innerHTML = '';
+      allLoansEmpty.style.display = 'block';
+    }else{
+      allLoansEmpty.style.display = 'none';
+      allLoansBody.innerHTML = allLoanedPlayers.map(p => `
+        <tr>
+          <td class="player"><a class="player-link" href="https://www.anstoss-online.de/?do=spieler&spieler_id=${p.player_id}" target="_blank" rel="noopener">${p.player}</a></td>
+          <td class="pos">${posBadge(p.pos)}</td>
+          <td class="route">${crestImg(p.club_id)}${clubLink(p.club_name, p.club_id)}</td>
+          <td class="num">${p.strength || '–'}</td>
+          <td class="num">${p.age ?? '–'}</td>
+          <td>${p.nationality || '–'}</td>
+        </tr>
+      `).join('');
+    }
+  }catch(e){
+    console.error('Fehler beim Aufbau der Leihspieler-Liste:', e);
+  }
+
+  try{
+    const select = document.getElementById('club-select');
+    clubsList
+      .slice()
+      .sort((a, b) => a.name.localeCompare(b.name, 'de'))
+      .forEach(c => select.insertAdjacentHTML('beforeend', `<option value="${c.name}">${c.name}</option>`));
+
+    function showClub(club){
+      const columns = document.getElementById('club-columns');
+      const noneSelected = document.getElementById('club-none-selected');
+
+      if(!club){
+        columns.style.display = 'none';
+        noneSelected.style.display = 'block';
+        return;
+      }
+      columns.style.display = 'grid';
+      noneSelected.style.display = 'none';
+
+      const incoming = allTransfers
+        .filter(t => t.to_club === club)
+        .sort((a, b) => parseDate(b.date) - parseDate(a.date));
+      const outgoing = allTransfers
+        .filter(t => t.from_club === club)
+        .sort((a, b) => parseDate(b.date) - parseDate(a.date));
+
+      const inBody = document.getElementById('club-in-body');
+      const inEmpty = document.getElementById('club-in-empty');
+      if(!incoming.length){
+        inBody.innerHTML = '';
+        inEmpty.style.display = 'block';
+      }else{
+        inEmpty.style.display = 'none';
+        inBody.innerHTML = incoming.map(t => `
+          <tr>
+            <td class="date">${t.date || '–'}</td>
+            <td class="player">${starPrefix(t)}${playerLink(t)}</td>
+            <td class="num">${t.strength || '–'}</td>
+            <td class="num">${t.age ?? '–'}</td>
+            <td class="route">${crestImg(t.from_club_id)}${clubLink(t.from_club, t.from_club_id)}${loanBadge(t)}</td>
+          </tr>
+        `).join('');
+      }
+
+      const outBody = document.getElementById('club-out-body');
+      const outEmpty = document.getElementById('club-out-empty');
+      if(!outgoing.length){
+        outBody.innerHTML = '';
+        outEmpty.style.display = 'block';
+      }else{
+        outEmpty.style.display = 'none';
+        outBody.innerHTML = outgoing.map(t => `
+          <tr>
+            <td class="date">${t.date || '–'}</td>
+            <td class="player">${starPrefix(t)}${playerLink(t)}</td>
+            <td class="num">${t.strength || '–'}</td>
+            <td class="num">${t.age ?? '–'}</td>
+            <td class="route">${crestImg(t.to_club_id)}${clubLink(t.to_club, t.to_club_id)}${loanBadge(t)}</td>
+          </tr>
+        `).join('');
+      }
+
+      // Aktuell ausgeliehene Spieler: aus dem Kader-Snapshot, gefiltert auf
+      // manuell erfasste (oder automatisch erkannte) Leihspieler
+      const clubEntry = clubsList.find(c => c.name === club);
+      const squad = (clubEntry && kaderLatest.clubs) ? (kaderLatest.clubs[clubEntry.id] || []) : [];
+      const loanedPlayers = squad.filter(p => manualLoans[p.player_id] === true);
+
+      const loansBody = document.getElementById('club-loans-body');
+      const loansEmpty = document.getElementById('club-loans-empty');
+      if(!loanedPlayers.length){
+        loansBody.innerHTML = '';
+        loansEmpty.style.display = 'block';
+      }else{
+        loansEmpty.style.display = 'none';
+        loansBody.innerHTML = loanedPlayers.map(p => `
+          <tr>
+            <td class="player"><a class="player-link" href="https://www.anstoss-online.de/?do=spieler&spieler_id=${p.player_id}" target="_blank" rel="noopener">${p.player}</a></td>
+            <td class="pos">${posBadge(p.pos)}</td>
+            <td class="num">${p.strength || '–'}</td>
+            <td class="num">${p.age ?? '–'}</td>
+            <td>${p.nationality || '–'}</td>
+          </tr>
+        `).join('');
+      }
+    }
+
+    select.addEventListener('change', () => {
+      const club = select.value;
+      showClub(club);
+      // Teilbaren Link aktualisieren, ohne die Seite neu zu laden
+      const url = new URL(location.href);
+      if(club){ url.searchParams.set('verein', club); } else { url.searchParams.delete('verein'); }
+      history.replaceState(null, '', url);
+    });
+
+    // Falls die Seite mit ?verein=... aufgerufen wurde, direkt diesen Verein anzeigen
+    const preselected = new URLSearchParams(location.search).get('verein');
+    if(preselected && clubsList.some(c => c.name === preselected)){
+      select.value = preselected;
+      showClub(preselected);
+    }
+  }catch(e){
+    console.error('Fehler beim Aufbau der Vereins-Ansicht:', e);
+  }
+})();
+</script>
+
+</body>
+</html>
