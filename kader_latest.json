@@ -1,5 +1,5 @@
 {
-  "date": "14.08.2026",
+  "date": "15.08.2026",
   "clubs": {
     "4668": [
       {
@@ -1943,6 +1943,14 @@
         "nationality": "Litauen"
       },
       {
+        "player_id": "184707",
+        "player": "Hildeberto Ruben Gola",
+        "pos": "RV",
+        "strength": "5.1",
+        "age": 18,
+        "nationality": "Portugal"
+      },
+      {
         "player_id": "186369",
         "player": "Gaetano Turchi",
         "pos": "RV",
@@ -2185,20 +2193,20 @@
         "nationality": "Polen"
       },
       {
-        "player_id": "143263",
-        "player": "Tim Chalk",
-        "pos": "ZM",
-        "strength": "8.6",
-        "age": 28,
-        "nationality": "England"
-      },
-      {
         "player_id": "145958",
         "player": "Alp Rifaat",
         "pos": "ZM",
         "strength": "8.6",
         "age": 28,
         "nationality": "Türkei"
+      },
+      {
+        "player_id": "143263",
+        "player": "Tim Chalk",
+        "pos": "ZM",
+        "strength": "8.6",
+        "age": 29,
+        "nationality": "England"
       },
       {
         "player_id": "172199",
