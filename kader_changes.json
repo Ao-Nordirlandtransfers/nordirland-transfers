@@ -1,5 +1,21 @@
 [
   {
+    "id": "174979-5007-None-16.08.2026",
+    "date": "16.08.2026",
+    "player_id": "174979",
+    "player": "Uisdean Brady",
+    "pos": "ST",
+    "strength": "5.3",
+    "age": 25,
+    "nationality": "Australien",
+    "from_club": "Cerrick Rangers",
+    "from_club_id": "5007",
+    "to_club": "außerhalb Nordirland1",
+    "to_club_id": null,
+    "is_loan": null,
+    "detected_at": "2026-08-16T23:24:54.741843+00:00"
+  },
+  {
     "id": "191123-None-5007-15.08.2026",
     "date": "15.08.2026",
     "player_id": "191123",
