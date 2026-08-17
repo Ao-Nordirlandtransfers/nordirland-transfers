@@ -1,5 +1,37 @@
 [
   {
+    "id": "170213-100-5007-18.08.2026",
+    "pos": "LM",
+    "player": "F. Jurquet",
+    "player_id": "170213",
+    "strength": "6.4",
+    "age": 23,
+    "nationality": "Frankreich",
+    "from_club": "FV Metz",
+    "from_club_id": "100",
+    "to_club": "Cerrick Rangers",
+    "to_club_id": "5007",
+    "date": "18.08.2026",
+    "scraped_at": "2026-08-17T23:27:10.906750+00:00",
+    "is_loan": false
+  },
+  {
+    "id": "172885-5013-515-18.08.2026",
+    "pos": "LIB",
+    "player": "G. Nduwayezu",
+    "player_id": "172885",
+    "strength": "4.9",
+    "age": 21,
+    "nationality": "Ruanda",
+    "from_club": "Brantwood FV",
+    "from_club_id": "5013",
+    "to_club": "FV Wimbledon",
+    "to_club_id": "515",
+    "date": "18.08.2026",
+    "scraped_at": "2026-08-17T23:27:10.906914+00:00",
+    "is_loan": false
+  },
+  {
     "id": "146010-5003-5012-17.08.2026",
     "pos": "MD",
     "player": "D. Otakar",

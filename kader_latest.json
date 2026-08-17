@@ -1203,7 +1203,7 @@
         "player": "Kostas Koryzis",
         "pos": "MD",
         "strength": "5.4",
-        "age": 22,
+        "age": 23,
         "nationality": "Griechenland"
       },
       {
@@ -1617,6 +1617,14 @@
         "strength": "3.6",
         "age": 17,
         "nationality": "Nordirland"
+      },
+      {
+        "player_id": "170213",
+        "player": "Frédéric Jurquet",
+        "pos": "LM",
+        "strength": "6.4",
+        "age": 23,
+        "nationality": "Frankreich"
       },
       {
         "player_id": "162209",

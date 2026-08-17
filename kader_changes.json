@@ -1,5 +1,21 @@
 [
   {
+    "id": "170213-None-5007-17.08.2026",
+    "date": "17.08.2026",
+    "player_id": "170213",
+    "player": "Frédéric Jurquet",
+    "pos": "LM",
+    "strength": "6.4",
+    "age": 23,
+    "nationality": "Frankreich",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Cerrick Rangers",
+    "to_club_id": "5007",
+    "is_loan": false,
+    "detected_at": "2026-08-17T23:27:43.067393+00:00"
+  },
+  {
     "id": "146010-None-5012-17.08.2026",
     "date": "17.08.2026",
     "player_id": "146010",
