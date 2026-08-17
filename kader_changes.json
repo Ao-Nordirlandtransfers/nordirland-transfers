@@ -1,5 +1,37 @@
 [
   {
+    "id": "146010-None-5012-17.08.2026",
+    "date": "17.08.2026",
+    "player_id": "146010",
+    "player": "Dusan Otakar",
+    "pos": "MD",
+    "strength": "7.9",
+    "age": 27,
+    "nationality": "Tschechien",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Ballyclare Comrádaís",
+    "to_club_id": "5012",
+    "is_loan": false,
+    "detected_at": "2026-08-17T11:30:40.922884+00:00"
+  },
+  {
+    "id": "176420-None-4660-17.08.2026",
+    "date": "17.08.2026",
+    "player_id": "176420",
+    "player": "Mikkjal Danielsen",
+    "pos": "LV RV",
+    "strength": "6.3",
+    "age": 24,
+    "nationality": "Färöer",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Cliftonville FV",
+    "to_club_id": "4660",
+    "is_loan": false,
+    "detected_at": "2026-08-17T11:30:39.323461+00:00"
+  },
+  {
     "id": "174979-5007-None-16.08.2026",
     "date": "16.08.2026",
     "player_id": "174979",

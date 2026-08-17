@@ -111,7 +111,7 @@
         "player": "Ricardo A. Rio Rego",
         "pos": "RM",
         "strength": "7.6",
-        "age": 23,
+        "age": 24,
         "nationality": "Portugal"
       },
       {
@@ -251,6 +251,14 @@
         "strength": "7.3",
         "age": 31,
         "nationality": "Nordirland"
+      },
+      {
+        "player_id": "176420",
+        "player": "Mikkjal Danielsen",
+        "pos": "LV RV",
+        "strength": "6.3",
+        "age": 24,
+        "nationality": "Färöer"
       },
       {
         "player_id": "161141",
@@ -507,7 +515,7 @@
         "player": "Lee Wilcox",
         "pos": "RV",
         "strength": "3.7",
-        "age": 24,
+        "age": 25,
         "nationality": "Nordirland"
       },
       {
@@ -631,6 +639,14 @@
         "strength": "8.0",
         "age": 22,
         "nationality": "England"
+      },
+      {
+        "player_id": "146010",
+        "player": "Dusan Otakar",
+        "pos": "MD",
+        "strength": "7.9",
+        "age": 27,
+        "nationality": "Tschechien"
       },
       {
         "player_id": "175043",
