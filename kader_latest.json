@@ -1,5 +1,5 @@
 {
-  "date": "17.08.2026",
+  "date": "18.08.2026",
   "clubs": {
     "4668": [
       {
@@ -1919,6 +1919,14 @@
         "nationality": "Nordirland"
       },
       {
+        "player_id": "179340",
+        "player": "Apolinar Temko",
+        "pos": "TW",
+        "strength": "6.6",
+        "age": 20,
+        "nationality": "Äquatorial-Guinea"
+      },
+      {
         "player_id": "185723",
         "player": "Lee Learn",
         "pos": "TW",
@@ -1933,14 +1941,6 @@
         "strength": "6.3",
         "age": 33,
         "nationality": "Nordirland"
-      },
-      {
-        "player_id": "172885",
-        "player": "Godfrey Nduwayezu",
-        "pos": "LIB",
-        "strength": "4.9",
-        "age": 21,
-        "nationality": "Ruanda"
       },
       {
         "player_id": "137894",
@@ -2117,7 +2117,7 @@
         "player": "Tom De Bane",
         "pos": "LIB",
         "strength": "8.0",
-        "age": 33,
+        "age": 34,
         "nationality": "Niederlande"
       },
       {
@@ -2307,14 +2307,6 @@
         "nationality": "Deutschland"
       },
       {
-        "player_id": "109452",
-        "player": "Sven Czinke",
-        "pos": "LIB",
-        "strength": "2.9",
-        "age": 34,
-        "nationality": "Deutschland"
-      },
-      {
         "player_id": "159341",
         "player": "Martin Groark",
         "pos": "LV",
@@ -2351,7 +2343,7 @@
         "player": "Joakim Forstan",
         "pos": "MD",
         "strength": "4.9",
-        "age": 24,
+        "age": 25,
         "nationality": "Schweden"
       },
       {
@@ -2521,7 +2513,7 @@
         "player": "John Fredrick",
         "pos": "LIB",
         "strength": "5.4",
-        "age": 18,
+        "age": 19,
         "nationality": "Nordirland"
       },
       {
