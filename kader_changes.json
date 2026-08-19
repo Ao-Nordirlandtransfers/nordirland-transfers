@@ -1,5 +1,21 @@
 [
   {
+    "id": "157185-None-4658-19.08.2026",
+    "date": "19.08.2026",
+    "player_id": "157185",
+    "player": "Mark Elston",
+    "pos": "LIB",
+    "strength": "7.1",
+    "age": 25,
+    "nationality": "England",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Glentoran FV",
+    "to_club_id": "4658",
+    "is_loan": true,
+    "detected_at": "2026-08-19T17:31:35.362897+00:00"
+  },
+  {
     "id": "161141-4660-None-19.08.2026",
     "date": "19.08.2026",
     "player_id": "161141",

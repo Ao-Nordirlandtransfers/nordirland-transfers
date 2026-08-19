@@ -16,6 +16,23 @@
     "is_loan": false
   },
   {
+    "id": "157185-621-4658-19.08.2026",
+    "pos": "LIB",
+    "player": "Mark Elston",
+    "player_id": "157185",
+    "strength": "7.1",
+    "age": 25,
+    "nationality": "England",
+    "from_club": "FV Hibernian",
+    "from_club_id": "621",
+    "to_club": "Glentoran FV",
+    "to_club_id": "4658",
+    "date": "19.08.2026",
+    "is_loan": true,
+    "scraped_at": "2026-08-19T17:31:38.550719+00:00",
+    "nachgetragen": true
+  },
+  {
     "id": "170213-100-5007-18.08.2026",
     "pos": "LM",
     "player": "F. Jurquet",
