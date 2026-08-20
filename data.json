@@ -1,5 +1,21 @@
 [
   {
+    "id": "191042-4658-4679-21.08.2026",
+    "pos": "ZM",
+    "player": "D. Grady",
+    "player_id": "191042",
+    "strength": "5.9",
+    "age": 18,
+    "nationality": "Nordirland",
+    "from_club": "Glentoran FV",
+    "from_club_id": "4658",
+    "to_club": "Sugndal IL",
+    "to_club_id": "4679",
+    "date": "21.08.2026",
+    "scraped_at": "2026-08-20T23:29:28.829907+00:00",
+    "is_loan": false
+  },
+  {
     "id": "161141-4660-6144-19.08.2026",
     "pos": "LV RV",
     "player": "V. Dubravčić",
