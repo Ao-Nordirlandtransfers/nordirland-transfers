@@ -3043,14 +3043,6 @@
         "nationality": "Nordirland"
       },
       {
-        "player_id": "92753",
-        "player": "Serkan Sevval",
-        "pos": "MD",
-        "strength": "3.7",
-        "age": 36,
-        "nationality": "Türkei"
-      },
-      {
         "player_id": "159194",
         "player": "Marinus Schütz",
         "pos": "RV",
@@ -3131,14 +3123,6 @@
         "nationality": "Algerien"
       },
       {
-        "player_id": "191042",
-        "player": "David Grady",
-        "pos": "ZM",
-        "strength": "5.9",
-        "age": 18,
-        "nationality": "Nordirland"
-      },
-      {
         "player_id": "186262",
         "player": "Martin Srebotnik",
         "pos": "ZM",
@@ -3201,14 +3185,6 @@
         "strength": "6.0",
         "age": 21,
         "nationality": "Nordirland"
-      },
-      {
-        "player_id": "103728",
-        "player": "Thomas Dries",
-        "pos": "ST",
-        "strength": "4.1",
-        "age": 34,
-        "nationality": "Deutschland"
       }
     ],
     "5015": [
