@@ -1,5 +1,37 @@
 [
   {
+    "id": "177273-4679-4658-25.08.2026",
+    "pos": "LV RV",
+    "player": "P. Perrim",
+    "player_id": "177273",
+    "strength": "6.7",
+    "age": 20,
+    "nationality": "England",
+    "from_club": "Sugndal IL",
+    "from_club_id": "4679",
+    "to_club": "Glentoran FV",
+    "to_club_id": "4658",
+    "date": "25.08.2026",
+    "scraped_at": "2026-08-24T23:25:54.167553+00:00",
+    "is_loan": false
+  },
+  {
+    "id": "125162-5015-5023-25.08.2026",
+    "pos": "LIB",
+    "player": "S. Parmenter",
+    "player_id": "125162",
+    "strength": "5.7",
+    "age": 31,
+    "nationality": "Nordirland",
+    "from_club": "Loughgall FV",
+    "from_club_id": "5015",
+    "to_club": "Skoid FK Oslo",
+    "to_club_id": "5023",
+    "date": "25.08.2026",
+    "scraped_at": "2026-08-24T23:25:54.167702+00:00",
+    "is_loan": false
+  },
+  {
     "id": "145870-5015-229-24.08.2026",
     "pos": "ST",
     "player": "K. Orum",
