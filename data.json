@@ -80,6 +80,23 @@
     "is_loan": false
   },
   {
+    "id": "191217-None-5015-24.08.2026",
+    "pos": "LIB",
+    "player": "Gerry Conroy",
+    "player_id": "191217",
+    "strength": "2.4",
+    "age": 17,
+    "nationality": "Nordirland",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Loughgall FV",
+    "to_club_id": "5015",
+    "date": "24.08.2026",
+    "is_loan": false,
+    "scraped_at": "2026-08-25T17:36:57.721888+00:00",
+    "nachgetragen": true
+  },
+  {
     "id": "191042-4658-4679-21.08.2026",
     "pos": "ZM",
     "player": "D. Grady",

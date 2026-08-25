@@ -3011,6 +3011,14 @@
         "nationality": "Nordirland"
       },
       {
+        "player_id": "177273",
+        "player": "Peter Perrim",
+        "pos": "LV RV",
+        "strength": "6.7",
+        "age": 20,
+        "nationality": "England"
+      },
+      {
         "player_id": "117851",
         "player": "Chris Livingstone",
         "pos": "MD",
@@ -3197,20 +3205,20 @@
         "nationality": "Nordirland"
       },
       {
-        "player_id": "125162",
-        "player": "Steven Parmenter",
-        "pos": "LIB",
-        "strength": "5.7",
-        "age": 31,
-        "nationality": "Nordirland"
-      },
-      {
         "player_id": "162691",
         "player": "Patrice Buron",
         "pos": "LIB",
         "strength": "5.3",
         "age": 24,
         "nationality": "Frankreich"
+      },
+      {
+        "player_id": "191217",
+        "player": "Gerry Conroy",
+        "pos": "LIB",
+        "strength": "2.4",
+        "age": 17,
+        "nationality": "Nordirland"
       },
       {
         "player_id": "161558",
@@ -3315,14 +3323,6 @@
         "strength": "6.3",
         "age": 29,
         "nationality": "Finnland"
-      },
-      {
-        "player_id": "145870",
-        "player": "Kim Orum",
-        "pos": "ST",
-        "strength": "6.0",
-        "age": 31,
-        "nationality": "Dänemark"
       },
       {
         "player_id": "190951",
