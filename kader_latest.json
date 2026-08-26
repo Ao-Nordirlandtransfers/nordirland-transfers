@@ -1,5 +1,5 @@
 {
-  "date": "25.08.2026",
+  "date": "26.08.2026",
   "clubs": {
     "4668": [
       {
@@ -2239,14 +2239,6 @@
         "strength": "9.6",
         "age": 32,
         "nationality": "Nordirland"
-      },
-      {
-        "player_id": "142832",
-        "player": "Romain Bizet",
-        "pos": "ST",
-        "strength": "8.9",
-        "age": 30,
-        "nationality": "Frankreich"
       },
       {
         "player_id": "186468",

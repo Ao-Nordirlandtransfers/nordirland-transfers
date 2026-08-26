@@ -1,5 +1,37 @@
 [
   {
+    "id": "142832-5010-576-26.08.2026",
+    "pos": "ST",
+    "player": "R. Bizet",
+    "player_id": "142832",
+    "strength": "8.9",
+    "age": 30,
+    "nationality": "Frankreich",
+    "from_club": "Ballymoney Soccer",
+    "from_club_id": "5010",
+    "to_club": "Chester Town",
+    "to_club_id": "576",
+    "date": "26.08.2026",
+    "scraped_at": "2026-08-26T05:40:58.765266+00:00",
+    "is_loan": false
+  },
+  {
+    "id": "181929-316-4661-26.08.2026",
+    "pos": "MD",
+    "player": "M. Kayne",
+    "player_id": "181929",
+    "strength": "4.9",
+    "age": 19,
+    "nationality": "Nordirland",
+    "from_club": "SU Cremonese",
+    "from_club_id": "316",
+    "to_club": "Portadown FV",
+    "to_club_id": "4661",
+    "date": "26.08.2026",
+    "scraped_at": "2026-08-26T05:40:58.765409+00:00",
+    "is_loan": false
+  },
+  {
     "id": "177273-4679-4658-25.08.2026",
     "pos": "LV RV",
     "player": "P. Perrim",
