@@ -1,5 +1,21 @@
 [
   {
+    "id": "164073-4981-4658-27.08.2026",
+    "pos": "LIB",
+    "player": "P. Dodson",
+    "player_id": "164073",
+    "strength": "6.0",
+    "age": 22,
+    "nationality": "Nordirland",
+    "from_club": "FV Grigoriopol",
+    "from_club_id": "4981",
+    "to_club": "Glentoran FV",
+    "to_club_id": "4658",
+    "date": "27.08.2026",
+    "scraped_at": "2026-08-27T04:26:02.727776+00:00",
+    "is_loan": false
+  },
+  {
     "id": "142832-5010-576-26.08.2026",
     "pos": "ST",
     "player": "R. Bizet",

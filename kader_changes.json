@@ -1,5 +1,37 @@
 [
   {
+    "id": "164073-None-4658-27.08.2026",
+    "date": "27.08.2026",
+    "player_id": "164073",
+    "player": "Paul Dodson",
+    "pos": "LIB",
+    "strength": "6.0",
+    "age": 22,
+    "nationality": "Nordirland",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Glentoran FV",
+    "to_club_id": "4658",
+    "is_loan": false,
+    "detected_at": "2026-08-27T04:27:39.703308+00:00"
+  },
+  {
+    "id": "181929-None-4661-27.08.2026",
+    "date": "27.08.2026",
+    "player_id": "181929",
+    "player": "Marc Kayne",
+    "pos": "MD",
+    "strength": "4.9",
+    "age": 19,
+    "nationality": "Nordirland",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Portadown FV",
+    "to_club_id": "4661",
+    "is_loan": false,
+    "detected_at": "2026-08-27T04:27:37.883622+00:00"
+  },
+  {
     "id": "142832-5010-None-26.08.2026",
     "date": "26.08.2026",
     "player_id": "142832",

@@ -1,5 +1,5 @@
 {
-  "date": "26.08.2026",
+  "date": "27.08.2026",
   "clubs": {
     "4668": [
       {
@@ -377,7 +377,7 @@
         "player": "Paul Kissane",
         "pos": "ST",
         "strength": "6.6",
-        "age": 20,
+        "age": 21,
         "nationality": "Nordirland"
       },
       {
@@ -997,6 +997,14 @@
         "nationality": "Nordirland"
       },
       {
+        "player_id": "181929",
+        "player": "Marc Kayne",
+        "pos": "MD",
+        "strength": "4.9",
+        "age": 19,
+        "nationality": "Nordirland"
+      },
+      {
         "player_id": "187944",
         "player": "Stanley Hadfield",
         "pos": "RV",
@@ -1365,7 +1373,7 @@
         "player": "Costa Masarenhas",
         "pos": "MD",
         "strength": "8.9",
-        "age": 33,
+        "age": 34,
         "nationality": "Portugal"
       },
       {
@@ -1477,7 +1485,7 @@
         "player": "Dimitri Rouwens",
         "pos": "ST",
         "strength": "7.7",
-        "age": 31,
+        "age": 32,
         "nationality": "Belgien"
       },
       {
@@ -1591,7 +1599,7 @@
         "player": "Andrew Westray",
         "pos": "MD",
         "strength": "4.4",
-        "age": 22,
+        "age": 23,
         "nationality": "Nordirland"
       },
       {
@@ -2987,6 +2995,14 @@
         "nationality": "England"
       },
       {
+        "player_id": "164073",
+        "player": "Paul Dodson",
+        "pos": "LIB",
+        "strength": "6.0",
+        "age": 22,
+        "nationality": "Nordirland"
+      },
+      {
         "player_id": "152702",
         "player": "Tolis Stratonikos",
         "pos": "LV",
@@ -3175,7 +3191,7 @@
         "player": "Lee Clasper",
         "pos": "ST",
         "strength": "6.0",
-        "age": 21,
+        "age": 22,
         "nationality": "Nordirland"
       }
     ],
