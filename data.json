@@ -1,5 +1,21 @@
 [
   {
+    "id": "143072-4658-4679-29.08.2026",
+    "pos": "RM",
+    "player": "D. Lush",
+    "player_id": "143072",
+    "strength": "3.7",
+    "age": 33,
+    "nationality": "Nordirland",
+    "from_club": "Glentoran FV",
+    "from_club_id": "4658",
+    "to_club": "Sugndal IL",
+    "to_club_id": "4679",
+    "date": "29.08.2026",
+    "scraped_at": "2026-08-29T00:54:34.367896+00:00",
+    "is_loan": false
+  },
+  {
     "id": "164073-4981-4658-27.08.2026",
     "pos": "LIB",
     "player": "P. Dodson",
