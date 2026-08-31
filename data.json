@@ -1,5 +1,21 @@
 [
   {
+    "id": "161777-157-5010-31.08.2026",
+    "pos": "ST",
+    "player": "S. Tulip",
+    "player_id": "161777",
+    "strength": "7.9",
+    "age": 23,
+    "nationality": "Nordirland",
+    "from_club": "Friedrich II Tilburg",
+    "from_club_id": "157",
+    "to_club": "Ballymoney Soccer",
+    "to_club_id": "5010",
+    "date": "31.08.2026",
+    "scraped_at": "2026-08-31T01:14:55.319392+00:00",
+    "is_loan": false
+  },
+  {
     "id": "143072-4658-4679-29.08.2026",
     "pos": "RM",
     "player": "D. Lush",
