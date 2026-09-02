@@ -1,5 +1,21 @@
 [
   {
+    "id": "188173-6119-5015-02.09.2026",
+    "pos": "LIB",
+    "player": "A. Jimenez",
+    "player_id": "188173",
+    "strength": "6.0",
+    "age": 26,
+    "nationality": "Gibraltar",
+    "from_club": "Occident FC",
+    "from_club_id": "6119",
+    "to_club": "Loughgall FV",
+    "to_club_id": "5015",
+    "date": "02.09.2026",
+    "scraped_at": "2026-09-02T09:27:00.398984+00:00",
+    "is_loan": false
+  },
+  {
     "id": "161777-157-5010-31.08.2026",
     "pos": "ST",
     "player": "S. Tulip",

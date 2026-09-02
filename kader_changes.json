@@ -1,5 +1,21 @@
 [
   {
+    "id": "188173-None-5015-02.09.2026",
+    "date": "02.09.2026",
+    "player_id": "188173",
+    "player": "Ajay Jimenez",
+    "pos": "LIB",
+    "strength": "6.0",
+    "age": 26,
+    "nationality": "Gibraltar",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Loughgall FV",
+    "to_club_id": "5015",
+    "is_loan": false,
+    "detected_at": "2026-09-02T09:28:32.930486+00:00"
+  },
+  {
     "id": "161777-None-5010-31.08.2026",
     "date": "31.08.2026",
     "player_id": "161777",
