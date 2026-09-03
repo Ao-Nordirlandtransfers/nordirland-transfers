@@ -451,7 +451,7 @@
         "player": "Jacinto Barquín",
         "pos": "MD",
         "strength": "5.9",
-        "age": 34,
+        "age": 35,
         "nationality": "Kuba"
       },
       {
@@ -1547,14 +1547,6 @@
         "nationality": "Island"
       },
       {
-        "player_id": "145007",
-        "player": "Ibrahim Zobar",
-        "pos": "LIB",
-        "strength": "7.1",
-        "age": 29,
-        "nationality": "Türkei"
-      },
-      {
         "player_id": "163383",
         "player": "Stuart Dickinson",
         "pos": "LIB",
@@ -2151,14 +2143,6 @@
         "strength": "8.0",
         "age": 32,
         "nationality": "Griechenland"
-      },
-      {
-        "player_id": "162957",
-        "player": "Mark Rood",
-        "pos": "MD",
-        "strength": "7.6",
-        "age": 23,
-        "nationality": "Nordirland"
       },
       {
         "player_id": "137985",
@@ -3057,14 +3041,6 @@
         "strength": "4.7",
         "age": 19,
         "nationality": "Nordirland"
-      },
-      {
-        "player_id": "159194",
-        "player": "Marinus Schütz",
-        "pos": "RV",
-        "strength": "6.0",
-        "age": 25,
-        "nationality": "Deutschland"
       },
       {
         "player_id": "179779",
