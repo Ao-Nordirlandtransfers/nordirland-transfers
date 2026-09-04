@@ -1,5 +1,21 @@
 [
   {
+    "id": "143187-5623-5015-04.09.2026",
+    "pos": "LM",
+    "player": "H. Ruben Aca",
+    "player_id": "143187",
+    "strength": "5.4",
+    "age": 28,
+    "nationality": "Portugal",
+    "from_club": "FV Seligenporten",
+    "from_club_id": "5623",
+    "to_club": "Loughgall FV",
+    "to_club_id": "5015",
+    "date": "04.09.2026",
+    "scraped_at": "2026-09-04T00:58:19.867748+00:00",
+    "is_loan": false
+  },
+  {
     "id": "162957-5010-4515-03.09.2026",
     "pos": "MD",
     "player": "M. Rood",
