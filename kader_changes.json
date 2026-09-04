@@ -1,5 +1,21 @@
 [
   {
+    "id": "143187-None-5015-04.09.2026",
+    "date": "04.09.2026",
+    "player_id": "143187",
+    "player": "Hugo Ruben Aca",
+    "pos": "LM",
+    "strength": "5.4",
+    "age": 28,
+    "nationality": "Portugal",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Loughgall FV",
+    "to_club_id": "5015",
+    "is_loan": false,
+    "detected_at": "2026-09-04T09:30:17.691814+00:00"
+  },
+  {
     "id": "162957-5010-None-03.09.2026",
     "date": "03.09.2026",
     "player_id": "162957",

@@ -2189,7 +2189,7 @@
         "player": "Slawomir Olichwierxzuk",
         "pos": "RM",
         "strength": "8.3",
-        "age": 36,
+        "age": 37,
         "nationality": "Polen"
       },
       {
@@ -2577,7 +2577,7 @@
         "player": "Jason Physick",
         "pos": "ZM",
         "strength": "4.4",
-        "age": 22,
+        "age": 23,
         "nationality": "Nordirland"
       },
       {
@@ -3259,6 +3259,14 @@
         "strength": "4.7",
         "age": 24,
         "nationality": "Nordirland"
+      },
+      {
+        "player_id": "143187",
+        "player": "Hugo Ruben Aca",
+        "pos": "LM",
+        "strength": "5.4",
+        "age": 28,
+        "nationality": "Portugal"
       },
       {
         "player_id": "179333",
