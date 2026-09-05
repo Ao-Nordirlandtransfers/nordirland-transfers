@@ -1,5 +1,21 @@
 [
   {
+    "id": "171489-4661-None-05.09.2026",
+    "date": "05.09.2026",
+    "player_id": "171489",
+    "player": "Neicer Reasco",
+    "pos": "LIB",
+    "strength": "7.6",
+    "age": 24,
+    "nationality": "Ecuador",
+    "from_club": "Portadown FV",
+    "from_club_id": "4661",
+    "to_club": "außerhalb Nordirland1",
+    "to_club_id": null,
+    "is_loan": null,
+    "detected_at": "2026-09-05T00:45:51.901211+00:00"
+  },
+  {
     "id": "143187-None-5015-04.09.2026",
     "date": "04.09.2026",
     "player_id": "143187",

@@ -1,5 +1,5 @@
 {
-  "date": "04.09.2026",
+  "date": "05.09.2026",
   "clubs": {
     "4668": [
       {
@@ -965,14 +965,6 @@
         "nationality": "Nordirland"
       },
       {
-        "player_id": "171489",
-        "player": "Neicer Reasco",
-        "pos": "LIB",
-        "strength": "7.6",
-        "age": 24,
-        "nationality": "Ecuador"
-      },
-      {
         "player_id": "157941",
         "player": "Lee Burchfield",
         "pos": "LV RV",
@@ -985,7 +977,7 @@
         "player": "Andy Penn",
         "pos": "MD",
         "strength": "8.6",
-        "age": 30,
+        "age": 31,
         "nationality": "Nordirland"
       },
       {

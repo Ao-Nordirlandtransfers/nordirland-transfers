@@ -1,5 +1,21 @@
 [
   {
+    "id": "171489-4661-5052-05.09.2026",
+    "pos": "LIB",
+    "player": "N. Reasco",
+    "player_id": "171489",
+    "strength": "7.6",
+    "age": 24,
+    "nationality": "Ecuador",
+    "from_club": "Portadown FV",
+    "from_club_id": "4661",
+    "to_club": "Leixoes SK",
+    "to_club_id": "5052",
+    "date": "05.09.2026",
+    "scraped_at": "2026-09-05T00:45:25.372170+00:00",
+    "is_loan": false
+  },
+  {
     "id": "143187-5623-5015-04.09.2026",
     "pos": "LM",
     "player": "H. Ruben Aca",
