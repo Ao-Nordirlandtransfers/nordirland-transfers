@@ -1,5 +1,37 @@
 [
   {
+    "id": "167789-None-5007-07.09.2026",
+    "date": "07.09.2026",
+    "player_id": "167789",
+    "player": "Jason Cherles",
+    "pos": "RM",
+    "strength": "5.9",
+    "age": 22,
+    "nationality": "Grenada",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Cerrick Rangers",
+    "to_club_id": "5007",
+    "is_loan": false,
+    "detected_at": "2026-09-07T16:21:30.369034+00:00"
+  },
+  {
+    "id": "163393-None-5010-07.09.2026",
+    "date": "07.09.2026",
+    "player_id": "163393",
+    "player": "Martin Arnautovic",
+    "pos": "ZM",
+    "strength": "1.4",
+    "age": 22,
+    "nationality": "Österreich",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Ballymoney Soccer",
+    "to_club_id": "5010",
+    "is_loan": false,
+    "detected_at": "2026-09-07T16:21:28.559308+00:00"
+  },
+  {
     "id": "171489-4661-None-05.09.2026",
     "date": "05.09.2026",
     "player_id": "171489",

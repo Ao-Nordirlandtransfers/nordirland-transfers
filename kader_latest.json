@@ -1619,6 +1619,14 @@
         "nationality": "Bosnien-Herzegowina"
       },
       {
+        "player_id": "167789",
+        "player": "Jason Cherles",
+        "pos": "RM",
+        "strength": "5.9",
+        "age": 22,
+        "nationality": "Grenada"
+      },
+      {
         "player_id": "180579",
         "player": "Diego Vanni",
         "pos": "RM",
@@ -2207,6 +2215,14 @@
         "strength": "7.6",
         "age": 22,
         "nationality": "Niederlande"
+      },
+      {
+        "player_id": "163393",
+        "player": "Martin Arnautovic",
+        "pos": "ZM",
+        "strength": "1.4",
+        "age": 22,
+        "nationality": "Österreich"
       },
       {
         "player_id": "142612",

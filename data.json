@@ -1,5 +1,37 @@
 [
   {
+    "id": "167789-5400-5007-07.09.2026",
+    "pos": "RM",
+    "player": "J. Cherles",
+    "player_id": "167789",
+    "strength": "5.9",
+    "age": 22,
+    "nationality": "Grenada",
+    "from_club": "FC Borac Cacak",
+    "from_club_id": "5400",
+    "to_club": "Cerrick Rangers",
+    "to_club_id": "5007",
+    "date": "07.09.2026",
+    "scraped_at": "2026-09-07T16:19:53.467755+00:00",
+    "is_loan": false
+  },
+  {
+    "id": "163393-5339-5010-07.09.2026",
+    "pos": "ZM",
+    "player": "M. Arnautovic",
+    "player_id": "163393",
+    "strength": "1.4",
+    "age": 22,
+    "nationality": "Österreich",
+    "from_club": "Wolfsberger AK",
+    "from_club_id": "5339",
+    "to_club": "Ballymoney Soccer",
+    "to_club_id": "5010",
+    "date": "07.09.2026",
+    "scraped_at": "2026-09-07T16:19:53.467915+00:00",
+    "is_loan": false
+  },
+  {
     "id": "171489-4661-5052-05.09.2026",
     "pos": "LIB",
     "player": "N. Reasco",
