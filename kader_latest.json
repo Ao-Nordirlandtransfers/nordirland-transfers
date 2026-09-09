@@ -1991,14 +1991,6 @@
         "nationality": "Island"
       },
       {
-        "player_id": "186340",
-        "player": "Dominic Amery",
-        "pos": "RM",
-        "strength": "4.1",
-        "age": 18,
-        "nationality": "England"
-      },
-      {
         "player_id": "163504",
         "player": "Paul Horsey",
         "pos": "ZM",
@@ -2075,7 +2067,7 @@
         "player": "Mick Campion",
         "pos": "ST",
         "strength": "6.7",
-        "age": 21,
+        "age": 22,
         "nationality": "Nordirland"
       }
     ],
@@ -2103,14 +2095,6 @@
         "strength": "8.0",
         "age": 34,
         "nationality": "Niederlande"
-      },
-      {
-        "player_id": "177938",
-        "player": "Berkant Erez",
-        "pos": "LIB",
-        "strength": "5.3",
-        "age": 20,
-        "nationality": "Türkei"
       },
       {
         "player_id": "186307",
@@ -2553,7 +2537,7 @@
         "player": "Sören Eakis",
         "pos": "LM",
         "strength": "4.0",
-        "age": 20,
+        "age": 21,
         "nationality": "Deutschland"
       },
       {

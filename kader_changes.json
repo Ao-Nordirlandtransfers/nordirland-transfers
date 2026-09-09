@@ -1,5 +1,37 @@
 [
   {
+    "id": "186340-5013-None-09.09.2026",
+    "date": "09.09.2026",
+    "player_id": "186340",
+    "player": "Dominic Amery",
+    "pos": "RM",
+    "strength": "4.1",
+    "age": 18,
+    "nationality": "England",
+    "from_club": "Brantwood FV",
+    "from_club_id": "5013",
+    "to_club": "außerhalb Nordirland1",
+    "to_club_id": null,
+    "is_loan": null,
+    "detected_at": "2026-09-09T15:04:51.097695+00:00"
+  },
+  {
+    "id": "177938-5010-None-09.09.2026",
+    "date": "09.09.2026",
+    "player_id": "177938",
+    "player": "Berkant Erez",
+    "pos": "LIB",
+    "strength": "5.3",
+    "age": 20,
+    "nationality": "Türkei",
+    "from_club": "Ballymoney Soccer",
+    "from_club_id": "5010",
+    "to_club": "außerhalb Nordirland1",
+    "to_club_id": null,
+    "is_loan": null,
+    "detected_at": "2026-09-09T15:04:51.097678+00:00"
+  },
+  {
     "id": "167789-None-5007-07.09.2026",
     "date": "07.09.2026",
     "player_id": "167789",
