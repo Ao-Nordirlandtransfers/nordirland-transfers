@@ -1,5 +1,37 @@
 [
   {
+    "id": "177938-5010-5183-08.09.2026",
+    "pos": "LIB",
+    "player": "B. Erez",
+    "player_id": "177938",
+    "strength": "5.3",
+    "age": 20,
+    "nationality": "Türkei",
+    "from_club": "Ballymoney Soccer",
+    "from_club_id": "5010",
+    "to_club": "SK Başakşehir",
+    "to_club_id": "5183",
+    "date": "08.09.2026",
+    "scraped_at": "2026-09-09T01:07:06.636917+00:00",
+    "is_loan": false
+  },
+  {
+    "id": "187566-6092-6032-08.09.2026",
+    "pos": "ST",
+    "player": "A. Mencel",
+    "player_id": "187566",
+    "strength": "5.1",
+    "age": 28,
+    "nationality": "Polen",
+    "from_club": "Flote Swinoujscie",
+    "from_club_id": "6092",
+    "to_club": "Warrenpoint Village",
+    "to_club_id": "6032",
+    "date": "08.09.2026",
+    "scraped_at": "2026-09-09T01:07:06.637086+00:00",
+    "is_loan": false
+  },
+  {
     "id": "167789-5400-5007-07.09.2026",
     "pos": "RM",
     "player": "J. Cherles",
