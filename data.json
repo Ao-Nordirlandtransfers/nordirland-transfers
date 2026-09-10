@@ -1,5 +1,22 @@
 [
   {
+    "id": "191344-None-5013-09.09.2026",
+    "pos": "RV",
+    "player": "Ricky Frew",
+    "player_id": "191344",
+    "strength": "3.7",
+    "age": 17,
+    "nationality": "Nordirland",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Brantwood FV",
+    "to_club_id": "5013",
+    "date": "09.09.2026",
+    "is_loan": false,
+    "scraped_at": "2026-09-10T09:35:55.889856+00:00",
+    "nachgetragen": true
+  },
+  {
     "id": "177938-5010-5183-08.09.2026",
     "pos": "LIB",
     "player": "B. Erez",

@@ -1967,12 +1967,12 @@
         "nationality": "Italien"
       },
       {
-        "player_id": "188845",
-        "player": "Akram Chesnel",
+        "player_id": "191344",
+        "player": "Ricky Frew",
         "pos": "RV",
-        "strength": "4.0",
-        "age": 18,
-        "nationality": "Libanon"
+        "strength": "3.7",
+        "age": 17,
+        "nationality": "Nordirland"
       },
       {
         "player_id": "139433",
@@ -2044,14 +2044,6 @@
         "pos": "ZM",
         "strength": "3.7",
         "age": 20,
-        "nationality": "Nordirland"
-      },
-      {
-        "player_id": "150671",
-        "player": "Patrick Bright",
-        "pos": "ZM",
-        "strength": "3.3",
-        "age": 32,
         "nationality": "Nordirland"
       },
       {
