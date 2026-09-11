@@ -1967,6 +1967,14 @@
         "nationality": "Italien"
       },
       {
+        "player_id": "188845",
+        "player": "Akram Chesnel",
+        "pos": "RV",
+        "strength": "4.0",
+        "age": 18,
+        "nationality": "Libanon"
+      },
+      {
         "player_id": "191344",
         "player": "Ricky Frew",
         "pos": "RV",
@@ -1989,6 +1997,14 @@
         "strength": "4.7",
         "age": 19,
         "nationality": "Island"
+      },
+      {
+        "player_id": "186340",
+        "player": "Dominic Amery",
+        "pos": "RM",
+        "strength": "4.1",
+        "age": 18,
+        "nationality": "England"
       },
       {
         "player_id": "163504",

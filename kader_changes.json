@@ -1,5 +1,37 @@
 [
   {
+    "id": "186340-None-5013-11.09.2026",
+    "date": "11.09.2026",
+    "player_id": "186340",
+    "player": "Dominic Amery",
+    "pos": "RM",
+    "strength": "4.1",
+    "age": 18,
+    "nationality": "England",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Brantwood FV",
+    "to_club_id": "5013",
+    "is_loan": false,
+    "detected_at": "2026-09-11T09:32:44.752996+00:00"
+  },
+  {
+    "id": "188845-None-5013-11.09.2026",
+    "date": "11.09.2026",
+    "player_id": "188845",
+    "player": "Akram Chesnel",
+    "pos": "RV",
+    "strength": "4.0",
+    "age": 18,
+    "nationality": "Libanon",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Brantwood FV",
+    "to_club_id": "5013",
+    "is_loan": false,
+    "detected_at": "2026-09-11T09:32:42.985975+00:00"
+  },
+  {
     "id": "191344-None-5013-10.09.2026",
     "date": "10.09.2026",
     "player_id": "191344",

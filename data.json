@@ -1,5 +1,21 @@
 [
   {
+    "id": "166883-4689-4660-11.09.2026",
+    "pos": "RV",
+    "player": "S. Salimov",
+    "player_id": "166883",
+    "strength": "6.3",
+    "age": 22,
+    "nationality": "Aserbaidschan",
+    "from_club": "Donamo Bukarest",
+    "from_club_id": "4689",
+    "to_club": "Cliftonville FV",
+    "to_club_id": "4660",
+    "date": "11.09.2026",
+    "scraped_at": "2026-09-11T09:31:09.638077+00:00",
+    "is_loan": false
+  },
+  {
     "id": "191344-None-5013-09.09.2026",
     "pos": "RV",
     "player": "Ricky Frew",
