@@ -1,5 +1,21 @@
 [
   {
+    "id": "191360-None-4669-12.09.2026",
+    "date": "12.09.2026",
+    "player_id": "191360",
+    "player": "Tadeáš Mário Vavra",
+    "pos": "MD",
+    "strength": "4.3",
+    "age": 18,
+    "nationality": "Slowakei",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Institute FV",
+    "to_club_id": "4669",
+    "is_loan": false,
+    "detected_at": "2026-09-12T13:56:36.482447+00:00"
+  },
+  {
     "id": "186340-None-5013-11.09.2026",
     "date": "11.09.2026",
     "player_id": "186340",
