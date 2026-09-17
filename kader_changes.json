@@ -1,5 +1,21 @@
 [
   {
+    "id": "156505-4661-None-17.09.2026",
+    "date": "17.09.2026",
+    "player_id": "156505",
+    "player": "Steve Berrisford",
+    "pos": "ST",
+    "strength": "4.7",
+    "age": 24,
+    "nationality": "Nordirland",
+    "from_club": "Portadown FV",
+    "from_club_id": "4661",
+    "to_club": "außerhalb Nordirland1",
+    "to_club_id": null,
+    "is_loan": null,
+    "detected_at": "2026-09-17T15:30:12.793055+00:00"
+  },
+  {
     "id": "191360-None-4669-12.09.2026",
     "date": "12.09.2026",
     "player_id": "191360",

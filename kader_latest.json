@@ -419,7 +419,7 @@
         "player": "Gary Wade",
         "pos": "LIB",
         "strength": "3.0",
-        "age": 21,
+        "age": 22,
         "nationality": "Nordirland"
       },
       {
@@ -1114,14 +1114,6 @@
         "pos": "ST",
         "strength": "6.0",
         "age": 18,
-        "nationality": "Nordirland"
-      },
-      {
-        "player_id": "156505",
-        "player": "Steve Berrisford",
-        "pos": "ST",
-        "strength": "4.7",
-        "age": 24,
         "nationality": "Nordirland"
       },
       {
@@ -3685,7 +3677,7 @@
         "player": "Brett Lockey",
         "pos": "ST",
         "strength": "3.7",
-        "age": 31,
+        "age": 32,
         "nationality": "Nordirland"
       },
       {

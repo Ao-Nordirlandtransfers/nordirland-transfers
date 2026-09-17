@@ -1,5 +1,21 @@
 [
   {
+    "id": "156505-4661-6075-17.09.2026",
+    "pos": "ST",
+    "player": "S. Berrisford",
+    "player_id": "156505",
+    "strength": "4.7",
+    "age": 24,
+    "nationality": "Nordirland",
+    "from_club": "Portadown FV",
+    "from_club_id": "4661",
+    "to_club": "Rokow Czestochowa",
+    "to_club_id": "6075",
+    "date": "17.09.2026",
+    "scraped_at": "2026-09-17T15:28:42.757677+00:00",
+    "is_loan": false
+  },
+  {
     "id": "191360-None-4669-12.09.2026",
     "pos": "MD",
     "player": "Tadeáš Mário Vavra",
