@@ -1,5 +1,21 @@
 [
   {
+    "id": "144819-5015-None-21.09.2026",
+    "date": "21.09.2026",
+    "player_id": "144819",
+    "player": "Marco Venter",
+    "pos": "RM",
+    "strength": "5.1",
+    "age": 30,
+    "nationality": "Deutschland",
+    "from_club": "Loughgall FV",
+    "from_club_id": "5015",
+    "to_club": "außerhalb Nordirland1",
+    "to_club_id": null,
+    "is_loan": null,
+    "detected_at": "2026-09-21T20:56:57.806500+00:00"
+  },
+  {
     "id": "156505-4661-None-17.09.2026",
     "date": "17.09.2026",
     "player_id": "156505",
