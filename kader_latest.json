@@ -127,7 +127,7 @@
         "player": "Sam Sismore",
         "pos": "RM",
         "strength": "5.4",
-        "age": 32,
+        "age": 33,
         "nationality": "Nordirland"
       },
       {
@@ -237,14 +237,6 @@
         "nationality": "Ukraine"
       },
       {
-        "player_id": "147972",
-        "player": "Martin Wutscher",
-        "pos": "LIB",
-        "strength": "7.0",
-        "age": 30,
-        "nationality": "Österreich"
-      },
-      {
         "player_id": "145763",
         "player": "Jon Suffling",
         "pos": "LV RV",
@@ -346,14 +338,6 @@
         "pos": "ZM",
         "strength": "6.6",
         "age": 25,
-        "nationality": "Nordirland"
-      },
-      {
-        "player_id": "161231",
-        "player": "Jason Osler",
-        "pos": "ZM",
-        "strength": "4.7",
-        "age": 23,
         "nationality": "Nordirland"
       },
       {
@@ -831,7 +815,7 @@
         "player": "Kris Woodmore",
         "pos": "MD",
         "strength": "7.3",
-        "age": 30,
+        "age": 31,
         "nationality": "Nordirland"
       },
       {
@@ -1647,7 +1631,7 @@
         "player": "Joaquim A. Djaló",
         "pos": "ZM",
         "strength": "6.1",
-        "age": 24,
+        "age": 25,
         "nationality": "Portugal"
       },
       {
@@ -2159,6 +2143,14 @@
         "strength": "9.1",
         "age": 33,
         "nationality": "Kolumbien"
+      },
+      {
+        "player_id": "191458",
+        "player": "Joseph Sharp",
+        "pos": "LM RM",
+        "strength": "4.7",
+        "age": 18,
+        "nationality": "Nordirland"
       },
       {
         "player_id": "190212",
