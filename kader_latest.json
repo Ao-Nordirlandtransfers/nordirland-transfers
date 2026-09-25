@@ -1,5 +1,5 @@
 {
-  "date": "24.09.2026",
+  "date": "25.09.2026",
   "clubs": {
     "4668": [
       {
@@ -1018,14 +1018,6 @@
         "pos": "RM",
         "strength": "9.1",
         "age": 30,
-        "nationality": "Nordirland"
-      },
-      {
-        "player_id": "153955",
-        "player": "Peter Emens",
-        "pos": "RM",
-        "strength": "6.6",
-        "age": 25,
         "nationality": "Nordirland"
       },
       {

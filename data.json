@@ -1,5 +1,21 @@
 [
   {
+    "id": "153955-4661-4773-25.09.2026",
+    "pos": "RM",
+    "player": "P. Emens",
+    "player_id": "153955",
+    "strength": "6.6",
+    "age": 25,
+    "nationality": "Nordirland",
+    "from_club": "Portadown FV",
+    "from_club_id": "4661",
+    "to_club": "Illochivets Mariupol",
+    "to_club_id": "4773",
+    "date": "25.09.2026",
+    "scraped_at": "2026-09-25T01:17:15.321405+00:00",
+    "is_loan": false
+  },
+  {
     "id": "147972-4660-4689-23.09.2026",
     "pos": "LIB",
     "player": "M. Wutscher",
