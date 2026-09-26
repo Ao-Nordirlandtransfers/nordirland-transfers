@@ -1,5 +1,22 @@
 [
   {
+    "id": "161907-4769-5015-26.09.2026",
+    "pos": "LV",
+    "player": "Andrey Chepil",
+    "player_id": "161907",
+    "strength": "6.3",
+    "age": 24,
+    "nationality": "Ukraine",
+    "from_club": "Dnopro Dnipropetrowsk",
+    "from_club_id": "4769",
+    "to_club": "Loughgall FV",
+    "to_club_id": "5015",
+    "date": "26.09.2026",
+    "is_loan": true,
+    "scraped_at": "2026-09-26T09:49:22.752723+00:00",
+    "nachgetragen": true
+  },
+  {
     "id": "153955-4661-4773-25.09.2026",
     "pos": "RM",
     "player": "P. Emens",

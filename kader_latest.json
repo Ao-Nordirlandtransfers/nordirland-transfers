@@ -2779,7 +2779,7 @@
         "player": "Mark Milner",
         "pos": "ST",
         "strength": "3.9",
-        "age": 24,
+        "age": 25,
         "nationality": "Nordirland"
       },
       {
@@ -2959,7 +2959,7 @@
         "player": "Peter Kirby",
         "pos": "TW",
         "strength": "1.4",
-        "age": 20,
+        "age": 21,
         "nationality": "Nordirland"
       },
       {
@@ -3031,7 +3031,7 @@
         "player": "Idrissa Gueye",
         "pos": "LM",
         "strength": "6.9",
-        "age": 22,
+        "age": 23,
         "nationality": "Senegal"
       },
       {
@@ -3195,6 +3195,14 @@
         "strength": "2.4",
         "age": 17,
         "nationality": "Nordirland"
+      },
+      {
+        "player_id": "161907",
+        "player": "Andrey Chepil",
+        "pos": "LV",
+        "strength": "6.3",
+        "age": 24,
+        "nationality": "Ukraine"
       },
       {
         "player_id": "161558",
