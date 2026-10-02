@@ -2121,14 +2121,6 @@
         "nationality": "Saudi-Arabien"
       },
       {
-        "player_id": "178993",
-        "player": "Emile Lindley",
-        "pos": "MD",
-        "strength": "2.3",
-        "age": 23,
-        "nationality": "Nordirland"
-      },
-      {
         "player_id": "126471",
         "player": "Leonel de Jesús Álvarez Zuleta",
         "pos": "LM RM",
@@ -2142,14 +2134,6 @@
         "pos": "LM RM",
         "strength": "4.7",
         "age": 18,
-        "nationality": "Nordirland"
-      },
-      {
-        "player_id": "190212",
-        "player": "Leo Stonefield",
-        "pos": "LM RM",
-        "strength": "3.1",
-        "age": 17,
         "nationality": "Nordirland"
       },
       {
@@ -2191,22 +2175,6 @@
         "strength": "7.6",
         "age": 22,
         "nationality": "Niederlande"
-      },
-      {
-        "player_id": "163393",
-        "player": "Martin Arnautovic",
-        "pos": "ZM",
-        "strength": "1.4",
-        "age": 22,
-        "nationality": "Österreich"
-      },
-      {
-        "player_id": "142612",
-        "player": "Steve Ham",
-        "pos": "ZM",
-        "strength": "1.3",
-        "age": 29,
-        "nationality": "Nordirland"
       },
       {
         "player_id": "125141",
