@@ -1,5 +1,21 @@
 [
   {
+    "id": "170707-5160-4666-04.10.2026",
+    "pos": "ST",
+    "player": "H. Ryttov",
+    "player_id": "170707",
+    "strength": "4.9",
+    "age": 26,
+    "nationality": "Dänemark",
+    "from_club": "SK Usti nad Labem",
+    "from_club_id": "5160",
+    "to_club": "Ards FV",
+    "to_club_id": "4666",
+    "date": "04.10.2026",
+    "scraped_at": "2026-10-04T11:02:55.238086+00:00",
+    "is_loan": false
+  },
+  {
     "id": "161907-4769-5015-26.09.2026",
     "pos": "LV",
     "player": "Andrey Chepil",
