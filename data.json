@@ -1,5 +1,21 @@
 [
   {
+    "id": "170079-5079-5006-09.10.2026",
+    "pos": "MD",
+    "player": "A. Walerij",
+    "player_id": "170079",
+    "strength": "5.4",
+    "age": 22,
+    "nationality": "Russland",
+    "from_club": "Donamo St.Petersburg",
+    "from_club_id": "5079",
+    "to_club": "Kings University",
+    "to_club_id": "5006",
+    "date": "09.10.2026",
+    "scraped_at": "2026-10-09T11:46:56.149570+00:00",
+    "is_loan": false
+  },
+  {
     "id": "170707-5160-4666-04.10.2026",
     "pos": "ST",
     "player": "H. Ryttov",
