@@ -1,5 +1,37 @@
 [
   {
+    "id": "113085-5010-668-23.10.2026",
+    "pos": "TW",
+    "player": "K. Trzemzalski",
+    "player_id": "113085",
+    "strength": "8.8",
+    "age": 34,
+    "nationality": "Polen",
+    "from_club": "Ballymoney Soccer",
+    "from_club_id": "5010",
+    "to_club": "AO Kevala",
+    "to_club_id": "668",
+    "date": "23.10.2026",
+    "scraped_at": "2026-10-23T01:20:40.625539+00:00",
+    "is_loan": false
+  },
+  {
+    "id": "144637-194-5010-23.10.2026",
+    "pos": "ST",
+    "player": "K. Sarginson",
+    "player_id": "144637",
+    "strength": "8.6",
+    "age": 28,
+    "nationality": "England",
+    "from_club": "DVD Santa Clara",
+    "from_club_id": "194",
+    "to_club": "Ballymoney Soccer",
+    "to_club_id": "5010",
+    "date": "23.10.2026",
+    "scraped_at": "2026-10-23T01:20:40.625683+00:00",
+    "is_loan": false
+  },
+  {
     "id": "178134-668-5010-19.10.2026",
     "pos": "TW",
     "player": "Stefan Bonsiepen",
