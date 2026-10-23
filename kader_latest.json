@@ -2057,14 +2057,6 @@
     ],
     "5010": [
       {
-        "player_id": "113085",
-        "player": "Krzysztof Trzemzalski",
-        "pos": "TW",
-        "strength": "8.8",
-        "age": 34,
-        "nationality": "Polen"
-      },
-      {
         "player_id": "178134",
         "player": "Stefan Bonsiepen",
         "pos": "TW",
@@ -2191,6 +2183,14 @@
         "strength": "9.6",
         "age": 32,
         "nationality": "Nordirland"
+      },
+      {
+        "player_id": "144637",
+        "player": "Kenny Sarginson",
+        "pos": "ST",
+        "strength": "8.6",
+        "age": 28,
+        "nationality": "England"
       },
       {
         "player_id": "161777",

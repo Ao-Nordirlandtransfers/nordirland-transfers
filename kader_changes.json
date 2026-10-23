@@ -1,5 +1,37 @@
 [
   {
+    "id": "144637-None-5010-23.10.2026",
+    "date": "23.10.2026",
+    "player_id": "144637",
+    "player": "Kenny Sarginson",
+    "pos": "ST",
+    "strength": "8.6",
+    "age": 28,
+    "nationality": "England",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Ballymoney Soccer",
+    "to_club_id": "5010",
+    "is_loan": false,
+    "detected_at": "2026-10-23T09:56:22.314038+00:00"
+  },
+  {
+    "id": "113085-5010-None-23.10.2026",
+    "date": "23.10.2026",
+    "player_id": "113085",
+    "player": "Krzysztof Trzemzalski",
+    "pos": "TW",
+    "strength": "8.8",
+    "age": 34,
+    "nationality": "Polen",
+    "from_club": "Ballymoney Soccer",
+    "from_club_id": "5010",
+    "to_club": "außerhalb Nordirland1",
+    "to_club_id": null,
+    "is_loan": null,
+    "detected_at": "2026-10-23T09:56:19.516195+00:00"
+  },
+  {
     "id": "178134-None-5010-19.10.2026",
     "date": "19.10.2026",
     "player_id": "178134",
