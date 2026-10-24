@@ -1,5 +1,21 @@
 [
   {
+    "id": "120770-5775-5010-24.10.2026",
+    "pos": "LIB",
+    "player": "G. Kounev",
+    "player_id": "120770",
+    "strength": "6.7",
+    "age": 30,
+    "nationality": "Bulgarien",
+    "from_club": "Ästers IS",
+    "from_club_id": "5775",
+    "to_club": "Ballymoney Soccer",
+    "to_club_id": "5010",
+    "date": "24.10.2026",
+    "scraped_at": "2026-10-24T01:25:10.037706+00:00",
+    "is_loan": false
+  },
+  {
     "id": "113085-5010-668-23.10.2026",
     "pos": "TW",
     "player": "K. Trzemzalski",
