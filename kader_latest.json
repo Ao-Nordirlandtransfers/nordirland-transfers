@@ -855,7 +855,7 @@
         "player": "Kevin Robb",
         "pos": "RV",
         "strength": "2.3",
-        "age": 23,
+        "age": 24,
         "nationality": "Nordirland"
       },
       {
@@ -2079,6 +2079,14 @@
         "strength": "8.0",
         "age": 34,
         "nationality": "Niederlande"
+      },
+      {
+        "player_id": "120770",
+        "player": "Georgi Kounev",
+        "pos": "LIB",
+        "strength": "6.7",
+        "age": 30,
+        "nationality": "Bulgarien"
       },
       {
         "player_id": "186307",

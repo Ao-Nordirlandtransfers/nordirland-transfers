@@ -1,5 +1,21 @@
 [
   {
+    "id": "120770-None-5010-24.10.2026",
+    "date": "24.10.2026",
+    "player_id": "120770",
+    "player": "Georgi Kounev",
+    "pos": "LIB",
+    "strength": "6.7",
+    "age": 30,
+    "nationality": "Bulgarien",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Ballymoney Soccer",
+    "to_club_id": "5010",
+    "is_loan": false,
+    "detected_at": "2026-10-24T14:24:26.222722+00:00"
+  },
+  {
     "id": "144637-None-5010-23.10.2026",
     "date": "23.10.2026",
     "player_id": "144637",
