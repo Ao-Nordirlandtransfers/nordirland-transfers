@@ -1,5 +1,21 @@
 [
   {
+    "id": "168709-5364-5010-26.10.2026",
+    "pos": "RV",
+    "player": "L. Herzl",
+    "player_id": "168709",
+    "strength": "7.9",
+    "age": 23,
+    "nationality": "Israel",
+    "from_club": "Hepoel Nazareth Ilit",
+    "from_club_id": "5364",
+    "to_club": "Ballymoney Soccer",
+    "to_club_id": "5010",
+    "date": "26.10.2026",
+    "scraped_at": "2026-10-26T01:03:27.824269+00:00",
+    "is_loan": false
+  },
+  {
     "id": "120770-5775-5010-24.10.2026",
     "pos": "LIB",
     "player": "G. Kounev",
