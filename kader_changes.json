@@ -1,5 +1,37 @@
 [
   {
+    "id": "168709-None-5010-26.10.2026",
+    "date": "26.10.2026",
+    "player_id": "168709",
+    "player": "Lior Herzl",
+    "pos": "RV",
+    "strength": "7.9",
+    "age": 23,
+    "nationality": "Israel",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Ballymoney Soccer",
+    "to_club_id": "5010",
+    "is_loan": false,
+    "detected_at": "2026-10-26T10:58:10.533176+00:00"
+  },
+  {
+    "id": "125657-None-5010-26.10.2026",
+    "date": "26.10.2026",
+    "player_id": "125657",
+    "player": "Mehmet Gey",
+    "pos": "LM",
+    "strength": "6.0",
+    "age": 32,
+    "nationality": "Türkei",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Ballymoney Soccer",
+    "to_club_id": "5010",
+    "is_loan": true,
+    "detected_at": "2026-10-26T10:58:08.846376+00:00"
+  },
+  {
     "id": "120770-None-5010-24.10.2026",
     "date": "24.10.2026",
     "player_id": "120770",

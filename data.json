@@ -16,6 +16,23 @@
     "is_loan": false
   },
   {
+    "id": "125657-4830-5010-26.10.2026",
+    "pos": "LM",
+    "player": "Mehmet Gey",
+    "player_id": "125657",
+    "strength": "6.0",
+    "age": 32,
+    "nationality": "Türkei",
+    "from_club": "FV Casa do Benfica",
+    "from_club_id": "4830",
+    "to_club": "Ballymoney Soccer",
+    "to_club_id": "5010",
+    "date": "26.10.2026",
+    "is_loan": true,
+    "scraped_at": "2026-10-26T10:58:15.195845+00:00",
+    "nachgetragen": true
+  },
+  {
     "id": "120770-5775-5010-24.10.2026",
     "pos": "LIB",
     "player": "G. Kounev",

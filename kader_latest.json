@@ -2129,6 +2129,22 @@
         "nationality": "Saudi-Arabien"
       },
       {
+        "player_id": "168709",
+        "player": "Lior Herzl",
+        "pos": "RV",
+        "strength": "7.9",
+        "age": 23,
+        "nationality": "Israel"
+      },
+      {
+        "player_id": "125657",
+        "player": "Mehmet Gey",
+        "pos": "LM",
+        "strength": "6.0",
+        "age": 32,
+        "nationality": "Türkei"
+      },
+      {
         "player_id": "126471",
         "player": "Leonel de Jesús Álvarez Zuleta",
         "pos": "LM RM",
