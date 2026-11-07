@@ -1,5 +1,5 @@
 {
-  "date": "06.11.2026",
+  "date": "07.11.2026",
   "clubs": {
     "4668": [
       {
@@ -2905,6 +2905,14 @@
         "nationality": "Nordirland"
       },
       {
+        "player_id": "191793",
+        "player": "Ian Riley",
+        "pos": "ZM",
+        "strength": "4.6",
+        "age": 19,
+        "nationality": "Nordirland"
+      },
+      {
         "player_id": "179792",
         "player": "Danny Marlin",
         "pos": "ZM",
@@ -3289,7 +3297,7 @@
         "player": "Danny Fonseca Bravo",
         "pos": "ZM",
         "strength": "6.4",
-        "age": 31,
+        "age": 32,
         "nationality": "Costa Rica"
       },
       {

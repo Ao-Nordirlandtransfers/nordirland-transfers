@@ -1,5 +1,21 @@
 [
   {
+    "id": "191793-None-4659-07.11.2026",
+    "date": "07.11.2026",
+    "player_id": "191793",
+    "player": "Ian Riley",
+    "pos": "ZM",
+    "strength": "4.6",
+    "age": 19,
+    "nationality": "Nordirland",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Linfield FV",
+    "to_club_id": "4659",
+    "is_loan": false,
+    "detected_at": "2026-11-07T02:39:20.656129+00:00"
+  },
+  {
     "id": "158951-5010-None-03.11.2026",
     "date": "03.11.2026",
     "player_id": "158951",
