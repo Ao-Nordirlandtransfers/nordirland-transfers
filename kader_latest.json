@@ -911,7 +911,7 @@
         "player": "Adam Golaszewski",
         "pos": "ST",
         "strength": "7.4",
-        "age": 30,
+        "age": 31,
         "nationality": "Polen"
       },
       {
@@ -2097,14 +2097,6 @@
         "nationality": "Nordirland"
       },
       {
-        "player_id": "126001",
-        "player": "Junior Martin",
-        "pos": "LV RV",
-        "strength": "9.0",
-        "age": 30,
-        "nationality": "Nordirland"
-      },
-      {
         "player_id": "126525",
         "player": "Prasaskevas Lianis",
         "pos": "MD",
@@ -2205,7 +2197,7 @@
         "player": "Kenny Sarginson",
         "pos": "ST",
         "strength": "8.6",
-        "age": 28,
+        "age": 29,
         "nationality": "England"
       },
       {
