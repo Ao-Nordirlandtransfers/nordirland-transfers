@@ -1,5 +1,22 @@
 [
   {
+    "id": "183462-4871-5015-19.11.2026",
+    "pos": "MD",
+    "player": "Søren Hoyer",
+    "player_id": "183462",
+    "strength": "5.7",
+    "age": 19,
+    "nationality": "Dänemark",
+    "from_club": "CS Horsens",
+    "from_club_id": "4871",
+    "to_club": "Loughgall FV",
+    "to_club_id": "5015",
+    "date": "19.11.2026",
+    "is_loan": true,
+    "scraped_at": "2026-11-19T14:17:34.658873+00:00",
+    "nachgetragen": true
+  },
+  {
     "id": "126001-5010-567-10.11.2026",
     "pos": "LV RV",
     "player": "J. Martin",
