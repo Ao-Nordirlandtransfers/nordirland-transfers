@@ -1,5 +1,5 @@
 {
-  "date": "19.11.2026",
+  "date": "20.11.2026",
   "clubs": {
     "4668": [
       {
@@ -1053,14 +1053,6 @@
         "nationality": "Nordirland"
       },
       {
-        "player_id": "179338",
-        "player": "Simon Gannon",
-        "pos": "ZM",
-        "strength": "5.4",
-        "age": 21,
-        "nationality": "Nordirland"
-      },
-      {
         "player_id": "124951",
         "player": "Julian Campion",
         "pos": "ZM",
@@ -2011,7 +2003,7 @@
         "player": "Bocar Calcine",
         "pos": "ZM",
         "strength": "5.1",
-        "age": 18,
+        "age": 19,
         "nationality": "Frankreich"
       },
       {

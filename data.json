@@ -1,5 +1,21 @@
 [
   {
+    "id": "179338-4661-5150-20.11.2026",
+    "pos": "ZM",
+    "player": "S. Gannon",
+    "player_id": "179338",
+    "strength": "5.4",
+    "age": 21,
+    "nationality": "Nordirland",
+    "from_club": "Portadown FV",
+    "from_club_id": "4661",
+    "to_club": "FV Vysocina Jihlava",
+    "to_club_id": "5150",
+    "date": "20.11.2026",
+    "scraped_at": "2026-11-20T03:54:18.297856+00:00",
+    "is_loan": false
+  },
+  {
     "id": "183462-4871-5015-19.11.2026",
     "pos": "MD",
     "player": "Søren Hoyer",

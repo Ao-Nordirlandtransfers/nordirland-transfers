@@ -1,5 +1,21 @@
 [
   {
+    "id": "179338-4661-None-20.11.2026",
+    "date": "20.11.2026",
+    "player_id": "179338",
+    "player": "Simon Gannon",
+    "pos": "ZM",
+    "strength": "5.4",
+    "age": 21,
+    "nationality": "Nordirland",
+    "from_club": "Portadown FV",
+    "from_club_id": "4661",
+    "to_club": "außerhalb Nordirland1",
+    "to_club_id": null,
+    "is_loan": null,
+    "detected_at": "2026-11-20T03:55:53.944766+00:00"
+  },
+  {
     "id": "183462-None-5015-19.11.2026",
     "date": "19.11.2026",
     "player_id": "183462",
