@@ -1,5 +1,21 @@
 [
   {
+    "id": "188295-None-5007-21.11.2026",
+    "date": "21.11.2026",
+    "player_id": "188295",
+    "player": "Marcin Dalli",
+    "pos": "ST",
+    "strength": "5.4",
+    "age": 26,
+    "nationality": "Gibraltar",
+    "from_club": "außerhalb Nordirland1",
+    "from_club_id": null,
+    "to_club": "Cerrick Rangers",
+    "to_club_id": "5007",
+    "is_loan": false,
+    "detected_at": "2026-11-21T22:06:59.939218+00:00"
+  },
+  {
     "id": "117917-4668-None-21.11.2026",
     "date": "21.11.2026",
     "player_id": "117917",

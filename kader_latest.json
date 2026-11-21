@@ -1651,6 +1651,14 @@
         "nationality": "England"
       },
       {
+        "player_id": "188295",
+        "player": "Marcin Dalli",
+        "pos": "ST",
+        "strength": "5.4",
+        "age": 26,
+        "nationality": "Gibraltar"
+      },
+      {
         "player_id": "154696",
         "player": "Jonathan Stockfish",
         "pos": "ST",
@@ -1875,7 +1883,7 @@
         "player": "Lee Learn",
         "pos": "TW",
         "strength": "4.4",
-        "age": 22,
+        "age": 23,
         "nationality": "Nordirland"
       },
       {
