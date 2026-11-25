@@ -99,14 +99,6 @@
         "nationality": "Slowakei"
       },
       {
-        "player_id": "104627",
-        "player": "Riad Tirone",
-        "pos": "RM",
-        "strength": "8.1",
-        "age": 35,
-        "nationality": "Frankreich"
-      },
-      {
         "player_id": "165127",
         "player": "Ricardo A. Rio Rego",
         "pos": "RM",
@@ -249,7 +241,7 @@
         "player": "Nerius Saag",
         "pos": "LV RV",
         "strength": "5.7",
-        "age": 18,
+        "age": 19,
         "nationality": "Estland"
       },
       {
