@@ -1,5 +1,21 @@
 [
   {
+    "id": "104627-4668-4524-25.11.2026",
+    "pos": "RM",
+    "player": "R. Tirone",
+    "player_id": "104627",
+    "strength": "8.1",
+    "age": 35,
+    "nationality": "Frankreich",
+    "from_club": "Crusaders FV",
+    "from_club_id": "4668",
+    "to_club": "VB Vágir",
+    "to_club_id": "4524",
+    "date": "25.11.2026",
+    "scraped_at": "2026-11-25T01:17:38.577208+00:00",
+    "is_loan": false
+  },
+  {
     "id": "188295-6125-5007-21.11.2026",
     "pos": "ST",
     "player": "M. Dalli",
