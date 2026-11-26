@@ -1,5 +1,21 @@
 [
   {
+    "id": "116404-4433-4660-26.11.2026",
+    "pos": "TW",
+    "player": "H. Duus",
+    "player_id": "116404",
+    "strength": "6.8",
+    "age": 34,
+    "nationality": "Dänemark",
+    "from_club": "KS Baselidhja",
+    "from_club_id": "4433",
+    "to_club": "Cliftonville FV",
+    "to_club_id": "4660",
+    "date": "26.11.2026",
+    "scraped_at": "2026-11-26T00:52:30.974722+00:00",
+    "is_loan": false
+  },
+  {
     "id": "104627-4668-4524-25.11.2026",
     "pos": "RM",
     "player": "R. Tirone",
