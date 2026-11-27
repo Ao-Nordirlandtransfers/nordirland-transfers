@@ -197,6 +197,14 @@
         "nationality": "Nordirland"
       },
       {
+        "player_id": "116404",
+        "player": "Henrik Duus",
+        "pos": "TW",
+        "strength": "6.8",
+        "age": 34,
+        "nationality": "Dänemark"
+      },
+      {
         "player_id": "152705",
         "player": "Steve Woodward",
         "pos": "TW",
@@ -2311,7 +2319,7 @@
         "player": "Pit Gengler",
         "pos": "RV",
         "strength": "5.7",
-        "age": 19,
+        "age": 20,
         "nationality": "Luxemburg"
       },
       {
@@ -3265,7 +3273,7 @@
         "player": "Mattias Ortendhal",
         "pos": "RM",
         "strength": "7.0",
-        "age": 30,
+        "age": 31,
         "nationality": "Schweden"
       },
       {
